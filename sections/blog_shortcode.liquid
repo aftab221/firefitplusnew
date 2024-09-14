@@ -1,0 +1,20 @@
+{% comment %}
+  Usage: {% include 'blog_shortcode', product_handle: 'your-product-handle' %}
+
+
+{% assign product_handle = product_handle | default: 'default-product-handle' %}
+{% assign product = all_products[product_handle] %}
+
+{% if product %}
+  <div class="product-shortcode">
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.description }}</p>
+    <p>Price: ${{ product.price | money }}</p>
+    <!-- Add more product details as needed -->
+
+    <!-- You can customize the HTML structure based on your needs -->
+  </div>
+{% else %}
+  <p>Product not found.</p>
+{% endif %}
+{% endcomment %}

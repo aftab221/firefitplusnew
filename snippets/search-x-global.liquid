@@ -1,0 +1,51 @@
+<script>
+  window.sx_autocomplete = {
+    options: {
+      display: {
+        form_open: true,
+        position: 'left',
+        stars_color: 'gold_bright'
+      },
+      f_boost: {
+        field: 'product_type',
+        value: ['fire pit'] // LOWEST TO HIGHEST PRIORITY
+      },
+      q_placeholder: 'What are you looking for?',
+      reviews: 'rapid'
+    }
+  }
+
+  ;(function () {
+    if (window.sx_loaded) return
+    window.sx_loaded = true
+    var sxt = document.createElement('script')
+    sxt.type = 'text/javascript'
+    sxt.async = true
+    sxt.src =
+      'https://apps.belkapp.com/api/search/files/firepitsurplus.myshopify.com/searchx-core'
+    var s = document.getElementsByTagName('script')[0]
+    s.parentNode.insertBefore(sxt, s)
+  })();
+</script>
+
+<style>
+  .live-search {
+    display: none;
+  }
+  #sx-autocomplete {
+    font-size: 14px;
+    margin-right: auto;
+  }
+  #sx-autocomplete .sx-ac-outer {
+    left: 0 !important;
+    right: auto !important;
+  }
+  .sx-ui, .sx-ac, .sx-dummy, .sxr select {
+    border: 2px solid rgb(154, 186, 221) !important;
+  }
+  @media screen and (min-width: 1200px) {
+    .sx-ac-input input {
+      width: 500px !important;
+    }
+  }
+</style>

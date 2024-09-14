@@ -1,0 +1,534 @@
+<script
+  type="application/json"
+  data-section-type="static-collection"
+  data-section-id="{{ section.id }}"
+  data-section-data
+  data-data
+>
+{
+    "show_product_counts": {{section.settings.show_product_counts}},
+    "product_count" : {{ collection.products_count }},
+    "context": {
+      "see_more": {{ 'general.general.see_more' | t | json }},
+      "see_less": {{ 'general.general.see_less' | t | json }}
+    }
+  }
+</script>
+
+{% assign show_sidebar = false %}
+{% assign show_filters = true %}
+{% assign show_filter_trigger = false %}
+
+{% if section.settings.filter_style == 'none' %}
+  {% assign show_filters = false %}
+{% endif %}
+
+{% if section.settings.show_sidebar %}
+  {% comment %}
+    Sidebar toggle is used on mobile only, and will only show Filters
+  {% endcomment %}
+
+  {% if collection.all_tags.size > 0 and show_filters %}
+    {% assign show_filter_trigger = true %}
+  {% endif %}
+
+  {% if section.blocks.size > 0 or collection.all_tags.size > 0 and show_filters %}
+    {% comment %}
+      Sidebar to show only if there are tags in the collection, or there are menus
+    {% endcomment %}
+    {% assign show_sidebar = true %}
+  {% endif %}
+{% endif %}
+
+{% assign paginate_by = section.settings.products_per_page_range %}
+{% if template contains 'view-24' %}
+  {% assign paginate_by = 24 %}
+{% elsif template contains 'view-36' %}
+  {% assign paginate_by = 36 %}
+{% elsif template contains 'view-48' %}
+  {% assign paginate_by = 48 %}
+{% endif %}
+
+{%- capture collection_classes -%}
+  {% if show_sidebar %}
+    layout--has-sidebar
+  {% else %}
+    layout--no-sidebar
+  {% endif %}
+{%- endcapture -%}
+
+{% paginate collection.products by paginate_by %}
+  <div class="productgrid--outer {{ collection_classes | strip_newlines }}">
+    {% if show_sidebar %}
+      {%
+        include 'product-grid-sidebar',
+        filter_style: section.settings.filter_style,
+        filter_position: section.settings.filter_position,
+        filter_limit: section.settings.filter_limit,
+        menu_depth: section.settings.menu_depth_range
+      %}
+    {% endif %}
+
+    <div class="productgrid--wrapper">
+      {%- if section.settings.show_breadcrumbs -%}
+        {% include 'breadcrumbs' %}
+      {%- endif -%}
+      <div
+        class="
+          productgrid--masthead
+          {% unless section.settings.show_breadcrumbs %}no-breadcrumbs{% endunless %}
+        "
+      >
+        {% if section.settings.show_collection_image and collection.image %}
+          <figure class="collection--image">
+            {%
+              include 'rimg',
+              img: collection.image,
+              size: '1350x',
+              lazy: settings.lazy_load,
+              canvas: settings.lazy_load
+            %}
+          </figure>
+        {% endif %}
+
+        <div class="collection--information">
+          <h1 class="collection--title">
+            {{ collection.title }}
+          </h1>
+
+          {% if collection.description != blank %}
+            <div class="collection--description rte">
+              {{ collection.description }}
+            </div>
+          {% endif %}
+        </div>
+
+      </div>
+      <div class="results--container" data-html="productgrid">
+      <div class='processing-overlay'>
+      </div>
+      {% if current_tags.size > 0 %}
+        <div class="productgrid--filters">
+          {%- include 'product-grid-tags-active' %}
+        </div>
+      {% endif %}
+
+      {% if show_filter_trigger or section.settings.sort_by or section.settings.show_by or section.settings.grid_list %}
+        {% capture utility_class %}
+          productgrid--utils
+
+          {% if show_filter_trigger or section.settings.sort_by or section.settings.grid_list %}
+            productgrid--utils--visible-mobile
+          {% endif %}
+
+          {% unless section.settings.show_by or section.settings.sort_by or section.settings.grid_list %}
+            productgrid--utils--hidden-desktop
+          {% endunless %}
+        {% endcapture %}
+        <nav
+          class="{{ utility_class | strip_newlines }}"
+          aria-label="{{ 'general.accessibility.nav_collection_utilities' | t }}"
+        >
+          {% if show_filter_trigger %}
+            {%- assign filter_count = 0 -%}
+            {%- if current_tags.size > 0 -%}
+              {%- assign filter_count = current_tags.size -%}
+            {%- endif -%}
+            <div class="productgrid--utils utils-filter">
+              <button
+                class="utils-filter-button"
+                type="button"
+                aria-label="{{ 'product_grid.filters.title_count' | t: count: filter_count }}"
+                data-productgrid-trigger-filters
+              >
+                <span class="utils-filter-icon">
+                  {%- include 'icon-library', id: 'icon-filters' -%}
+                </span>
+                <span class="utils-filter-text">
+                  {{- 'product_grid.filters.title_count' | t: count: filter_count -}}
+                </span>
+              </button>
+            </div>
+          {% endif %}
+
+          {%- if section.settings.sort_by -%}
+            {%-
+              include 'product-grid-sortby',
+              type: 'select',
+            -%}
+          {%- endif -%}
+
+          {%- if section.settings.show_by or section.settings.grid_list -%}
+            <div
+              class="
+                productgrid--utils
+                utils-view
+                {% if section.settings.grid_list == false %}
+                  utils-hide
+                {% endif %}
+              "
+            >
+              <div class="utils-view-container">
+                {%- if section.settings.show_by -%}
+                  {%-
+                    include 'product-grid-showby',
+                    show_by: paginate_by,
+                    grid_list: section.settings.grid_list
+                  -%}
+                {%- endif -%}
+
+                {% if section.settings.grid_list %}
+                  <div class="utils-viewtoggle">
+                    <span class="utils-viewtoggle-label">
+                      {{ 'product_grid.view_as.title' | t }}
+                    </span>
+
+                    <button
+                      class="utils-viewtoggle-button active"
+                      data-collection-view="grid-view"
+                      aria-label="grid view"
+                    >
+                      {% include 'icon-library', id: 'icon-grid' %}
+                    </button>
+
+                    <button
+                      class="utils-viewtoggle-button"
+                      data-collection-view="list-view"
+                      aria-label="list view"
+                    >
+                      {% include 'icon-library', id: 'icon-list' %}
+                    </button>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {%- endif -%}
+        </nav>
+      {% endif %}
+
+      {% include 'icon-library', id: 'icon-loading' %}
+        
+        <div class="coll_top col_content">
+          <div class="short_desc" id="top">
+            <p class="fadded_text">If you are looking to take your apartment or business space to the next level of comfort and functionality, consider the addition of a luxurious commercial fire pit for your outdoor aesthetic.<br>
+              Commercial outdoor fire pits have become almost synonymous with class and design for modern apartment complexes, RV parks, and business centers all the like.</p>
+            <a id="readM">Read More</a>
+          </div>
+          <div class="long_desc" style="display:none;">
+            <p>If you are looking to take your apartment or business space to the next level of comfort and functionality, consider the addition of a luxurious commercial fire pit for your outdoor aesthetic. <br>
+              Commercial outdoor fire pits have become almost synonymous with class and design for modern apartment complexes, RV parks, and business centers all the like.</p>
+            <p>There is no questioning the benefits a fire pit provides, but you will want to have the top-of-the-line commercial fire pits with the utmost qualities of safety in mind. </p>
+            <p>Commercial fire pits require a few more safety requirements compared to residential fire pit systems, based on local and national commercial fire pit code standards.</p>
+            <p>If you do not follow proper state guidelines and safety measures, your commercial fire pits will not pass inspection. </p>
+            <p>In the next few sections, you will learn exactly what is required for your commercial fire pit set up. Read more to know which style of fire pit will be best for your outdoor commercial space and where to get them.</p>
+            <a href="#top" id="readL">Read Less</a>
+          </div>
+        </div>
+        
+
+      {% if collection.products.size > 0 %}
+        <ul data-sectionId="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products"
+          class="
+            productgrid--items
+            {% if settings.enable_product_card_spacing == false %}productgrid--no-spacing{% endif %}
+          "
+          data-html="productgridItems"
+        >
+          {% for product in collection.products %}
+            {%
+              include 'product-grid-item',
+              product: product
+            %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div class="productgrid--no-results">
+          <h2 class="productgrid--no-results-title">
+            {%- if collection.all_products_count == 0 -%}
+              {{ 'product_grid.no_results.empty' | t }}
+            {%- else -%}
+              {{ 'product_grid.no_results.tags_empty' | t }}
+            {%- endif -%}
+          </h2>
+
+          <a class="productgrid--no-results-button" href="{{ routes.all_products_collection_url }}">
+            {{ 'search.general.view_all_products' | t }}
+          </a>
+        </div>
+      {% endif %}
+        
+        <div class="coll_btm col_content">
+          <h2>Wholesale Fire Pits Provider</h2>
+          <p>Fire Pit Surplus will provide you with the best product for impressing your guests and residents while keeping them 100% safe. </p>
+          <p>If you have any liability concerns when it comes to commercial fire pits, you are going to want to play it safe and follow the standard code.</p>
+          <p>If you are involved in the service industry of any sort, we consider you part of the trade, meaning you are eligible for special trade pricing. Email <a href="mailto:tiffany@firepitsurplus.com">tiffany@firepitsurplus.com</a> to learn more or go ahead <a href="https://www.firepitsurplus.com/pages/trade-program">apply for our trade program here!</a></p>
+          <p>Many of their commercial fire pits, such as the <a href="https://www.firepitsurplus.com/products/pyromania-fire-moderne-rectangle-concrete-fire-pit-table">Pyromania Commercial Fire Table</a>, come with beautiful lava rock to fill the furnace for the finishing touch. </p>
+          <p>For a more glamorous look, you can opt-out of receiving lava rock and purchase <a href="https://www.firepitsurplus.com/collections/fire-glass-1">recycled fire glass or reflective fire glass</a> to fill your commercial outdoor fire pit furnace.</p>
+          
+          <h2>Commercial Outdoor Gas Fire Pit with Safety Certification</h2>
+          <p>There are quite a few possible options for commercial outdoor gas fire pits. It will be best to go with a commercial outdoor gas fire pit with safety certification. </p>
+          <p>Many fire pits that you will find on the market are great for residential use, but not all fire pits you find will have the important components needed to pass inspection, become legally certified, and be perfectly safe for residents/patrons that will be using the commercial fire pits.</p>
+          <p>Here are a few essential items to seek out when it comes to commercial outdoor fire pits:</p>          
+          
+          <h2 class="sf">1. Commercial Fire Pits Outdoor Timer</h2>
+          <p>Because of the concern of gas leakage and improper use of commercial outdoor fire pits, the use of a <a href="https://www.firepitsurplus.com/collections/hpc-1/products/hpc-2-hour-outdoor-stainless-steel-timer">timer for your fire pit</a> is absolutely necessary.</p>
+          <p>A <a href="https://www.firepitsurplus.com/collections/hpc-1/products/hpc-2-hour-outdoor-stainless-steel-timer">timer</a> for your commercial outdoor fire pit is essential for aesthetic and safety reasons. </p>
+          <p>An outdoor fire pit timer will ensure that you, as the manager of the property, have complete control over the fire pit gas usage. </p>
+          <p>The timer for your commercial outdoor fire pit will mitigate a large bit of risk that normally comes with outdoor fire pits.</p>
+
+
+          <h2 class="sf">2. Commercial Fire Pits Ignition Methods</h2>
+          <p>Guidelines typically call for an electronically controlled commercial fire pit. An electronic setup will allow you to turn on and ignite your fire pit with the flip of a switch.</p>
+          <p>Match Lit ignition is not for use with commercial fire pits. </p>
+          <p>Some commercial outdoor fire pits will have the option of both match lit and electronic flame ignition, but match lit ignition alone will not be certified. </p>
+
+          <h2 class="sf">3. Flame Sensor for Fire Pit Commercial Use </h2>
+          <p>In order to pass inspection, your commercial fire pit must have a flame sensor to monitor and make sure the flame levels are not too high. </p>
+          <p>For commercial fire pits, the flame levels will almost always be higher than 65,000 BTU’s per hour. 65,000 is the level of BTUs that, if over, your complex or facility has to have the flame levels legally monitored. </p>
+          <p>You must have a flame sensor in order for your fire pit to be licensed for commercial use. If you do not have a flame sensor for fire pit commercial use, your project will not pass inspection.</p>
+          <p>Stick with the appropriate, certified fire pit that comes with a flame sensor. You won’t have to worry about your commercial fire pit project being denied by an inspector.</p>
+
+
+          <h2>Fire Pit Commercial Use Dangers</h2>
+          <p>Outdoor fire pits can be temperamental and will turn off if there is bad weather with rain or high winds. </p>
+          <p>The flame on your commercial fire pit will likely be shut off from time to time. </p>
+          <p>The flame shutting off is not the problem, as that is perfect for safety. The problem with the commercial fire pit flame going out is that the gas will continue to seep from the fire pit tank. </p>
+          <p>A gas leak can be extremely dangerous with fire pit commercial use. If for any reason there is a flame or other ignition source that gets close, a build-up of propane or natural gas can cause a dangerous explosion similar to that of a bomb.</p>
+          <p>Gas leaking from your fire pit is the number one safety issue to take care of in order to pass inspection and keep our clients safe. </p>
+
+
+          <h2>Commercial Outdoor Fire Pits Bottom Line</h2>
+          <p>Outdoor fire pits are a classy addition to commercial outdoor spaces. </p>
+          <p>There are quite a few commercial fire pits available on the market these days so it can be difficult to know which fire pit to go with.</p>
+          <p>With so many options available, the luxurious design will not be a concern. What you will need to pay attention to are the safety specifications and features.</p>
+          <p>Luckily, <a href="https://www.firepitsurplus.com/">Fire Pit Surplus</a> has safety-certified commercial fire pit options to put your mind at ease.  </p>
+          <p><a href="https://www.firepitsurplus.com/">Fire Pit Surplus</a> carries the top-of-the-line fire pits and is paired with world-class customer service. </p>
+          <p>Putting your pockets at ease, we will work with you to give your space the most luxurious fire pits with safety in mind.</p>
+          <p>These items would satisfy the local code inspectors and these items would be certified by CSA and or UL.</p>
+
+          
+          
+        </div>
+      {%
+        include 'pagination',
+        pagination_type: section.settings.pagination
+      %}
+    </div>
+  </div>
+  {% endpaginate %}
+  </div>
+
+{%- if section.settings.sort_by -%}
+  {%-
+    include 'product-grid-sortby',
+    type: 'modal',
+  -%}
+{%- endif -%}
+
+
+{% schema %}
+{
+  "name": "Collection pages",
+  "class": "collection--section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "label": "Show breadcrumb navigation",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "label": "Show collection image",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "products_per_page_range",
+      "label": "Products per page",
+      "min": 24,
+      "max": 48,
+      "step": 12,
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "pagination",
+      "label": "Pagination method",
+      "options": [
+        {
+          "value": "click_to_load",
+          "label": "Click-to-load"
+        },
+        {
+          "value": "infinite_scroll",
+          "label": "Infinite scroll"
+        },
+        {
+          "value": "traditional",
+          "label": "Jump-to-page"
+        }
+      ],
+      "default": "click_to_load"
+    },
+    {
+      "type": "header",
+      "content": "Utility bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "sort_by",
+      "label": "Show \"Sort by\" dropdown",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_by",
+      "label": "Show products per page links",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "grid_list",
+      "label": "Show grid/list view toggle",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Sidebar"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sidebar",
+      "label": "Show sidebar",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "filter_style",
+      "label": "Filters",
+      "info":"[Learn more](https://support.pixelunion.net/hc/en-us/articles/360022061114)",
+      "options": [
+        {
+          "value": "none",
+          "label": "Hide filters"
+        },
+        {
+          "value": "tags",
+          "label": "By tag"
+        },
+        {
+          "value": "groups",
+          "label": "By group"
+        }
+      ],
+      "default": "tags"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_counts",
+      "label": "Show product counts",
+      "default": false
+    },
+    {
+      "id": "filter_limit",
+      "type": "select",
+      "label": "Hide additional tags after",
+      "options": [
+        {
+          "value": "5",
+          "label": "5 tags"
+        },
+        {
+          "value": "6",
+          "label": "6 tags"
+        },
+        {
+          "value": "8",
+          "label": "8 tags"
+        },
+        {
+          "value": "10",
+          "label": "10 tags"
+        },
+        {
+          "value": "15",
+          "label": "15 tags"
+        },
+        {
+          "value": "20",
+          "label": "20 tags"
+        },
+        {
+          "value": "999",
+          "label": "Show all tags"
+        }
+      ],
+      "default": "999"
+    },
+    {
+      "type": "select",
+      "id": "filter_position",
+      "label": "Filters position",
+      "options": [
+        {
+          "value": "above_menus",
+          "label": "Above menus"
+        },
+        {
+          "value": "below_menus",
+          "label": "Below menus"
+        }
+      ],
+      "default": "above_menus"
+    },
+    {
+      "type":      "text",
+      "id":        "grid_categories",
+      "label":     "Display filters as grid",
+      "info":      "List groups to display in an alternate grid format, like “Size, Price”. [Learn more](https://support.pixelunion.net/hc/en-us/articles/360022061114-Setting-up-Superstore-s-sidebar-filter-and-menus)"
+    },
+    {
+      "type":      "textarea",
+      "id":        "custom_ordered_categories",
+      "label":     "Group order",
+      "info":      "Define a custom order for groups, like “Color, Brand, Size”. Other groups will appear at the bottom."
+    },
+    {
+      "type":      "textarea",
+      "id":        "custom_ordered_tags",
+      "label":     "Tag order",
+      "info":      "Define a custom order for tags, like “Size_S, Size_M, Size_L”. Items must exactly match tag name, including group prefix. Other tags will appear at the bottom."
+    },
+    {
+      "type": "range",
+      "id": "menu_depth_range",
+      "label": "Menu depth visibility",
+      "info": "[Learn more](https://help.shopify.com/manual/sell-online/online-store/menus-and-links#create-a-drop-down-menu)",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 1
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "id": "menu",
+          "type": "link_list",
+          "label": "Menu",
+          "info": "This menu will show as many drop-down items as specified above under \"Menu depth visibility.\""
+        }
+      ],
+      "limit": 10
+    }
+  ]
+}
+
+{% endschema %}
+
+{% include 'rapid-reviews-old-collection' %}

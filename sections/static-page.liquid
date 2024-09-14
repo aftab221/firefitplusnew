@@ -1,0 +1,54 @@
+<article class="site-page" data-template-page>
+  <header class="page-masthead">
+    <h1 class="page-title">
+      {{ page.title }}
+    </h1>
+  </header>
+
+  {% if page.content != blank or page.handle contains 'sitemap' %}
+    <div class="page-content rte">
+      {{ page.content }}
+      
+      <!--Start Site Map Code-->
+      {% if page.handle contains 'sitemap' %}
+      <div style="padding-top: 10px;">
+        <h2>Product Categories</h2>
+        {% for collection in collections %}
+        <h3><a href="{{ collection.url }}">{{ collection.title }}</a></h3>
+        <ul>
+          {% paginate collection.products by 200 %}
+          {% for product in collection.products %}
+          <li><a href="{{ product.url }}">{{ product.title }}</a></li>
+          {% endfor %}
+          {% endpaginate %}
+        </ul>
+        {% endfor %}
+        <h2>Information</h2>
+        <ul>
+          {% for link in linklists.sitemap-pages.links %}
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+        <h2>Blog</h2>
+        <ul>
+          {% paginate blog.articles by 200 %}
+          {% for article in blogs.shopping-guides.articles %}
+          <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+          {% endfor %}
+          {% endpaginate %}
+        </ul>
+      </div>
+      {% endif %}
+      <!--End Site Map Code-->
+    </div>
+  {% endif %}
+</article>
+
+{% schema %}
+{
+  "name": "Page",
+  "class": "page--section",
+  "settings": []
+}
+
+{% endschema %}

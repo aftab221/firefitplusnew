@@ -1,0 +1,72 @@
+{% assign product = all_products['backyard-delivery'] %}
+
+{% unless cart.item_count == 0 or product.empty? or product.variants.first.available == false %}
+
+  {% assign item_count = 0 %}
+  {% assign quantity_of_target_product = 0 %}
+  
+  {% for item in cart.items %}
+    {% unless item.properties == empty %}
+          {% for property in item.properties %}
+            {% if property.last == 'Backyard Delivery' and property.first == 'Quote'  %}
+               {% assign item_count = item_count | plus: 1 %}
+             {% endif %}
+          {% endfor %}
+      {% endunless %}
+
+
+     {% if item.product.id == 68605198057703 %}
+      {% assign quantity_of_target_product = quantity_of_target_product | plus: item.quantity %}
+    {% endif %}
+    
+  {% endfor %}
+
+
+  {% assign variant_id = product.variants.first.id %}
+
+  <script>
+    
+    jQuery(document).ready(function($) {
+      var cartItems = {{ cart.items | json }},
+          qtyInTheCart = 0,
+          cartUpdates = {};
+    
+      for (var i = 0; i < cartItems.length; i++) {
+        if (cartItems[i].id === {{ variant_id }}) {
+          qtyInTheCart = cartItems[i].quantity;
+          break;
+        }
+      }
+    
+      if ((cartItems.length === 1) && (qtyInTheCart > 0)) {
+        cartUpdates = { {{ variant_id }}: 0 };
+      } else if ((cartItems.length >= 1) && (qtyInTheCart !== 1)) {
+        cartUpdates = { {{ variant_id }}: {{ item_count }} };
+         if ( {{ item_count }} === {{ quantity_of_target_product }} ) { return;}
+      } else {
+           if ( {{ item_count }} === {{ quantity_of_target_product }} ) {
+                return;
+              }else if ({{ item_count }} > {{ quantity_of_target_product }} ){
+                cartUpdates = { {{ variant_id }}: {{item_count}} }
+              }else{
+             return;
+          }
+      }
+
+           
+    
+      var params = {
+        type: 'POST',
+        url: '/cart/update.js',
+        data: { updates: cartUpdates },
+        dataType: 'json',
+        success: function(stuff) {
+          window.location.href = '/cart';
+        }
+      };
+    
+      $.ajax(params);
+    });
+
+  </script>
+{% endunless %}

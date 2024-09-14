@@ -1,0 +1,54 @@
+{% assign authors1 = pages['author-details'].metafields.custom.authorname1 %}
+{% assign authors2 = pages['author-details'].metafields.custom.authorname2 %}
+{% assign authors3 = pages['author-details'].metafields.custom.authorname3 %}
+{% assign authors4 = pages['author-details'].metafields.custom.authorname4 %}
+{% assign authors5 = pages['author-details'].metafields.custom.authorname5 %}
+{% assign authors6 = pages['author-details'].metafields.custom.authorname6 %}
+{% assign authors7 = pages['author-details'].metafields.custom.authorname7 %}
+{% assign authors8 = pages['author-details'].metafields.custom.authorname8 %}
+{% assign authors9 = pages['author-details'].metafields.custom.authorname9 %}
+
+{% capture authors_list %}{{authors1 | strip}}::{{authors2| strip}}::{{authors3| strip}}::{{authors4| strip}}::{{authors5| strip}}::{{authors6 | strip}}::{{authors7 | strip}}::{{authors8 | strip}}::{{authors9 | strip}}{% endcapture %}
+
+{% assign authorsImg1 = pages['author-details'].metafields.custom.authorimg1 %}
+{% assign authorsImg2 = pages['author-details'].metafields.custom.authorimg2 %}
+{% assign authorsImg3 = pages['author-details'].metafields.custom.authorimg3 %}
+{% assign authorsImg4 = pages['author-details'].metafields.custom.authorimg4 %}
+{% assign authorsImg5 = pages['author-details'].metafields.custom.authorimg5 %}
+{% assign authorsImg6 = pages['author-details'].metafields.custom.authorimg6 %}
+{% assign authorsImg7 = pages['author-details'].metafields.custom.authorimg7 %}
+{% assign authorsImg8 = pages['author-details'].metafields.custom.authorimg8 %}
+{% assign authorsImg9 = pages['author-details'].metafields.custom.authorimg9 %}
+
+{% capture authorsImg_list %}{{authorsImg1 | file_url}}::{{authorsImg2 | file_url}}::{{authorsImg3 | file_url}}::{{authorsImg4| file_url}}::{{authorsImg5| file_url}}::{{authorsImg6| file_url}}::{{authorsImg7| file_url}}::{{authorsImg8| file_url}}::{{authorsImg9| file_url}}{% endcapture %}
+
+{% assign authorsBio1 = pages['author-details'].metafields.custom.authorbio1 %}
+{% assign authorsBio2 = pages['author-details'].metafields.custom.authorbio2 %}
+{% assign authorsBio3 = pages['author-details'].metafields.custom.authorbio3 %}
+{% assign authorsBio4 = pages['author-details'].metafields.custom.authorbio4 %}
+{% assign authorsBio5 = pages['author-details'].metafields.custom.authorbio5 %}
+{% assign authorsBio6 = pages['author-details'].metafields.custom.authorbio6 %}
+{% assign authorsBio7 = pages['author-details'].metafields.custom.authorbio7 %}
+{% assign authorsBio8 = pages['author-details'].metafields.custom.authorbio8 %}
+{% assign authorsBio9 = pages['author-details'].metafields.custom.authorbio9 %}
+
+{% capture authorsBio_list %}{{authorsBio1 | strip}}::{{authorsBio2 | strip}}::{{authorsBio3 | strip}}::{{authorsBio4 | strip}}::{{authorsBio5 | strip}}::{{authorsBio6 | strip}}::{{authorsBio7 | strip}}::{{authorsBio8 | strip}}::{{authorsBio9 | strip}}{% endcapture %}
+
+<script>
+  var authors_arr = ("{{authors_list}}").split("::");
+  var authorsImg_arr = ("{{authorsImg_list}}").split("::");
+  var authorsBio_arr = ("{{authorsBio_list}}").split("::");
+  authors_arr.forEach(function(data,i){
+    console.log(data);
+    if(data == "{{ article.metafields.custom.author }}"){
+      var authorname = data;
+      var authorimg = authorsImg_arr[i];
+      var authorbio = authorsBio_arr[i];
+      document.querySelectorAll(".article-author .author-img img")[0].setAttribute("src", authorimg);  
+      document.querySelectorAll(".article-author .author-name")[0].innerText = authorname;
+      document.querySelectorAll(".article-author .author-bio")[0].innerText = authorbio;
+      return;
+    }
+  })
+    
+</script>

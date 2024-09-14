@@ -1,0 +1,39 @@
+{%- assign thisMeta = collection.metafields.custom.row_featured_collection.value %}
+{% for item in thisMeta %}  
+  <div class="content-section">
+    <div class="collection-row-featured">
+      
+      {% assign refCollection = collections[item.handle] %}
+      <h3>Featured: {{ item.title }}</h3>
+      <p>{{ item.description }} <a href="{{ refCollection.url }}">See More</a></p>
+
+      <ul class="product-list">
+        {% for product in refCollection.products limit: 4 %}
+          <li class="product-tile">
+            <div class="inner">
+              <a href="{{ product.url }}"><img loading="lazy" src="{{ product.featured_image | img_url: '300x300' }}" alt="product.title"></a>
+              {% include 'collection-grid-product-info' %}
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+{% endfor %}
+
+
+{% include 'wb-collection-css-js' %}
+
+{% schema %}
+  {
+    "name": "Collection Row Featured",
+    "tag": "section",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Collection Row Featured",
+        "settings": {}
+      }
+    ]
+  }
+{% endschema %}

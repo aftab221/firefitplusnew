@@ -1,0 +1,129 @@
+<style>
+  .collection-header-featured {
+    display: flex;
+  }
+  .collection-header-featured > .item:first-child {
+    width: 60%;
+  }
+  .collection-header-featured > .item:first-child > .inner {
+    margin-right: 20px;
+  }
+  .collection-header-featured > .item:last-child {
+    width: 40%;
+  }
+  .collection-header-featured > .item:last-child > .inner {
+    margin-left: 20px;
+  }
+  .collection-header-featured p {
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+  }
+  .collection-header-featured .products li {
+    font-size: 12px;
+    margin: 0 0 20px;
+    width: 25%;
+  }
+  .collection-header-featured .products li > .inner {
+    padding: 10px;
+  }
+  .collection-grid {
+    padding: 20px;
+  }
+  .collection-product-info .title {
+    display: block;
+    line-height: 1.4;
+    margin: 10px 0 6px;
+  }
+  .collection-product-info .price {
+    display: block;
+    margin: 0 0 10px;
+  }
+  .product-desc-preview {
+    color: rgb(112, 112, 112);
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  .pagination {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  .pagination > span a,
+  .pagination > span.current {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 14px 20px;
+  }
+  .pagination > span a:hover {
+    background-color: #eee;
+  }
+  .pagination > span.current {
+    border: none;
+    cursor: default;
+    font-weight: bold;
+  }
+
+  .collection-row-featured {
+    text-align: center;
+  }
+  .collection-row-featured .rapid_reviews_stars_badge {
+    text-align: center;
+  }
+  .collection-row-featured p {
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  @media only screen and (max-width: 1000px) {
+    .collection-header-featured {
+      display: block;
+    }
+    .collection-header-featured-text {
+      max-height: 400px;
+      overflow-y: scroll;
+    }
+    .collection-header-featured > .item {
+      width: 100% !important;
+    }
+    .collection-header-featured > .item > .inner {
+      margin: 0 !important;
+    }
+    .collection-header-featured .products li {
+      width: 50%;
+    }
+    .collection-header-featured .products li:nth-child(n+5) {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  function gridDescriptions() {
+    setTimeout(function() {
+      var els = ge('.product-desc-preview', 1)
+      for (var i = 0; i < els.length; i++) {
+        var el = els[i]
+        var str = el.getAttribute('data-str')
+        if (! str) continue
+        el.textContent = str.replace(/^\s+/, '')
+      }
+    }, 20)
+  }
+  if (document.readyState !== 'loading') {
+    gridDescriptions()
+  } else {
+    document.addEventListener('DOMContentLoaded', gridDescriptions)
+  }
+</script>
+
+<script>
+  ;(function(){
+    if (window.r_u_loaded) return; window.r_u_loaded = 1;
+    var rvsc = document.createElement('script'); rvsc.type = 'text/javascript'; rvsc.async = 'true';
+    rvsc.src = 'https://apps.belkapp.com/api/reviews/files/{{ shop.permanent_domain }}/rapid-reviews-core';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(rvsc, s);
+  })();
+</script>

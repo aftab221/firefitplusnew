@@ -1,0 +1,11 @@
+{% assign button_label = section.settings.lowest_price_text %}
+{% assign button_label_split = button_label | split: '|' %}
+<div class="lowest-price-wrapper">
+  <a class="button button-primary" href="#lowest-price-form" data-lity>
+    {{ button_label_split | first }}
+    {% if button_label_split.size > 1 %}<span class="subtitle">{{ button_label_split | last }}</span>{% endif %}
+  </a>
+  <div id="lowest-price-form" class="lity-hide" style="background-color: #FFFFFF; padding: 1rem;">
+    <div class="klaviyo-form-W9HQ48"></div>
+  </div>
+</div>

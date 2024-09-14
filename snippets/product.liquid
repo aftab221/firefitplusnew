@@ -1,0 +1,623 @@
+{% comment %}
+  @param layout {String}
+    Layout type
+
+  @param show_description {Bool}
+    If false, hide the product description
+
+  @param gallery_aspect_ratio {string}
+    This is the gallery aspect ratio, can be one of 'natural', 'short', 'square', 'long'
+
+  @param gallery_thumbnail_position {string}
+    This is the gallery thumbnail position, can be one of 'below', or 'left'
+
+  @param gallery_image_crop {boolean}
+    Whether to crop images
+
+  @param gallery_hover_zoom {String}
+    This is the hover zoom setting, which is either 'disabled', 'separate', or 'replace'
+
+  @param gallery_click_to_zoom {String}
+    This is the click to zoom setting, which is either 'disabled', 'mobile', 'desktop', or 'always'
+{% endcomment %}
+
+{% unless show_description %}
+  {% assign show_description = true %}
+{% endunless %}
+{% assign selected_variant = product.selected_or_first_available_variant %}
+{% assign selected_image = selected_variant.image | default: product.featured_image %}
+{% assign compare_at_price = selected_variant.compare_at_price %}
+{% assign price = selected_variant.price %}
+{% assign sku = selected_variant.sku %}
+{% assign product_available = product.available %}
+
+{%
+  include 'api' with 'variant:price',
+  product: product,
+  variant: selected_variant,
+%}
+
+{% if onboarding %}
+  {% assign compare_at_price = 2999 %}
+  {% assign price = 1999 %}
+{% endif %}
+
+{% assign on_sale = false %}
+{% if compare_at_price > price %}
+  {% assign on_sale = true %}
+{% endif %}
+
+{%- capture share_buttons -%}
+  {% assign social_image = false %}
+  {% if product.featured_image %}
+    {% assign social_image = product.featured_image | img_url: '1024x' %}
+  {% endif %}
+  {% assign social_url = shop.url | append: product.url %}
+  {%-
+    include 'share-buttons',
+    snippet_title: 'general.share_buttons.title',
+    social_image: social_image,
+    social_title: product.title,
+    social_url: social_url
+  -%}
+{%- endcapture  -%}
+
+<article class="product--outer">
+  {% comment %}
+    Product slideshow, never moves
+  {% endcomment %}
+  {%
+    include 'product-gallery',
+    selected_image: selected_image,
+    is_product_modal: false,
+    aspect_ratio: gallery_aspect_ratio,
+    thumbnail_position: gallery_thumbnail_position,
+    image_crop: gallery_image_crop,
+    click_to_zoom: gallery_click_to_zoom,
+    hover_zoom: gallery_hover_zoom,
+    onboarding: onboarding,
+  %}
+  <div class="product-main">
+    <div class="product-details" data-product-details>
+
+      {% for block in section.blocks %}
+        <div
+          class="
+            product-block
+            product-block--{{ block.type }}
+            {% if forloop.first %}
+              product-block--first
+            {% endif %}
+          "
+          {{ block.shopify_attributes }}
+        >
+          {% case block.type %}
+            {% when '@app' %}
+              <div class="product-app">
+                {% render block %}
+              </div>
+
+            {% when 'complementary_products' %}
+              {%
+                render 'complementary-products',
+                product: product,
+                block: block,
+              %}
+
+            {% when 'title' %}
+              {% if template == 'index' %}
+                <h2 class="product-title">
+              {% else %}
+                <h1 class="product-title">
+              {% endif %}
+                {% unless onboarding %}
+                  {{ product.title }}
+                {% else %}
+                  {{ 'onboarding.product.title' | t }}
+                {% endunless %}
+              {% if template == 'index' %}
+                </h2>
+              {% else %}
+                </h1>
+              {% endif %}
+
+            {% when 'text' %}
+              <div class="product-text">
+                {{ block.settings.text }}
+              </div>
+
+            {% when 'vendor' %}
+              {% if product.vendor != blank or onboarding %}
+                <div class="product-vendor">
+                  {% unless onboarding %}
+                    {% assign vendorHandle = product.vendor | handle %}
+                    {% if collections[vendorHandle].products.size > 0 %}
+                    <p>by <a href="{{ collections[vendorHandle].url }}">{{ product.vendor }}</a></p>
+                    {% else %}
+                    <p>{{ product.vendor | link_to_vendor }}</p>
+                    {% endif %}
+                    {% comment %}
+                    {%- capture vendor_link -%}
+                      {{ product.vendor | link_to_vendor }}
+                    {%- endcapture -%}
+                    {{ 'product.general.by_vendor_html' | t: vendor_link: vendor_link }}
+                    {% endcomment %}
+                  {% else %}
+                    {{ 'onboarding.product.by_vendor' | t }}
+                  {% endunless %}
+                </div>
+              {% endif %}
+
+            {%- comment -%}
+              {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
+            {%- endcomment -%}
+            
+            {% when 'rating' %}
+              {% if settings.product_ratings_reviews and product.metafields.reviews.rating.value != blank %}
+                <div class="product-ratings">
+                  <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">
+                    <span class="spr-badge">
+                      <span class="spr-starrating spr-badge-starrating">
+                        <i class="spr-icon spr-icon-star-empty"></i>
+                        <i class="spr-icon spr-icon-star-empty"></i>
+                        <i class="spr-icon spr-icon-star-empty"></i>
+                        <i class="spr-icon spr-icon-star-empty"></i>
+                        <i class="spr-icon spr-icon-star-empty"></i>
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              {% endif %}
+
+            {% when 'price' %}
+              <div class="product-pricing" aria-live="polite">
+                {%
+                  include 'product-badge',
+                  class_root: 'product',
+                  product_available: product_available,
+                  on_sale: on_sale,
+                  price: price,
+                  compare_at_price: compare_at_price,
+                  show_saved: true
+                %}
+
+                {%
+                  include 'product-price',
+                  class_root: 'product',
+                  price: price,
+                  price_varies: false,
+                  compare_at_price: compare_at_price,
+                  compare_at_price_varies: false,
+                  on_sale: on_sale,
+                  emphasize_price: false,
+                  show_original: true
+                %}
+              </div>
+
+            {% when 'sku' %}
+              {% unless onboarding %}
+                <div
+                  class="
+                    product-sku
+                    {% if sku == empty %}product-sku--empty{% endif %}
+                  "
+                >
+                  {{ 'product.general.sku_html' | t: sku: sku | strip_newlines }}
+                </div>
+              {% endunless %}
+
+            {% when 'form' %}
+              {%- assign product_sold_out = false -%}
+              {%- if settings.in_stock_notification_form != 'disabled' and product.available == false -%}
+                {%- assign product_sold_out = true -%}
+              {%- endif -%}
+              <div class="product-form--regular" data-product-form>
+                <div {% if product_sold_out %}class="product-sold-out"{% endif %} data-product-form-area>
+                  {% if is_product_modal %}
+                    <div data-product-quickshop-message class="product-message--container"></div>
+                  {% endif %}
+                  {% unless onboarding %}
+                    {%
+                      include 'product-form',
+                      product: product,
+                      show_dcb: show_dcb,
+                      show_recipient_form: show_recipient_form,
+                      selected_variant: selected_variant,
+                      is_product_modal: false,
+                    %}
+
+                    {% if settings.in_stock_notification_form != 'disabled' %}
+                      {%
+                        include 'product-in-stock-notification-form',
+                        product: product,
+                      %}
+                    {% endif %}
+                  {% endunless %}
+                </div>
+              </div>
+
+            {% when 'view-product-link' %}
+              <a
+                class="button-primary"
+                href="{{ product.url | within: collection }}"
+                data-product-details-link
+              >
+                {{ block.settings.text | escape }}
+              </a>
+
+            {% when 'custom-liquid' %}
+              {% if block.settings.custom_liquid != blank %}
+                <div class="custom-liquid">
+                  {{ block.settings.custom_liquid }}
+                </div>
+              {% endif %}
+
+            {% when 'share' %}
+              {{ share_buttons | strip_newlines }}
+
+            {% when 'qoute' %}
+              {% if product.type contains "Fire Pit" or product.type contains "Fire Tables" %}
+              {% include "product-check_box_quote" %}
+              {% endif %}
+          
+            {% when 'description' %}
+              {% capture product_description %}{%- include 'shortcode-readmore', text: product.description, before_readmore: true -%}{% endcapture %}
+              {% if product_description != blank and show_description %}
+          		{%comment%}
+                <div class="product-description rte" data-product-description>{{ product_description | replace: 'Specifications:','<span class="easySeparator">Specifications:</span>' | replace: '<p>[split]</p>','<span class="easySeparator"></span>' }}</div>
+          		{%endcomment%}
+          {% endif %}
+          
+          {% endcase %}
+        </div>
+      {% endfor %}
+
+      {% if layout == 'layout--three-col' %}
+        {%- assign product_sold_out = false -%}
+        {%- if settings.in_stock_notification_form != 'disabled' and product.available == false -%}
+          {%- assign product_sold_out = true -%}
+        {%- endif -%}
+        <div class="product-form--regular" data-product-form-regular>
+          <div {% if product_sold_out %}class="product-sold-out"{% endif %} data-product-form-area>
+            {% unless onboarding %}
+              {%
+                include 'product-form',
+                product: product,
+                selected_variant: selected_variant,
+                is_product_modal: false,
+              %}
+              {%- if settings.in_stock_notification_form != 'disabled' -%}
+                {%
+                  include 'product-in-stock-notification-form',
+                  product: product,
+                %}
+              {%- endif -%}
+            {% endunless %}
+          </div>
+        </div>
+      {% endif%}
+    </div> {% comment %} end product-details {% endcomment %}
+   
+    <div class="floating-atc">
+         <div class="floating-add-to-cart float-up">
+              
+         
+              <img class="product-image" src="{{ product.featured_image | img_url: 'master' }}">
+              <div class="porduct-sticky-title">{{ product.title }}</div>
+              <div class="product-sticky-price">
+                {{ price | money }}
+              </div>
+            
+              <!-- <form id="sticky-add-to-cart-form" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data" data-product-form>
+                <input type="hidden" name="id" value="{{ selected_variant.id }}" />                
+                <button id="sticky-add-to-cart-button" type="submit" class="button-primary">
+                  Add to Cart
+                </button>
+                <select name="color" id="color">
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                
+              </select>
+              <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+              
+              </select>
+            </form> -->
+            
+
+            <form id="sticky-add-to-cart-form" action="{{ routes.cart_add_url }}" method="post" enctype="multipart/form-data" data-product-form>
+                <input type="hidden" name="id" value="{{ selected_variant.id }}" />                
+                <button id="sticky-add-to-cart-button" type="submit" class="button-primary">
+                  Add to Cart
+                </button>
+              <div class="best-custom-product-options"></div>
+            </form>
+           
+
+           
+
+           
+              </div>
+      
+     
+     </div>
+      
+
+    <style>
+      
+      img.product-image {
+        width: 80px;
+      }
+
+      .floating-add-to-cart {
+        display: none;
+        align-items: center;
+        column-gap: 5px;
+        }
+
+      .floating-add-to-cart button.product-form--atc-button {
+    width: 100%;
+}
+      @media screen and (max-width:767px){    
+     .floating-add-to-cart {
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        }
+        .floating-add-to-cart-v{
+        display: flex;
+        align-items: center;
+        column-gap: 5px;
+        }
+      }
+    </style>
+    
+  </div> {% comment %} end product-main {% endcomment %}
+
+  {% comment %}
+    If is a 3 column layout, the form will move here at $bp-large (layout.isBreakpoint('L'))
+  {% endcomment %}
+  {% if layout == 'layout--three-col' %}
+    <div class="product-form--alt" data-product-form-alt></div>
+  {% endif %}
+
+  {% capture product_readmore %}{%- include 'shortcode-readmore', text: product.description -%}{% endcapture %}
+  {% unless product_readmore == blank %}
+    <div class="product-readmore rte">{{ product_readmore  }}</div>
+  {% endunless %}
+</article>
+  {% if template contains 'product' %}
+<!-- sushil fiverr addded code for custom product tabs-->
+<style>
+  .mobile{display:none;}
+  @media only screen and (max-width: 600px) {
+  .mobile{display:block;}
+    .desktop{display:none;}
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #3a0a0b;
+  float: left;
+  border: 0.5px solid #dddddd;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 4;
+    width: auto;
+    height: 15px;
+    padding: 30px 50px 30px 50px !important;
+    margin: 0;
+    color: #fffbfb;
+    line-height: 15px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 0;
+    outline: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 1 !important;
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #f27c21 !important;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+      background: #3a0a0b!important;
+}
+
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 30px 40px 30px 40px !important;
+    border-radius: 0 3px 3px 3px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    text-align: left;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+</style>
+<div class="product-description rte" data-product-description>  
+  <div class="desktop">
+<div class="tab">
+  <button class="tablinks" onclick="opentab(event, 'description')">Description</button>
+  <button class="tablinks" onclick="opentab(event, 'shipping')">Shipping</button>
+  <button class="tablinks" onclick="opentab(event, 'whyus')">Why Buy From Us</button>
+</div>
+
+<div id="description" class="tabcontent" style="display:block;">
+  {% if product.description contains '[split]' %}
+  	{% assign description_columns = product.description | split: '[split]' %}
+    <div class="column-row">
+      <div class="columngrid--item">
+          {{ description_columns[0] }}
+      </div>
+      <div class="columngrid--item">
+          {{ description_columns[1] }}
+      </div>
+  	</div>
+  {% else %}
+	{{product.description}}
+  {% endif %}
+</div>
+
+<div id="shipping" class="tabcontent">
+  <p>Free Shipping To All Lower 48 States Over $199. All Fire Pits, Bowls, and Heating Products Ship Via Freight LTL Curbside. To Read More About Our Shipping Police. Click <a href="https://www.firepitsurplus.com/pages/shipping-policy">Here</a>.</p>
+</div>
+
+<div id="whyus" class="tabcontent">
+  <p>With more than 800+ positive reviews about Fire Pit Surplus, we are confident we can provide you with an excellent buying experience. Read more about how we stand out above the rest on our <a href="https://www.firepitsurplus.com/pages/why-buy-from-us" target="_blank" rel="noopener">Why Buy From Us</a> page.&nbsp;</p>
+</div>
+</div>
+  
+  <div class="mobile">
+  <style>
+    .accordion.active {
+  background-color: #f27c21 !important;
+}
+.accordion {
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  
+  padding: 30px;
+  width: 85%;
+  border: none;
+ 
+  
+  
+  background-color: #3a0a0b !important;
+
+  cursor: pointer;
+   
+    height: 15px;
+    margin: 0;
+    color: #fffbfb;
+    line-height: 15px;
+    font-style: normal;
+    font-weight: normal;
+    border-radius: 0;
+    outline: none;
+    -webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    opacity: 1 !important;
+}
+
+.active:not(body), .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+    button.accordion:after {
+    content: '\002B';
+    color: #fff;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+@media screen and (max-width:769px) {
+  .product-description td {
+    height: auto !important;
+    border-bottom: 1px solid rgb(216, 216, 216) !important;
+  }  
+}
+</style>
+  <button class="accordion">Description</button>
+<div class="panel">
+  {{product.description}}
+</div>
+
+<button class="accordion">Shipping</button>
+<div class="panel">
+  <p>Free Shipping To All Lower 48 States Over $199. All Fire Pits, Bowls, and Heating Products Ship Via Freight LTL Curbside. To Read More About Our Shipping Police. Click <a href="https://www.firepitsurplus.com/pages/shipping-policy">Here</a>.</p>
+</div>
+
+<button class="accordion">Why Buy From Us</button>
+<div class="panel">
+  <p>With more than 800+ positive reviews about Fire Pit Surplus, we are confident we can provide you with an excellent buying experience. Read more about how we stand out above the rest on our <a href="https://www.firepitsurplus.com/pages/why-buy-from-us" target="_blank" rel="noopener">Why Buy From Us</a> page.&nbsp;</p>
+</div>
+  </div>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+acc[0].classList.toggle("active");
+  document.getElementsByClassName("panel")[0].style.display="block";
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+<script>
+  document.getElementsByClassName("tabcontent")[0].style.display = "block";
+  document.getElementsByClassName("tablinks")[0].className += " active";
+function opentab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<!-- sushil fiverr addded code for custom product tabs-->
+
+  {% endif %}
+{% assign show_description = blank %}
+{% assign layout = blank %}
+
+{%- comment -%}
+  {% render 'questions-answers' %}
+{%- endcomment -%}
+
+<style>
+  .rapid_reviews_items, .rapid_reviews_media {
+    max-width: 1200px;
+  }
+  .r_tab {
+    padding: 12px 22px;
+  }
+</style>

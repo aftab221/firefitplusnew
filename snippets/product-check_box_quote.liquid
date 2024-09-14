@@ -1,0 +1,76 @@
+<!-- Backyard Delivery Quote -->
+
+{% assign quote_text = block.settings.quote_text %}
+
+<div class="yes-no-buttons" style="display: flex; align-items: flex-start; flex-direction: column;">
+  <label for="product-addons">{{ quote_text }}</label>
+  <div style="">
+    <input type="radio" id="yesRadio" name="quoteOption" style="display: none;" onclick="showSelectedOption()" value="Backyard Delivery" name="properties[Quote]">
+    <label for="yesRadio" style="padding: 5px 10px;width: 60px;background: white;border: 1px solid #A0A0A0;border-radius: 4px;height: 35px; cursor: pointer;">Yes</label>
+
+    <input type="radio" id="noRadio" name="quoteOption" style="display: none;" onclick="showSelectedOption()" checked>
+    <label for="noRadio" id="labelnoRadio" style="padding: 5px 10px;width: 60px;background: white;border: 1px solid #A0A0A0;border-radius: 4px;height: 35px; cursor: pointer;">No</label>
+
+    <span id="selectedOption" style="color: red; font-size: 12px; margin-left: 5px;">*Required</span>
+  </div>
+</div>
+<!-- <script>
+window.onload = function() {
+    var label = document.getElementById("labelnoRadio");
+    if (label) {
+        label.click();
+    }
+};
+</script> -->
+<script>
+
+  function showSelectedOption() {
+    var selectedOptionElement = document.getElementById("selectedOption");
+    var yesRadio = document.getElementById("yesRadio");
+    
+    if (yesRadio.checked) {
+      selectedOptionElement.textContent = "Yes";
+      selectedOptionElement.style.color = "black";
+    } else {
+      selectedOptionElement.textContent = "No";
+      selectedOptionElement.style.color = "black";
+    }
+  }
+</script>
+
+{% if product.type contains "Fire Pit" or product.type contains "Fire Tables" %}
+<script>
+    // Function to be executed after the entire page has loaded
+    function onPageLoad() {
+        // Find the button element by its class
+        var atcButton = document.querySelector('.product-form--atc-button');
+        
+        // Find the radio buttons by their IDs
+        var yesRadio = document.getElementById('yesRadio');
+        var noRadio = document.getElementById('noRadio');
+
+          noRadio.checked;
+
+        // Set atcButton disabled initially
+      //  atcButton.disabled = true;
+
+        // Function to handle radio button click
+        function handleRadioClick() {
+            // Enable atcButton if either yesRadio or noRadio is checked
+            atcButton.disabled = !(yesRadio.checked || noRadio.checked);
+        }
+
+        // Attach the handleRadioClick function to the change event of the radio buttons
+        yesRadio.addEventListener('change', handleRadioClick);
+        noRadio.addEventListener('change', handleRadioClick);
+    }
+
+    // Attach the onPageLoad function to the window.onload event
+    window.onload = onPageLoad;
+</script>
+{% endif %}
+
+
+
+
+

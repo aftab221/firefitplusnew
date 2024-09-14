@@ -1,0 +1,349 @@
+<style>
+  .author-img img {
+   height: 70px;
+    object-fit: cover;
+    width: 70px;
+    border-radius: 50%;
+}
+@media only screen and (min-width: 768px) {
+  .article-author{margin-top:30px;}
+  .article-author .author-img{height:70px; width:70px; border-radius:50%;display:inline-block;}
+  .article-author .author-name{font-size:22px;display:inline-block;width:107px;vertical-align:top!important;margin: 0 10px;}
+  .article-author .author-bio{display:inline-block;width:400px;vertical-align:top!important;color: #3d3b3b;
+    line-height: 25px;}       
+}
+
+@media only screen and (max-width: 767px) {
+  .article-author{margin-top:30px;}
+  .article-author .author-img{height:70px; width:70px; border-radius:50%;display:inline-block;}
+  .article-author .author-name{font-size:22px;display:inline-block;width:60%;vertical-align:top!important;margin: 0 10px;}
+  .article-author .author-bio{margin-top:10px;color: #3d3b3b;
+    line-height: 25px;}       
+}
+
+  /**PRODUCT TILE TABLE CONTENTS**/
+  .toggle-section {
+      padding: 10px 15px;
+      background-color: gainsboro;
+  }
+  .toggle-section .toggle-title {
+      margin: 0;
+      text-align: center;
+  }
+  .toggle-section .toggle-label {
+      text-decoration: underline;
+      color: #004AAD;
+      cursor: pointer;
+  }
+  .toggle-section .toggle-content * {
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      color: #004AAD;
+  }
+  .toggle-section .toggle-content ol {
+    counter-reset: item;
+    margin: 0;
+  }
+  .toggle-section .toggle-content ol li {
+    display: block;
+  }
+  .toggle-section .toggle-content ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+  }
+  .blog-product_tile > .product-tile {
+      border: 10px solid #FF6E00;
+      padding: 20px;
+      margin-bottom: 20px;
+      max-width: 500px;
+      width: 100%;
+      margin: 10px auto 0;
+  }
+  .blog-product_tile > .product-tile h3 span {
+      display: block;
+      text-align: center;
+  }
+  .blog-product_tile > .product-tile h3 a {
+    color: #470000;
+  }
+  .blog-product_tile > .product-tile h3 > span {
+      color: #004AAD;
+  }
+  .blog-product_tile > .product-tile img {
+      border: 1px solid #39080C;
+  }
+  .blog-product_tile > .product-tile .product-tile__info {
+      background-color: #39080C;
+      padding: 20px;
+      margin-top: 10px;
+  }
+  .blog-product_tile > .product-tile .product-tile__info ul,
+  .blog-product_tile > .product-tile .product-tile__info ol {
+      padding-left: 15px;
+  }
+  .blog-product_tile > .product-tile .product-tile__info > * {
+      color: #fff;
+  }
+  .blog-product_tile > .product-tile .product-tile__info div > a {
+      display: block;
+      color: #fff;
+      background-color: #EF4819;
+      padding: 20px 0;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 10px;
+  }
+  /**PRODUCT TILE TABLE CONTENTS END**/
+</style>
+<script
+  type="application/json"
+  data-section-type="static-article"
+  data-section-id="{{ section.id }}">
+</script>
+
+{% assign has_share = false %}
+{% if section.settings.use_share_buttons %}
+  {% assign has_share = true %}
+{% endif %}
+
+{%- capture share_buttons -%}
+  {% assign social_image = false %}
+  {% if article.image %}
+    {% assign social_image = article.image | img_url: '1024x' %}
+  {% endif %}
+  {% assign social_url = shop.url | append: article.url %}
+  {%-
+    include 'share-buttons',
+    snippet_title: 'general.share_buttons.title_short',
+    social_image: social_image,
+    social_title: article.title,
+    social_url: social_url
+  -%}
+{%- endcapture  -%}
+
+<section class="article--outer">
+   {% if article.image %}
+  {%comment%}
+    <figure
+      class="article-image"
+      {%
+        include 'rimg',
+        img: article.image,
+        size: '1800x',
+        lazy: settings.lazy_load,
+        crop: 'center',
+        background: true
+      %}
+    >
+      {%
+        include 'rimg',
+        img: article.image,
+        size: '1800x',
+        crop: 'center',
+        lazy: settings.lazy_load,
+        canvas: settings.lazy_load
+      %}
+    </figure>
+  {%endcomment%}
+  {%- assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+     <figure
+      class="article-image"
+      style="background-image:url('{{ article.image | img_url: '2800x2800' }}')"
+    >
+      
+    </figure>
+  {% endif %}
+
+  <div class="article--container">
+
+    {% if has_share %}
+      <div class="article--sidebar">
+        {{- share_buttons -}}
+      </div>
+    {% endif %}
+
+    <div class="article--inner">
+      {% if section.settings.show_date or section.settings.show_author %}
+        <div class="article--meta">
+          {% if section.settings.show_date %}
+            <span class="article--meta-item">
+              {{ article.published_at | date: format: 'month_day_year' }}
+            </span>
+          {% endif %}
+
+          {% if section.settings.show_author %}
+            <span class="article--meta-item">
+              {{ article.author }}
+            </span>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      <h1 class="article--title">
+        {{ article.title }}
+      </h1>
+
+      <div class="article--content rte">
+        {{ article.content }}
+
+
+
+
+        {% assign product_handle = product_handle | default: 'Elementi Granville Fire Pit Table OFG121' %}
+        {% assign product = all_products[product_handle] %}
+        
+        {% if product %}
+          <div class="product-shortcode">
+            <h2>{{ product.title }}</h2>
+            <p>{{ product.description }}</p>
+            <p>Price: ${{ product.price | money }}</p>
+            <!-- Add more product details as needed -->
+        
+            <!-- You can customize the HTML structure based on your needs -->
+          </div>
+        {% else %}
+          <p>Product not found.</p>
+        {% endif %}
+
+      </div>
+
+      {% if article.tags != blank %}
+        <div class="article--tags">
+          <span class="article--tags-title">{{- 'blog.article.filed_in' | t -}}</span>
+          {% for tag in article.tags %}
+            {{ tag | link_to_tag: tag }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      {% if has_share %}
+        <div class="article--share-buttons">
+          {{- share_buttons -}}
+        </div>
+      {% endif %}
+
+      {% if blog.next_article or blog.previous_article %}
+        <div class="article--pagination">
+          {% assign current_found = false %}
+          {% assign done = false %}
+          {% for a in blog.articles %}
+            {% if current_found and done == false %}
+              {% assign next_article = a %}
+              {% assign done = true %}
+            {% endif %}
+
+            {% unless done %}
+              {% if a.id == article.id %}
+                {% assign current_found = true %}
+              {% else %}
+                {% assign prev_article = a %}
+              {% endif %}
+            {% endunless %}
+          {% endfor %}
+
+          {% if prev_article %}
+            <div class="article--pagination-item-left">
+              <a href="{{ prev_article.url }}">
+                <span class="article--pagination-chevron-left" aria-hidden="true">
+                  {% include 'icon-library', id: 'icon-chevron-down-small' %}
+                </span>
+                <span class="article--pagination-text">
+                  {{ 'blog.article.previous_article' | t }}
+                  <span class="article--pagination-title">
+                    {{ prev_article.title | escape }}
+                  </span>
+                </span>
+              </a>
+            </div>
+          {% endif %}
+
+          {% if next_article %}
+            <div class="article--pagination-item-right">
+              <a href="{{ next_article.url }}">
+                <span class="article--pagination-text">
+                  {{ 'blog.article.next_article' | t }}
+                  <span class="article--pagination-title">
+                    {{ next_article.title | escape }}
+                  </span>
+                </span>
+                <span class="article--pagination-chevron-right" aria-hidden="true">
+                  {% include 'icon-library', id: 'icon-chevron-down-small' %}
+                </span>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      {% endif %}
+
+      
+      <div class="article-author">
+        <div class="author-img">
+          <img src="">
+        </div>
+        <div class="author-name">
+          <!--Ethan <br> O'Donnell -->
+        </div>
+        <div class="author-bio">
+          <!--Ethan comes from a custom woodworking, set and prop building and exhibit construction background. He has completed projects all 
+          over North America and for serveral fortune 500 companies as well as the United States Park Service. When not working, you can find 
+          him riding his bicycle, reading, drawing or at a nearby brewery discussing the recent Formula 1 happenings with friends. -->
+        </div>
+      </div>
+      {% include 'article-author' %}
+      {% include 'article-comments' %}
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCT TILE SCRIPT -->
+<script>
+    document.querySelector('.toggle-label').parentElement.parentElement.nextElementSibling.style.display = 'none'
+    document.querySelector('.toggle-label').addEventListener("click", (item) => {
+        if(item.currentTarget.classList.contains('close')) {
+            item.currentTarget.textContent = 'hide'
+            item.currentTarget.classList.remove('close')
+            item.currentTarget.classList.add('open')
+            item.currentTarget.parentElement.parentElement.parentElement.style.display = 'block'
+            item.currentTarget.parentElement.parentElement.nextElementSibling.style.display = 'block'
+        } else {
+            item.currentTarget.textContent = 'show'
+            item.currentTarget.classList.remove('open')
+            item.currentTarget.classList.add('close')
+            item.currentTarget.parentElement.parentElement.parentElement.style.display = 'inline-block'
+            item.currentTarget.parentElement.parentElement.nextElementSibling.style.display = 'none'
+        }
+    })
+</script>
+<!-- PRODUCT TILE SCRIPT END-->
+
+{% schema %}
+{
+  "name": "Article pages",
+  "class": "article--section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "label": "Show date published",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "label": "Show post author",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "use_share_buttons",
+      "label": "Use share buttons",
+      "default": true
+    }
+  ]
+}
+
+{% endschema %}

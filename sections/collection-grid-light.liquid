@@ -1,0 +1,29 @@
+<a name="products-list"></a>
+
+<div class="collection-grid-title mobile">
+  {{ collection.products.size }} products found in {{ collection.title }}
+</div>
+
+{%- paginate collection.products by 12 -%}
+
+<div class="collection-grid">
+  <ul class="product-list">
+    {% for product in collection.products %}  
+      <li class="product-tile">
+        <div class="inner">
+          <a href="{{ product.url }}"><img loading="lazy" src="{{ product.featured_image | img_url: '600x600' }}" alt="product.title"></a>
+
+         {% include 'collection-grid-product-info' %}
+
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <div class="pagination">
+    {{ paginate | default_pagination: next: 'Next', previous: 'Prev' }}
+  </div>
+  
+</div>
+
+{%- endpaginate -%}

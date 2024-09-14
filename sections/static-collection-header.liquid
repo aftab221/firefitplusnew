@@ -1,0 +1,63 @@
+<div class="productgrid--outer {{ collection_classes | strip_newlines }}">
+  <div class="productgrid--wrapper">
+    {%- if section.settings.show_breadcrumbs -%}
+    {% include 'breadcrumbs' %}
+    {%- endif -%}
+
+    <div class="productgrid--masthead {% unless section.settings.show_breadcrumbs %}no-breadcrumbs{% endunless %}">
+      {% if section.settings.show_collection_image and collection.image %}
+      <figure class="collection--image">
+        {% include 'rimg',
+          img: collection.image,
+          size: '1350x',
+          lazy: settings.lazy_load,
+          canvas: settings.lazy_load
+        %}
+      </figure>
+      {% endif %}
+
+      <div class="collection--information">
+        <h1 class="collection--title">
+          {{ collection.title }}
+        </h1>
+
+        {% if collection.description != blank %}
+        <div class="collection--description rte">
+          {{ collection.description 
+              | replace: '<p>[readmore_short]</p>', '<div class="short_desc" id="top">'
+              | replace: '<p>[/readmore_short]</p>', '<a id="readM" class="show">Read More</a></div>'
+              | replace: '<p>[readmore_long]</p>', '<div class="long_desc" style="display:none;">'
+              | replace: '<p>[/readmore_long]</p>', '<a href="#top" id="readL">Read Less</a></div>'
+          }}
+        </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection header",
+	"class": "collection--section static-collection-header--section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_breadcrumbs",
+        "label": "Show breadcrumb navigation",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_collection_image",
+        "label": "Show collection image",
+        "default": false
+      }
+	],
+    "presets": [{
+	  "name": "Collection header",
+	  "category": "Collection"
+    }]
+  }
+{% endschema %}

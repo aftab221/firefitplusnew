@@ -1,0 +1,630 @@
+<script
+  type="application/json"
+  data-section-type="static-collection"
+  data-section-id="{{ section.id }}"
+  data-section-data
+  data-data
+>
+{
+    "show_product_counts": {{section.settings.show_product_counts}},
+    "product_count" : {{ collection.products_count }},
+    "context": {
+      "see_more": {{ 'general.general.see_more' | t | json }},
+      "see_less": {{ 'general.general.see_less' | t | json }}
+    }
+  }
+</script>
+
+{% assign show_sidebar = false %}
+{% assign show_filters = true %}
+{% assign show_filter_trigger = false %}
+
+{% if section.settings.filter_style == 'none' %}
+  {% assign show_filters = false %}
+{% endif %}
+
+{% if section.settings.show_sidebar %}
+  {% comment %}
+    Sidebar toggle is used on mobile only, and will only show Filters
+  {% endcomment %}
+
+  {% if collection.all_tags.size > 0 and show_filters %}
+    {% assign show_filter_trigger = false %}
+  {% endif %}
+
+  {% if section.blocks.size > 0 or collection.all_tags.size > 0 and show_filters %}
+    {% comment %}
+      Sidebar to show only if there are tags in the collection, or there are menus
+    {% endcomment %}
+    {% assign show_sidebar = true %}
+  {% endif %}
+{% endif %}
+
+{% assign paginate_by = section.settings.products_per_page_range %}
+{% if template contains 'view-24' %}
+  {% assign paginate_by = 24 %}
+{% elsif template contains 'view-36' %}
+  {% assign paginate_by = 36 %}
+{% elsif template contains 'view-48' %}
+  {% assign paginate_by = 48 %}
+{% endif %}
+
+{%- capture collection_classes -%}
+  {% if show_sidebar %}
+    layout--has-sidebar
+  {% else %}
+    layout--no-sidebar
+  {% endif %}
+{%- endcapture -%}
+
+{% paginate collection.products by paginate_by %}
+  <div class="productgrid--outer {{ collection_classes | strip_newlines }}">
+    {% if show_sidebar %}
+      {%
+        include 'product-grid-sidebar',
+        filter_style: section.settings.filter_style,
+        filter_position: section.settings.filter_position,
+        filter_limit: section.settings.filter_limit,
+        menu_depth: section.settings.menu_depth_range
+      %}
+    {% endif %}
+
+    <div class="productgrid--wrapper">
+      {%- if section.settings.show_breadcrumbs -%}
+        {% include 'breadcrumbs' %}
+      {%- endif -%}
+      <div
+        class="
+          productgrid--masthead
+          {% unless section.settings.show_breadcrumbs %}no-breadcrumbs{% endunless %}
+        "
+      >
+        {% if section.settings.show_collection_image and collection.image %}
+          <figure class="collection--image">
+            {%
+              include 'rimg',
+              img: collection.image,
+              size: '1350x',
+              lazy: settings.lazy_load,
+              canvas: settings.lazy_load
+            %}
+          </figure>
+        {% endif %}
+
+        <div class="collection--information">
+          <h1 class="collection--title">
+            {{ collection.title }}
+          </h1>
+
+          {% if collection.description != blank %}
+            <div class="collection--description rte">
+              {{ collection.description }}
+            </div>
+          {% endif %}
+        </div>
+
+      </div>
+      <div class="results--container" data-html="productgrid">
+      <div class='processing-overlay'>
+      </div>
+      {% if current_tags.size > 0 %}
+        <div class="productgrid--filters">
+          {%- include 'product-grid-tags-active' %}
+        </div>
+      {% endif %}
+
+      {% if show_filter_trigger or section.settings.sort_by or section.settings.show_by or section.settings.grid_list %}
+        {% capture utility_class %}
+          productgrid--utils
+
+          {% if show_filter_trigger or section.settings.sort_by or section.settings.grid_list %}
+            productgrid--utils--visible-mobile
+          {% endif %}
+
+          {% unless section.settings.show_by or section.settings.sort_by or section.settings.grid_list %}
+            productgrid--utils--hidden-desktop
+          {% endunless %}
+        {% endcapture %}
+        <nav
+          class="{{ utility_class | strip_newlines }}"
+          aria-label="{{ 'general.accessibility.nav_collection_utilities' | t }}"
+        >
+          {% if show_filter_trigger %}
+            {%- assign filter_count = 0 -%}
+            {%- if current_tags.size > 0 -%}
+              {%- assign filter_count = current_tags.size -%}
+            {%- endif -%}
+            <div class="productgrid--utils utils-filter">
+              <button
+                class="utils-filter-button"
+                type="button"
+                aria-label="{{ 'product_grid.filters.title_count' | t: count: filter_count }}"
+                data-productgrid-trigger-filters
+              >
+                <span class="utils-filter-icon">
+                  {%- include 'icon-library', id: 'icon-filters' -%}
+                </span>
+                <span class="utils-filter-text">
+                  {{- 'product_grid.filters.title_count' | t: count: filter_count -}}
+                </span>
+              </button>
+            </div>
+          {% endif %}
+
+          {%- if section.settings.sort_by -%}
+            {%-
+              include 'product-grid-sortby',
+              type: 'select',
+            -%}
+          {%- endif -%}
+
+          {%- if section.settings.show_by or section.settings.grid_list -%}
+            <div
+              class="
+                productgrid--utils
+                utils-view
+                {% if section.settings.grid_list == false %}
+                  utils-hide
+                {% endif %}
+              "
+            >
+              <div class="utils-view-container">
+                {%- if section.settings.show_by -%}
+                  {%-
+                    include 'product-grid-showby',
+                    show_by: paginate_by,
+                    grid_list: section.settings.grid_list
+                  -%}
+                {%- endif -%}
+
+                {% if section.settings.grid_list %}
+                  <div class="utils-viewtoggle">
+                    <span class="utils-viewtoggle-label">
+                      {{ 'product_grid.view_as.title' | t }}
+                    </span>
+
+                    <button
+                      class="utils-viewtoggle-button active"
+                      data-collection-view="grid-view"
+                      aria-label="grid view"
+                    >
+                      {% include 'icon-library', id: 'icon-grid' %}
+                    </button>
+
+                    <button
+                      class="utils-viewtoggle-button"
+                      data-collection-view="list-view"
+                      aria-label="list view"
+                    >
+                      {% include 'icon-library', id: 'icon-list' %}
+                    </button>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          {%- endif -%}
+        </nav>
+      {% endif %}
+
+      {% include 'icon-library', id: 'icon-loading' %}
+        
+        <div class="coll_top col_content">
+          <div class="short_desc" id="top">
+            <h2>Arteflame - Round Flat Top Grill</h2>
+            <p class="fadded_text">Whether hosting an event with friends or family, the Arteflame Grill is an absolute game changer in innovative outdoor cooking. The Arteflame premium flat top grills are a true work of artistry and efficiency that every grill master deserves.</p>
+            <a id="readM">Read More</a>
+          </div>
+
+          
+
+          <div class="long_desc" style="display:none;">
+            <h2>Arteflame - Round Flat Top Grill</h2>
+            <p>Whether hosting an event with friends or family, the Arteflame Grill is an absolute game changer in innovative outdoor cooking. The Arteflame premium flat top grills are a true work of artistry and efficiency that every grill master deserves.</p>
+            <p>Arteflame carries the best round flat top grill on the market today, which is why it's important to know the benefits of having one and how it stands apart from the rest of the competition.</p>
+            <h2>A Round Flat Top Grill That Redefines Outdoor Cooking</h2>
+            <img src="{{ 'fire-pit.png' | asset_url }}">
+            <p>You've never seen a round flat top grill such as this one before. Arteflame offers various grill sizes and style options that are uniquely designed for the best flame grill cooking experience possible. </p>
+            <p>This simple but ingenious circular design allows for the most inviting grilling experience as your guest can comfortably stand around the wood flame as you grill. Not only that, the Arteflame round flat top grill also works as a fire pit as well.</p>
+
+            <h3>Arteflame Round Grill Designed for Innovative Cooking</h3>
+            <p>Nothing is more pleasurable than being able to deliver the most delicious tasting foods that are cooked to perfection. You can be rest assured that there will be no more dry, burnt, or over cooked foods when using an Arteflame grill. Arteflame is the most innovative grill on the market and you can cook with consistency while maintaining all that savory juicy goodness with a reliable flat grill top. </p>
+
+            <p>Arte flame grill can be used as a fire bowl with or without the cooktop and comes included with a seasoning puck to season your cooktop prior to cooking. The open fire circular grill works as a self cleaning feature by burning away residue and debris, allowing for a no mess and easy clean up. </p>
+            <h3>Round Grill Grate with Wood and Charcoal Smoking Options</h3>
+            <p>When using Arteflame’s round grill grate, there are so many ways to be creative with your cooking when you have the option of grilling with both wood or charcoal. </p>
+
+            <p>If you choose to grill with wood, you will have a longer burn time, an enhanced natural flavor profile, and produce much more heat. Not to mention, grilling with wood is much easier to handle and less messy than charcoal.</p>
+
+            <p>If you decide to grill with charcoal, you will have a more smokey and tender taste, juicer meats from infrared heat, and allow for more versatile cooking such as searing, grilling, baking, and much more. We also can’t forget about Arte flames' corten steel feature which allows for both methods of cooking to be cooked to the highest potential with incredible flavor every time. </p>
+
+            <h3>ArteFlame Circular Grill Cooktop Heats from Center Out</h3>
+            <img src="{{ 'circular-grill.png' | asset_url }}">
+
+            <p>Arteflame circular grill does a remarkable job at making sure all your tasty foods are cooked and grilled from the inside out. Food is heated from the center where it slowly works its way out ensuring a quality end result. No matter the food choice, you can rely on arte flame for the most delicious and tastiest outcomes. </p>
+
+            <p>With Arteflame, there is no one set temperature. Artflame grills have a circular flat top that have  different heating points, allowing for multiple cooking levels. Food items closer to the center will be hotter and heat much faster than the outer portion of the grill. This makes it much easier to cook numerous foods at once while giving you the option and control of deciding how thoroughly they will be heated. </p>
+            <h2>Arteflame - The Best Flat Top Grill for Entertaining</h2>
+            <p>Arteflame has many other useful functions other than just being used as a standard flame grill. Arteflame grills can be used as both a regular open fire grill or as a fire pit for the best social gatherings and occasions. </p>
+
+            <p>By removing the grill grate extension, you now can enjoy an open fire experience with one's dearest to you. Not to mention the flame grill also makes for a great statement piece when not in use for cooking. </p>
+
+            <h3>The First Flat Grill That Works as a Fire Pit</h3>
+            <img src="{{ 'arteflame-grill.png' | asset_url }}">
+            <p>Looking to stay home and enjoy an evening around the fire with your loved ones? Or maybe you and the kids want to gather around the fire pit for some good ole smores - either way, Arteflame allows you to do both. </p>
+
+            <p>With an aesthetically pleasing contemporary design, Art grill provides a warm and phenomenal social ambience that makes for the perfect fire pit gatherings. By removing the cook top, you can use Arteflame as a fire bowl where you and others can safely huddle around for warmth and comfort.  </p>
+            <h3>Arte Flame Grills are Built for Hosting</h3>
+            <p>One of the many benefits of using a flat top grill is that it can hold large quantities of food of various types, making them an excellent cooking option for hosting family parties. The circular grill allows for people to stand around the warmth and eat kebabs while enjoying a beautifully designed flat top grill. </p>
+
+            <p>Whether everyone wants to get around the fire pit for a good conversation or simply just want to enjoy a nice day with an open fire grill, arteflame is the best flat top grill you could possibly get. </p>
+
+            <p>Arte flame grills are also great for hosting due to the fact that they can be left out all year round without losing quality, which truly makes this the best flat top grill for every occasion no matter the time of day or year. </p>
+
+            <h3>Corten Steel Outer Edge Flat Grill for Endless Possibilities</h3>
+            <p>Arteflame grill is designed with corten steel on the outer edge which ensures durability as well as allowing for the best meals to be cooked. Corten steel itself is heat and weather resistant making them an exceptional open fire grill for any event. </p>
+
+            <p>The steel rusts and regenerates continuously when in contact with precipitation, to form a protective coating on the surface layer of the flat grill ensuring longevity. Designed with such a reliable material, arte flame is bound to stand the test of time.</p>
+            <a href="#top" id="readL">Read Less</a>
+          </div>
+        </div>
+        
+
+      {% if collection.products.size > 0 %}
+        <ul data-sectionId="{% if section.id %}{{section.id}}{% endif %}" data-settings='{% if section.settings %}{{section.settings | json}}{% endif %}' id="gf-products"
+          class="
+            productgrid--items
+            {% if settings.enable_product_card_spacing == false %}productgrid--no-spacing{% endif %}
+          "
+          data-html="productgridItems"
+        >
+          {% for product in collection.products %}
+            {%
+              include 'product-grid-item',
+              product: product
+            %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div class="productgrid--no-results">
+          <h2 class="productgrid--no-results-title">
+            {%- if collection.all_products_count == 0 -%}
+              {{ 'product_grid.no_results.empty' | t }}
+            {%- else -%}
+              {{ 'product_grid.no_results.tags_empty' | t }}
+            {%- endif -%}
+          </h2>
+
+          <a class="productgrid--no-results-button" href="{{ routes.all_products_collection_url }}">
+            {{ 'search.general.view_all_products' | t }}
+          </a>
+        </div>
+      {% endif %}
+        
+        <div class="coll_btm col_content">
+          <div class="short_descs" id="tops">
+          <h2>Why Cook with Arte Flame Round Flat Top Grill?</h2>
+          <p>A round top grill is a must have if you want to enjoy an exceptional cookout! There are many uses and benefits for Arteflame round grills that you can take advantage of such as:</p>
+          <ul>
+            <li>Easy to set up instructions</li>
+            <li>Simple and fast clean up time </li>           
+            <li>Outer surface of grill can be used to sear food or to get a nice crust</li>
+            <li>Pot can be placed on the center grill grate to fry or boil food</li> 
+            <li>Having the option of cooking directly on the flat surface or over the fire</li>
+            <li>Comes included with a seasoning puck </li>
+            <li>High quality corten steel feature without seams or welds</li> 
+            <li>Optional center grill grate </li>
+            <li>Fire bowl is spun from a single piece of corten steel without seams or welds</li>
+          </ul>
+          <h2>Open Fire Grills with Art Flame Grills</h2>
+          <p class="fadded_text">Open fire grills have a few advantages that you should know about such as using short cycle carbon instead of fossil fuels. Also, wood fire is a lot more enjoyable than using propane or charcoal for a social gathering. </p>
+            <a id="readMore">Read More</a>
+          </div>
+          
+          <div class="long_descs" style="display:none;">
+          <h2>Why Cook with Arte Flame Round Flat Top Grill?</h2>
+          <p>A round top grill is a must have if you want to enjoy an exceptional cookout! There are many uses and benefits for Arteflame round grills that you can take advantage of such as:</p>
+          <ul>
+            <li>Easy to set up instructions</li>
+            <li>Simple and fast clean up time </li>           
+            <li>Outer surface of grill can be used to sear food or to get a nice crust</li>
+            <li>Pot can be placed on the center grill grate to fry or boil food</li> 
+            <li>Having the option of cooking directly on the flat surface or over the fire</li>
+            <li>Comes included with a seasoning puck </li>
+            <li>High quality corten steel feature without seams or welds</li> 
+            <li>Optional center grill grate </li>
+            <li>Fire bowl is spun from a single piece of corten steel without seams or welds</li>
+          </ul>
+          <h2>Open Fire Grills with Art Flame Grills</h2>
+          <p>Open fire grills have a few advantages that you should know about such as using short cycle carbon instead of fossil fuels. Also, wood fire is a lot more enjoyable than using propane or charcoal for a social gathering. </p>
+          
+
+          <p>You will have more cooking options as well when deciding to use an open fire grill such as being able to cook handheld items with a stick like hot dogs, skewers, bacon, pineapples, and much more!</p>
+          <h3>Arteflame Extension for Grill Grate</h3>
+          <p>Arteflame has a grill grate extension that can be removed if needed and has an accessory ring under the cooktop so that the sizzle grate can be dropped in. This allows you to have more control on how you want certain items to be cooked as well as allowing you to have the option of taking it out completely to use as a fire bowl or pit instead. </p>
+          <h3>Art Grill Foodsaver for Protection</h3>
+          <p>With so many benefits of using an Arteflame grill, how could we forget to mention the food saver option! No such thing as too much food when you can store leftovers right in the center of your art grill. The center console also allows your food to be protected from other food items and oils that may leak out when cooking. The foodsaver option can be used as a place to store or allow certain foods to cool down while others are still being cooked on the grill. How neat! </p>
+          <h2>Art Flame Grill Accessories </h2>
+          <p>What good is your art flame grill without it's special accessories? These grill attachments are the perfect necessities for an ultimate cookout. </p>
+
+          <p>Not only will these add ons amplify your grilling experience, but it will also make your life easier by allowing you to do so much more with your cooking.</p>
+          <h3> Custom Grill Grate for Your Arteflame</h3>
+          <p>Nothing is more special than having a grill grate custom made for you or your loved one. It can even make for a great gift for your co-workers, friends, or even special events like birthday parties and holidays.</p> 
+
+          <p>All you'll need to provide is a CAD file or a DXF file with your logo or artwork. We will then rework and program our laser to create your masterpiece that will stand the test of time. This custom grill grate will also be made from solid steel.</p>
+          <h3>Art Grill Grate Riser </h3>
+          <p>Arteflame grill grate riser is perfect for large parties or when you find yourself cooking larger quantities of food. It allows for you to have a pan directly on the grill grate without smothering the fire.</p> 
+
+          <p>Food is raised from the grill grate which makes it so food is not cooked as quickly. This provides an added smoke-like flavor to your meals. It is made of two stainless steel parts that slide together so it can easily come apart when needed to go into the dishwasher for cleaning.</p>
+          <h3> Arte Flame Pizza Oven with Pizza Grate </h3>
+          <p>If you're a pizza lover this Arteflame pizza grate is for you. This kit comes with a stainless steel pizza oven and a special pizza grill insert. Together they create a cooking chamber which will allow you to bake your pizza right then and there!</p> 
+
+          <p>The oven has an open front design so you can see your delicious pizza baking. The grill insert drops right into the center of your Arteflame and gives you more room to adjust your pizza to the desired temperature. It even has large air vents that funnel heat throughout the pizza oven so everything is thoroughly cooked.</p> 
+          <h3>Arteflame Grill Grates</h3>
+          <p>Arteflame's carbon steel center grill grate makes for an easy grilling session no matter the food; seafood, steaks, burgers, veggies, and much more! This tool will also add more grill space if needed so you can grill larger meals and foods to be cooked at once. This will be great for parties, big events, or even just family gatherings .</p> 
+          <h3>Best Flat Top Grill Rotisserie Kit</h3>
+          <p>This Rotisserie kit from Arteflame is a remarkable addition to your grill. It fits directly in the center of the grill allowing you to cook the best tasting chicken, turkey, kabobs, or even if you simply just want to hang food from the top and use it as a rack. </p>
+
+          <p>This add on is made with a stainless steel system made to attach to the sear ring on the cooktop. All you have to do is squeeze and release. It's that easy! The kit also comes equipped with a cordless battery, spit, and one set of forks, with a motor that will turn out as much as 25lbs. </p>
+          <h2>Flame Grill Cover Accessories </h2>
+          <p>If you want to maintain your Arteflame grill so that it stays looking immaculate, then you absolutely need to get some handy covers. 
+
+          <p>These Arte flame grill covers are a great way to make sure all your tools and items stay in the clear from inclement weather and debris. It's also perfect for allowing you to maintain the overall longevity of your outdoor flat top grill. 
+          <h3> Art Grill Stainless Steel Center Lid</h3>
+          <p>By having a stainless steel center lid for your Arteflame grill, the center opening will be protected and shielded from snow, leaves, and other fallen debris that may enter your grill. </p>
+
+          <p>If you are in an area where it snows, this lid will completely eliminate the need of having to scoop snow out of your grill prior to starting your open fire grill. As a bonus feature, this cover also functions to extinguish fire when you are done cooking or grilling. </p>
+          <h3>Vinyl Grill Cover for Arte Flame</h3>
+          <p>This vinyl grill cover is truly an essential item for your Arte flame. With a cover, your outdoor flat top grill will maintain its shine and keep your grill in its original condition.</p> 
+
+          <p>The vinyl arte flame grill cover is made to withstand all weather conditions while preventing your grill from dust, snow, and even creepy crawlers. With two zippers on each side, you can be rest assured that your art grill is covered from high winds or storms. </p>
+          <h2>Other Useful Arteflame Accessories</h2>
+          <p>You might've thought you had everything you needed for your Arteflame, but we're here to tell you that there are still some minor but essential accessories that you might want to consider having. </p>
+
+          <p>These items will benefit your open fire grills tenfold by allowing you to save and store food as well as clean and get your flat top grill started!  </p>
+          <h3>Art Flame Grill Airlighter </h3>
+          <p>Airlighter is the perfect tool for lighting your Arteflame quickly and efficiently. It has a combination of both a blow torch and an air blower to ignite and boost your fire for your flame grill, while having an adjustable flame control feature.</p>
+
+          <p>This flame grill airlighter comes with a built in blower that allows 60 minutes of use with a set of fresh batteries included. The lighter also has a refillable fuel tank that provides 7-10 minutes of burning time. </p>
+          <h3>Best Flat Top Grill Griddle Scraper </h3>
+          <p>This griddle grill scraper tool from Arteflame is a phenomenal tool to help get your foods cooked while keeping your cooktop looking polished. </p>
+
+          <p>Arteflame scraper tool is made from extra thick heavy duty stainless steel with a heat resistant feature, making it easy to handle without ever bending or breaking. It also features a beveled, sharp, flat front that allows for a super easy clean. </p>
+          <h3> Arteflame Grill Food Saver </h3>
+          <p>This grill food saver from arte flame is made from 100% stainless steel and is the absolute perfect addition to your cooking. This tool prevents food from falling into the center of your grill especially when you have multiple food items on your circular grill. </p>
+
+          <p>The ring will fit perfectly in the center of your Arte flame and even works with the grill grate riser if you already have one. Not to mention, having a grill food saver keeps everything more organized and in place so that you can cook seamlessly.  </p>
+          <h2>Why Buy Arteflame Outdoor Flat Top Grill</h2>
+          <p>There are so many advantages for buying an outdoor Arteflame grill, as the versatile options are endless. By purchasing the best flat top grill on the market today, an art grill such as this one will allow you to cook like never before. Not only do you have the choice of wood or charcoal, but you can cook in over a dozen different ways just by moving and shifting food around and even moving the grill grate when needed. </p>
+
+          <p>Perfect for social events, round grills like Arteflame, provides the highest quality grilling by allowing multiple cooking temperatures to simultaneously heat your food while giving you the option of using its circular grill as an open fire pit or fire bowl. Nothing is better than a flame grill that allows you to do the job of multiple cooking devices which is why you’ll want to get your hands on an art grill. </p>
+          <h3>Arteflame Final Thoughts </h3>
+          <p>Enjoying a nice bbq or cookout with friends and family doesn’t ever have to be a drag. With Arteflame, you have endless options and possibilities to cook however you please. An Arteflame grill is so versatile that you’re not just limited to one style or method of cooking. Not only do you get to benefit from a flat grill but you can take advantage of their circular grill to be used as an open fire pit. </p>
+
+          <p>So no matter your choice or preference, rest assured Arteflame will be your best pick for all your cooking needs and wants. No more uneven cooking temperatures or messy clean ups when you have an outdoor flat top grill from Arteflame. </p>
+                        <a href="#tops" id="readLess">Read Less</a>
+          </div>
+
+        </div>
+      {%
+        include 'pagination',
+        pagination_type: section.settings.pagination
+      %}
+    </div>
+  </div>
+  {% endpaginate %}
+  </div>
+
+{%- if section.settings.sort_by -%}
+  {%-
+    include 'product-grid-sortby',
+    type: 'modal',
+  -%}
+{%- endif -%}
+
+
+{% schema %}
+{
+  "name": "Collection pages",
+  "class": "collection--section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_breadcrumbs",
+      "label": "Show breadcrumb navigation",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_collection_image",
+      "label": "Show collection image",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "products_per_page_range",
+      "label": "Products per page",
+      "min": 24,
+      "max": 48,
+      "step": 12,
+      "default": 24
+    },
+    {
+      "type": "select",
+      "id": "pagination",
+      "label": "Pagination method",
+      "options": [
+        {
+          "value": "click_to_load",
+          "label": "Click-to-load"
+        },
+        {
+          "value": "infinite_scroll",
+          "label": "Infinite scroll"
+        },
+        {
+          "value": "traditional",
+          "label": "Jump-to-page"
+        }
+      ],
+      "default": "click_to_load"
+    },
+    {
+      "type": "header",
+      "content": "Utility bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "sort_by",
+      "label": "Show \"Sort by\" dropdown",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_by",
+      "label": "Show products per page links",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "grid_list",
+      "label": "Show grid/list view toggle",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Sidebar"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_sidebar",
+      "label": "Show sidebar",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "filter_style",
+      "label": "Filters",
+      "info":"[Learn more](https://support.pixelunion.net/hc/en-us/articles/360022061114)",
+      "options": [
+        {
+          "value": "none",
+          "label": "Hide filters"
+        },
+        {
+          "value": "tags",
+          "label": "By tag"
+        },
+        {
+          "value": "groups",
+          "label": "By group"
+        }
+      ],
+      "default": "tags"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_product_counts",
+      "label": "Show product counts",
+      "default": false
+    },
+    {
+      "id": "filter_limit",
+      "type": "select",
+      "label": "Hide additional tags after",
+      "options": [
+        {
+          "value": "5",
+          "label": "5 tags"
+        },
+        {
+          "value": "6",
+          "label": "6 tags"
+        },
+        {
+          "value": "8",
+          "label": "8 tags"
+        },
+        {
+          "value": "10",
+          "label": "10 tags"
+        },
+        {
+          "value": "15",
+          "label": "15 tags"
+        },
+        {
+          "value": "20",
+          "label": "20 tags"
+        },
+        {
+          "value": "999",
+          "label": "Show all tags"
+        }
+      ],
+      "default": "999"
+    },
+    {
+      "type": "select",
+      "id": "filter_position",
+      "label": "Filters position",
+      "options": [
+        {
+          "value": "above_menus",
+          "label": "Above menus"
+        },
+        {
+          "value": "below_menus",
+          "label": "Below menus"
+        }
+      ],
+      "default": "above_menus"
+    },
+    {
+      "type":      "text",
+      "id":        "grid_categories",
+      "label":     "Display filters as grid",
+      "info":      "List groups to display in an alternate grid format, like “Size, Price”. [Learn more](https://support.pixelunion.net/hc/en-us/articles/360022061114-Setting-up-Superstore-s-sidebar-filter-and-menus)"
+    },
+    {
+      "type":      "textarea",
+      "id":        "custom_ordered_categories",
+      "label":     "Group order",
+      "info":      "Define a custom order for groups, like “Color, Brand, Size”. Other groups will appear at the bottom."
+    },
+    {
+      "type":      "textarea",
+      "id":        "custom_ordered_tags",
+      "label":     "Tag order",
+      "info":      "Define a custom order for tags, like “Size_S, Size_M, Size_L”. Items must exactly match tag name, including group prefix. Other tags will appear at the bottom."
+    },
+    {
+      "type": "range",
+      "id": "menu_depth_range",
+      "label": "Menu depth visibility",
+      "info": "[Learn more](https://help.shopify.com/manual/sell-online/online-store/menus-and-links#create-a-drop-down-menu)",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 1
+    }
+  ],
+  "blocks": [
+    {
+      "type": "menu",
+      "name": "Menu",
+      "settings": [
+        {
+          "id": "menu",
+          "type": "link_list",
+          "label": "Menu",
+          "info": "This menu will show as many drop-down items as specified above under \"Menu depth visibility.\""
+        }
+      ],
+      "limit": 10
+    }
+  ]
+}
+
+{% endschema %}
+
+{% include 'rapid-reviews-old-collection' %}

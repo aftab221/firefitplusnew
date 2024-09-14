@@ -1,0 +1,63 @@
+<div class="content-section no-bottom-padding">
+  <div class="collection-header-featured">
+    <div class="item">
+      <div class="inner">
+        <h1 tabindex="0">{{ collection.title }}</h1>
+        <div class="collection-featured-secondary-title">
+          <a href="#products-list">Jump to {{ collection.products.size }} products in {{ collection.title }}</a>
+        </div>
+        <div class="collection-header-featured-text">
+          <p>{{ collection.description }}</p>
+          <div class="promise">
+            <h2>Our Promise To You</h2>
+            <p>{{ section.settings.promise_desc }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="item products">
+      <div class="inner">
+        {%- assign thisMeta = collection.metafields.custom.header_featured_collection.value %}
+        {%- assign thisCollection = collections[thisMeta.handle]  %}
+        <h2 tabindex="0">{{ thisMeta.title }}</h2>
+        <p>{{ thisMeta.description }} <a href="{{ thisCollection.url }}">See More</a></p>
+        <ul class="product-list">
+          {% for product in thisCollection.products limit: 8 %}
+            <li class="product-tile">
+              <div class="inner">
+                <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url: '300x300' }}" alt="product.title"></a>
+                <div class="collection-product-info">
+                  <div class="title">
+                    <a href="{{ product.url }}">{{ product.title }}</a>
+                  </div>
+                  <div class="price">{{ product.price | money }}</div>
+                  {%- assign avg = product.metafields.rapid_reviews.counts.value.r.rating.avg %}
+                  {%- unless avg %}{% assign avg = 0 %}{% endunless %}
+                  {%- assign count = product.metafields.rapid_reviews.counts.value.r.counts.core.total %}
+                  {%- unless count %}{% assign count = 0 %}{% endunless %}
+                  {%- if count > 0 %}<div class="rapid_reviews_stars_badge" data-avg="{{ avg }}" data-count="{{ count }}" data-url="{{ product.url }}"></div>{% endif %}
+                </div>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'wb-collection-css-js' %}
+
+{% schema %}
+  {
+    "name": "Featured Header",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "html",
+        "id": "promise_desc",
+        "label": "Promise Description"
+      }
+    ]
+  }
+{% endschema %}
