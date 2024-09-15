@@ -61,8 +61,7 @@
                       include 'rimg',
                       class: 'highlights-banners-custom-icon',
                       img: block.settings.image,
-                      size: 'x46',
-                      focal_point: block.settings.image.presentation.focal_point,
+                      size: 'x46'
                     %}
                   {% else %}
                     {% include 'icon-library', id: block.settings.icon %}
@@ -134,9 +133,23 @@
       "default": 10
     },
     {
-      "type": "text_alignment",
+      "type": "select",
       "id": "text_alignment",
-      "label": "Text alignment",
+      "label": "Banner text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
       "default": "left"
     },
     {
@@ -338,13 +351,12 @@
       ]
     }
   ],
-  "enabled_on": {
-    "templates": [
-      "index",
-      "product",
-      "page"
-    ]
-  }
+  "templates": [
+    "index",
+	"collection",
+    "product",
+    "page"
+  ]
 }
 
 {% endschema %}
