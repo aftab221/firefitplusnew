@@ -105,7 +105,8 @@
         "0f61b6af-0ae8-45ef-91d0-5b38007f52fe"
       ],
       "custom_css": [
-        ".small-promo-text-desktop {color: #ff7f02; font-size: x-large; font-weight: bold !important;}"
+        ".small-promo-text-desktop {color: #ff7f02; font-size: x-large; font-weight: bold !important;}",
+        "p#contact_header {display: none;}"
       ],
       "settings": {
         "sticky_header": true,
