@@ -9,7 +9,7 @@
 */
 {
   "sections": {
-    "166374424844a78e74": {
+    "165645762859955978": {
       "type": "static-collection-header",
       "settings": {
         "show_breadcrumbs": true,
@@ -28,13 +28,13 @@
         "filter-1": {
           "type": "filter",
           "settings": {
-            "filter_option": "tag",
+            "filter_option": "faceted",
             "show_product_counts": true,
             "filter_limit": "999",
             "filter_position": "above_menus",
-            "filter_style": "groups",
-            "grid_categories": "Material, Price, Shape, Color, Brand, Ignition System",
-            "custom_ordered_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "filter_style": "tags",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
             "custom_ordered_tags": ""
           }
         },
@@ -179,29 +179,183 @@
         "enable_recently_viewed_products": false
       }
     },
-    "1662664918e8f79786": {
-      "type": "apps",
+    "1656457642c2cd7455": {
+      "type": "dynamic-featured-products",
       "blocks": {
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77": {
-          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+        "16564576422941d3af-0": {
+          "type": "title_card",
+          "disabled": true,
           "settings": {
-            "active": true,
-            "top_color_predefined": "gold_bright"
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77"
+        "16564576422941d3af-0"
       ],
       "settings": {
+        "title": "Scott Aerator Muck Blaster",
+        "subheading": "",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "scott-aerator-aquasweep-oscillator",
+        "override_product_description_1": "<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/scott-aerator-aquasweep-oscillator\"><span style=\"text-decoration:underline\">The Scott Aerator Oscillator 360<\/span><\/a> can be pre-programmed to rotate your dock-mounted Aquasweep or De-icer in 20-degree increments every 20 minutes.<\/p>",
+        "override_product_2": "dock-mount-aquasweep-by-scott-aerator",
+        "override_product_description_2": "<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/dock-mount-aquasweep-by-scott-aerator\"><span style=\"text-decoration:underline\">Scott Aerator Dock Mount Muck Blaster<\/span><\/a> is perfect for blasting away muck, silt, weeds, and decaying leaves.<\/p>",
+        "override_product_3": "",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "16564576477209cc73": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "165645764698e2d478-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "165645764698e2d478-0"
+      ],
+      "settings": {
+        "title": "Scott Aerator Fountains",
+        "subheading": "<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/north-star-fountain-aerator\"><span style=\"text-decoration:underline\">Scott Aerator North Star Fountain<\/span><\/a> moves over 600 gallons of water per minute, ensuring your water is oxygenated and clean.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "north-star-fountain-aerator",
+        "override_product_description_1": "<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/north-star-fountain-aerator\"><span style=\"text-decoration:underline\">Scott Aerator North Star Fountain<\/span><\/a> moves over 600 gallons of water per minute, ensuring your water is oxygenated and clean.<\/p>",
+        "override_product_2": "da-20-display-fountain-aerator",
+        "override_product_description_2": "<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/da-20-display-fountain-aerator\"><span style=\"text-decoration:underline\">Scott Aerator DA-20<\/span><\/a> has a stainless steel, oil-free submersible motor and is incredibly environmentally friendly.<\/p>",
+        "override_product_3": "",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "165645786491ebb51b": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "16564578648dd39ad6-0": {
+          "type": "text",
+          "settings": {
+            "title": "Where is Scott Aerator located?",
+            "text": "<p>Scott Aerator is located in Grand Rapids, Michigan.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "4cc6ed6b-b630-48dc-ba9c-8a5a241aedff": {
+          "type": "text",
+          "settings": {
+            "title": "Where is Scott Aerator pond equipment made?",
+            "text": "<p>Scott Aerator pond equipment is made in Holland, Michigan, USA.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "16564578648dd39ad6-0",
+        "4cc6ed6b-b630-48dc-ba9c-8a5a241aedff"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "16564579107f340043": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "1656457910ad5f6181-0": {
+          "type": "text",
+          "settings": {
+            "title": "Why shop Scott Aerator at Fire Pit Surplus?",
+            "text": "<p>At Fire Pit Surplus, we pride ourselves on providing the most cost-effective products on the market today, including all Scott Aerator products. You simply won’t find a lower price online or offline.<\/p><p>We also provide some of the fastest shipping options around, with only 1-3 days until your product ships and 3-10 days before it’s delivered (depending on the product).<\/p><p>Check out our reviews online — we have hundreds of reviews and have an average rating of 4.8\/5. When we say we focus on customer satisfaction, we mean it!<\/p><p>Contract us today through email, phone, or chat with any questions you might have.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1656457910ad5f6181-0"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
       }
     }
   },
   "order": [
-    "166374424844a78e74",
+    "165645762859955978",
     "main",
     "static-collection-promo-grid",
     "static-recently-viewed",
-    "1662664918e8f79786"
+    "1656457642c2cd7455",
+    "16564576477209cc73",
+    "165645786491ebb51b",
+    "16564579107f340043"
   ]
 }
