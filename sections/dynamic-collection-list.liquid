@@ -109,9 +109,11 @@
     ">
       {% for block in section.blocks %}
         {% assign collection = collections[block.settings.collection] %}
+      	{% assign custom_link = block.settings.custom_link %}
         {% assign collection_title = collection.title %}
         {% assign collection_url = collection.url %}
         {% assign button_text = block.settings.collection_button_text %}
+
         {% assign featured_image = false %}
         {% assign featured_image_alt = '' %}
 
@@ -131,6 +133,8 @@
         {%
           include 'dynamic-collection-list-item',
           block: block,
+      	  custom_link: custom_link,
+      	  button_text: button_text,
           collection_image: featured_image,
           collection_image_alt: featured_image_alt,
           desktop_active_class: desktop_active_class,
@@ -232,9 +236,23 @@
       "default": "label-style-heading"
     },
     {
-      "type": "text_alignment",
+      "type": "select",
       "id": "text_alignment",
       "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
       "default": "center"
     },
     {
@@ -394,12 +412,7 @@
           "type": "collection",
           "label": "Collection"
         },
-        {
-          "id": "collection_button_text",
-          "type": "text",
-          "label": "Button text"
-        },
-        {
+		{
           "id": "custom_link",
           "type": "url",
           "label": "Custom link"
@@ -418,6 +431,11 @@
           "id": "mobile_collection_label",
           "type": "text",
           "label": "Custom collection title (mobile)"
+        },
+		{
+          "id": "collection_button_text",
+          "type": "text",
+          "label": "Button text"
         }
       ]
     }
@@ -447,14 +465,7 @@
         }
       ]
     }
-  ],
-  "enabled_on": {
-    "templates": [
-      "index",
-      "product",
-      "page"
-    ]
-  }
+  ]
 }
 
 {% endschema %}
