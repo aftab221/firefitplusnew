@@ -22,7 +22,7 @@
   data-section-type="dynamic-rich-text"
 ></script>
 
-<section
+<section id="{{ section.settings.section_id }}"
   class="
     rich-text--container
     rich-text-{{ section.settings.width }}
@@ -55,6 +55,12 @@
             {{ block.settings.text }}
           </div>
         {% endif %}
+      
+      	{% if block.settings.button_text != blank %}
+          <a class="button-primary" href="{{ block.settings.button_url }}">
+            {{ block.settings.button_text | escape }}
+          </a>
+        {% endif %}
       {% elsif block.type == 'page' and block.settings.page %}
         {% if block.settings.show_heading %}
           <h2
@@ -81,6 +87,11 @@
   "class": "rich-text--section",
   "max_blocks": 2,
   "settings": [
+    {
+          "type": "text",
+          "id": "section_id",
+          "label": "Section ID"
+    },
     {
       "id": "width",
       "type": "select",
@@ -144,6 +155,18 @@
           "label": "Text",
           "default": "<p>Use this section to welcome customers to your store, say a bit about your brand, or share news and seasonal promotions.</p>"
         },
+		{
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text",
+		  "default": "Shop All"
+        },
+		{
+          "type": "url",
+          "id": "button_url",
+          "label": "Button URL",
+		  "info": "Use #shop-all to scroll to all products."
+        },
         {
           "id": "heading_size",
           "type": "select",
@@ -166,8 +189,22 @@
         },
         {
           "id": "text_alignment",
-          "type": "text_alignment",
+          "type": "select",
           "label": "Text alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
           "default": "left"
         }
       ]
@@ -224,13 +261,12 @@
       ]
     }
   ],
-  "enabled_on": {
-    "templates": [
-      "index",
-      "product",
-      "page"
-    ]
-  }
+  "templates": [
+    "index",
+    "collection",
+	"product",
+    "page"
+  ]
 }
 
 {% endschema %}

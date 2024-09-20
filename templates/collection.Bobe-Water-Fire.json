@@ -9,11 +9,46 @@
 */
 {
   "sections": {
-    "166374424844a78e74": {
+    "16559423020cbe6158": {
       "type": "static-collection-header",
       "settings": {
         "show_breadcrumbs": true,
         "show_collection_image": false
+      }
+    },
+    "16559423081c4b1989": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Bobé Water and Fire Products",
+        "subheading": "",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "bobe-water-fire-bowl",
+        "override_product_description_1": "<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/bobe-water-fire-bowl\"><span style=\"text-decoration:underline\">Bobé Fire And Water Fire Bowl Artisan Series<\/span><\/a> comes in copper, stainless steel, and hammer copper finishes.<\/p>",
+        "override_product_2": "bobe-water-and-fire-builder-series-original-lip-square-water-and-fire-bowl",
+        "override_product_description_2": "<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/bobe-water-and-fire-builder-series-original-lip-square-water-and-fire-bowl\"><span style=\"text-decoration:underline\">Bobé Fire And Water Square Fire Bowl<\/span><\/a> is made of copper that will naturally patina over time, protecting the metal and creating a unique color.<\/p>",
+        "override_product_3": "",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
       }
     },
     "main": {
@@ -28,13 +63,13 @@
         "filter-1": {
           "type": "filter",
           "settings": {
-            "filter_option": "tag",
+            "filter_option": "faceted",
             "show_product_counts": true,
             "filter_limit": "999",
             "filter_position": "above_menus",
-            "filter_style": "groups",
-            "grid_categories": "Material, Price, Shape, Color, Brand, Ignition System",
-            "custom_ordered_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "filter_style": "tags",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
             "custom_ordered_tags": ""
           }
         },
@@ -179,29 +214,38 @@
         "enable_recently_viewed_products": false
       }
     },
-    "1662664918e8f79786": {
-      "type": "apps",
+    "1655942574c48627d1": {
+      "type": "dynamic-rich-text",
       "blocks": {
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77": {
-          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+        "1655942574e013d708-0": {
+          "type": "text",
           "settings": {
-            "active": true,
-            "top_color_predefined": "gold_bright"
+            "title": "Where Are Bobé Fire Pits Made?",
+            "text": "<p>Bobé fire pits are made right here in the United States in Phoenix, Arizona. Bobé has over 30 years of experience in sheet metal design and fabrication and is a part of CMP.<\/p><p>When you shop with Bobé, you’re getting something truly unique — you’re just not going to find anything else like the water and fire series on the market today.<\/p><p>Check out the Bobé Water and Fire Series in Phoenix, AZ today, and ask us about Bobé fire glass.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
           }
         }
       },
       "block_order": [
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77"
+        "1655942574e013d708-0"
       ],
       "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
       }
     }
   },
   "order": [
-    "166374424844a78e74",
+    "16559423020cbe6158",
+    "16559423081c4b1989",
     "main",
     "static-collection-promo-grid",
     "static-recently-viewed",
-    "1662664918e8f79786"
+    "1655942574c48627d1"
   ]
 }
