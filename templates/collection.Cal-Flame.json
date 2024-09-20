@@ -9,7 +9,7 @@
 */
 {
   "sections": {
-    "166374424844a78e74": {
+    "1655939865a2a138fd": {
       "type": "static-collection-header",
       "settings": {
         "show_breadcrumbs": true,
@@ -28,13 +28,13 @@
         "filter-1": {
           "type": "filter",
           "settings": {
-            "filter_option": "tag",
+            "filter_option": "faceted",
             "show_product_counts": true,
             "filter_limit": "999",
             "filter_position": "above_menus",
-            "filter_style": "groups",
-            "grid_categories": "Material, Price, Shape, Color, Brand, Ignition System",
-            "custom_ordered_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "filter_style": "tags",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
             "custom_ordered_tags": ""
           }
         },
@@ -179,29 +179,113 @@
         "enable_recently_viewed_products": false
       }
     },
-    "1662664918e8f79786": {
-      "type": "apps",
+    "1655939293a3ea49e4": {
+      "type": "dynamic-rich-text",
       "blocks": {
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77": {
-          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+        "165593929352af0437-0": {
+          "type": "text",
           "settings": {
-            "active": true,
-            "top_color_predefined": "gold_bright"
+            "title": "What is the top-selling product within Cal Flame Fire Pits?",
+            "text": "<p>The most popular (or top-selling) Cal Flame fire pits product is the Cal Flame Stucco and Tile Rectangle Gas Fire Pit FPT-S301M.<\/p><p>What makes this fire pit so popular is that it combines beauty and simplicity at a reasonable price. You can choose from a wide variety of countertop finishes and base designs, all of which can come with our white-glove delivery service.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "4ad8ef57-a020-471c-8c90-178ff8a164f3": {
+          "type": "text",
+          "settings": {
+            "title": "What is the cheapest option available from Cal Flame Fire Pits?",
+            "text": "<p>The lowest-priced option from Cal Flame is their Stucco and Tile Dining Height Square Propane Gas Fire Pit Table, which costs $1,760.<\/p><p>However, there are several other options to choose from if you’re willing to go up a bit higher on your price point.<\/p><p>Keep in mind that Cal Flame fire pits are a premium product. You absolutely get what you pay for, so while it might be tempting to purchase a lower-priced brand, sticking with Cal Flame will guarantee you’re satisfied with your purchase.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
           }
         }
       },
       "block_order": [
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77"
+        "165593929352af0437-0",
+        "4ad8ef57-a020-471c-8c90-178ff8a164f3"
       ],
       "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "165593952837af43e1": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "1655939528aef8e861-0": {
+          "type": "text",
+          "settings": {
+            "title": "Where are Cal Flame fire pits manufactured?",
+            "text": "<p>Cal Flame fire pits are manufactured in Pomona, California where the fire pit manufacturer is headquartered.<\/p><p>Cal Flame has been manufacturing fire pits and BBQs for over 43 years.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "363fc0ae-c1ca-4c99-8ab3-bbfcc82e0caa": {
+          "type": "text",
+          "settings": {
+            "title": "Where are Cal Flame grills manufactured?",
+            "text": "<p>Cal Flame grills are manufactured in Pomona, California. These grills are recognized as some of the best in the industry and are loved by customers all over the world.<\/p><p>Cal Flame has a massive line of drop-in grills and grill features, and it has many different types of grills, including charcoal and convection.<\/p><p>Cal Flame also boasts exclusive removable V-shaped grill grates that both keep smaller pieces of food from falling through while locking in the heat.<\/p><p>Most Cal Flame grills have a higher grilling capacity than competitors — up to 25% more.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1655939528aef8e861-0",
+        "363fc0ae-c1ca-4c99-8ab3-bbfcc82e0caa"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "165593986156d8af72": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "1655939861ddef88be-0": {
+          "type": "text",
+          "settings": {
+            "title": "Why buy Cal Flame fire pits at Fire Pit Surplus?",
+            "text": "<p>There are many reasons why we think you should purchase Cal Flame fire pits from Fire Pit Surplus.<\/p><p>We offer the most competitive pricing in the industry. We work hard to ensure you receive the best price possible for your purchase.<\/p><p>We also have ongoing sales, so if the Cal Flame product you’re interested in isn’t available at your required price point, you’re sure to find something else that fits your budget.<\/p><p>We have many different shipping options available. Shipping varies from 1-3 business days, and delivery time varies between 3-10 business days.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1655939861ddef88be-0"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
       }
     }
   },
   "order": [
-    "166374424844a78e74",
+    "1655939865a2a138fd",
     "main",
     "static-collection-promo-grid",
     "static-recently-viewed",
-    "1662664918e8f79786"
+    "1655939293a3ea49e4",
+    "165593952837af43e1",
+    "165593986156d8af72"
   ]
 }
