@@ -282,5 +282,102 @@
       >
       </script>
     {% endif %}
+
+  {% render 'preorder-now' %}
+  <script defer src="{{ 'custom.min.js' | asset_url }}"></script>
+  {% include 'globo.filter.action' %}
+
+	<style>
+    @media only screen and (min-width: 768px) {
+      .jdgm-rev.jdgm-rev {
+        width: calc(19% - 2px)!important;
+      }
+    }
+  </style>
+  
+  <!--<link rel="stylesheet" href="https://obscure-escarpment-2240.herokuapp.com/stylesheets/bcpo-front.css">-->
+  <script>
+    delayed('https://obscure-escarpment-2240.herokuapp.com/stylesheets/bcpo-front.css', 'link', 2e3);
+  </script>
+
+<!-- Quantity Buttons -->
+<script>
+  $(document).ready(function() {
+    // Get the initial quantity value
+    var quantity = 1;
+
+    // Update the hidden input value and the displayed quantity
+    function updateQuantity() {
+      $('#product-quantity-input').val(quantity);
+    }
+
+    // Increment quantity
+    $('#quantity-add').on('click', function() {
+      quantity++;
+      updateQuantity();
+    });
+
+    // Decrement quantity
+    $('#quantity-decrease').on('click', function() {
+      if (quantity > 1) {
+        quantity--;
+        updateQuantity();
+      }
+    });
+
+    // Handle manual input change
+    $('#product-quantity-input').on('input', function() {
+      var inputQuantity = parseInt($(this).val());
+      if (!isNaN(inputQuantity) && inputQuantity >= 1) {
+        quantity = inputQuantity;
+        updateQuantity();
+      }
+    });
+  });
+</script>
+
+<!-- Backyard Delivery Quote -->
+<script>  
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the radio buttons and the product form
+    var yesRadio = document.getElementById("yesRadio");
+    var noRadio = document.getElementById("noRadio");
+    var productForm = document.querySelector("form[action='/cart/add']");
+
+    // Function to handle radio button changes
+    function handleRadioChange() {
+      var existingInput = productForm.querySelector("input[name='properties[Quote]']");
+      if (yesRadio.checked) {
+        if (!existingInput) {
+          // Add a hidden input to the form with the value "Backyard Delivery" when Yes is selected
+          var hiddenInput = document.createElement("input");
+          hiddenInput.type = "hidden";
+          hiddenInput.name = "properties[Quote]";
+          hiddenInput.value = "Backyard Delivery";
+          productForm.appendChild(hiddenInput);
+        }
+        yesRadio.nextElementSibling.style.opacity = "0.5";
+        yesRadio.nextElementSibling.style.background = "#f1eded";
+        noRadio.nextElementSibling.style.opacity = "1";
+        noRadio.nextElementSibling.style.background = "#fff";
+      } else if (noRadio.checked) {
+        if (existingInput) {
+          // Remove the hidden input from the form when No is selected
+          productForm.removeChild(existingInput);
+        }
+        yesRadio.nextElementSibling.style.opacity = "1";
+        yesRadio.nextElementSibling.style.background = "#fff";
+        noRadio.nextElementSibling.style.opacity = "0.5";
+        noRadio.nextElementSibling.style.background = "#f1eded";
+      }
+    }
+
+    // Add change event listeners to the radio buttons
+    yesRadio.addEventListener("change", handleRadioChange);
+    noRadio.addEventListener("change", handleRadioChange);
+  });
+</script>
+
+    
   </body>
 </html>
