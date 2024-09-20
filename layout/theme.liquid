@@ -74,6 +74,7 @@
     {% if page_description != blank %}
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
+     <link rel="stylesheet" type="text/css" href="{{ 'custom.css' | asset_url }}">
 
     {% include 'favicon' %}
 
@@ -99,8 +100,9 @@
     {% else %}
       <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
     {% endif %}
+  {% include 'globo.filter.script' %}
 
-    {{ content_for_header }}
+  {% if request.design_mode %}{{ content_for_header }}{% else %}{% capture cfh %}{{ content_for_header }}{% endcapture %}{% endif %}{{ cfh | replace: st[0], st[1] | replace: st[2], st[6] | replace:  st[3], st[7] | replace: st[4], st[5] | replace: xa1, xa2 | replace: xb1, xb2 }}<script>window.dispatchEvent(new Event('a:load'));</script>
 
     <script>
       document.documentElement.className=document.documentElement.className.replace(/\bno-js\b/,'js');
