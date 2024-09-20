@@ -116,7 +116,17 @@
       <link href="{{ 'theme-critical.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" data-styles-above-fold />
       <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
     {% endif %}
+ {% if preload_styles == 'await_all_styles' %}
+    <link rel="stylesheet" href="{{ main_css_asset | asset_url }}"  type="text/css" media="all"  onload="window.showStyle();">
+  {% elsif preload_styles == 'await_critical_styles' %}
+    <link rel="stylesheet" href="{{ main_css_asset | asset_url }}"  type="text/css" media="all" data-styles-above-fold  onload="window.showStyle();">
+  {% endif %}
+    
+  <link href="{{ 'lity.min.css' | asset_url }}" rel="stylesheet" type="text/css" media="all" {{fl}}>
 
+
+
+    
     {% if settings.custom_scripts_head != blank %}
       {% unless settings.custom_scripts_head contains '<script' %}<script>{% endunless %}
         {{ settings.custom_scripts_head }}
