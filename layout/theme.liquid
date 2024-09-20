@@ -148,6 +148,37 @@
     </script>
     {% comment %}Inject theme-object end{% endcomment %}
 
+
+
+{% render 'bsf-conversion-pixels' %}
+  {% render 'gsf-conversion-pixels' %}
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];___sSt(()=>y.parentNode.insertBefore(t,y), 5e3);
+    })(window, document, "clarity", "script", "bl22abf4b7");
+  </script>
+
+  {% include 'wb-css' %}
+  <script defer src="{{ 'wb.js' | asset_url }}"></script>
+  
+  {% include 'search-x-global' %}
+  
+  <script async data-deffered data-src="https://www.googleoptimize.com/optimize.js?id=OPT-NHV9D2S"></script>
+ {% include 'dataLayer-allPages' %}
+
+
+{% include 'pagefly-app-header' %}
+
+
+
+
+
+
+
+    
   </head>
 
   <body
