@@ -1,1 +1,289 @@
-{"sections":{"1655941471a453c08b":{"type":"static-collection-header","settings":{"show_breadcrumbs":true,"show_collection_image":false}},"main":{"type":"static-collection","blocks":{"307918d3-05d1-4047-a336-07f24a3bb594":{"type":"menu","settings":{"menu":"company"}},"filter-1":{"type":"filter","settings":{"filter_option":"faceted","show_product_counts":true,"filter_limit":"999","filter_position":"above_menus","filter_style":"tags","grid_categories":"","custom_ordered_categories":"","custom_ordered_tags":""}},"menu-1":{"type":"menu","settings":{"menu":""}}},"block_order":["307918d3-05d1-4047-a336-07f24a3bb594","filter-1","menu-1"],"settings":{"show_breadcrumbs":true,"show_collection_image":false,"products_per_page_range":24,"pagination":"traditional","sort_by":true,"grid_list":true,"menu_depth_range":1}},"static-collection-promo-grid":{"type":"static-collection-promo-grid","disabled":true,"blocks":{"grid-tile-1":{"type":"promotion","settings":{"image":"shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png","preheading":"test","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"grid-tile-2":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"acb5d1d6-4dc9-4208-b3a3-9615855fca5e":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"dab605d6-5512-4839-ac45-a2c055b7c650":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}}},"block_order":["grid-tile-1","grid-tile-2","acb5d1d6-4dc9-4208-b3a3-9615855fca5e","dab605d6-5512-4839-ac45-a2c055b7c650"],"settings":{"enable":true,"title":"Grid","subheading":"","heading_color":"#4d4d4d","subheading_color":"#4d4d4d","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"maintain_aspect_ratio":false,"compress_blocks":false}},"static-recently-viewed":{"type":"static-recently-viewed","settings":{"enable_recently_viewed_products":false}},"1655941480a0e75e46":{"type":"dynamic-featured-products","settings":{"title":"Shop Best Selling Gazebo Penguin Products","subheading":"","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"gazebo-penguin-florence-add-a-room-10-ft-x-12-ft-w1209","override_product_description_1":"<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/gazebo-penguin-florence-add-a-room-8-ft-x-12-ft-w1207\"><span style=\"text-decoration:underline\">Florence Add-A-Room Gazebo Penguin<\/span><\/a> gives you a little break from the sun and wind any time of the year.<\/p>","override_product_2":"gazebo-penguins-venus-gazebo-in-10-feet","override_product_description_2":"<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/gazebo-penguins-venus-gazebo-in-10-feet\"><span style=\"text-decoration:underline\">Venus Gazebo<\/span><\/a> is a freestanding structure that will resist all types of weather — ask about the one-year warranty.<\/p>","override_product_3":"gazebo-penguin-florence-solarium","override_product_description_3":"<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/gazebo-penguin-florence-solarium\"><span style=\"text-decoration:underline\">Florence Solarium<\/span><\/a> comes in two gorgeous colors and has two sliding doors.<\/p>","override_product_4":"","override_product_description_4":"","override_button_link":""}},"16559419449d7fda47":{"type":"dynamic-rich-text","blocks":{"1655941944ce699134-0":{"type":"text","settings":{"title":"Where is Gazebo Penguin located?","text":"<p>Gazebo Penguin is located in Montreal. A family-run business, it has been in operation since 1984 and originally only sold summer gazebos, winter car shelters, and garden swings.<\/p><p>However, over the years, they were forced to outsource their manufacturing to several plants in China in order to remain competitive. They still maintain a plant in Montreal where they have the equipment and trained personnel who take care of all their warranty repairs or replacements.<\/p><p>They also have a warehouse in Willsboro, NY where they ship products all over the United States.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}},"bb1bba9d-f192-4a03-b171-c9b361401bab":{"type":"text","settings":{"title":"What is the top-selling Gazebo Penguin product?","text":"<p>The top-selling product at Gazebo Penguin is the Florence Add-A-Room Solarium. What makes the add-a-room such a unique product is that you can put it right against your home as soon as it’s assembled.<\/p><p>Its open-end design means that you can align it with an existing doorway so that you’ve essentially added a new room to your home. The sliding doors, which can be adjusted in two different positions, allow you to easily enter or exit your backyard.<\/p><p>Once you’ve filled it with your furniture of choice, you’ve got your new hangout spot. You can open the windows during cool weather to enjoy the breeze through the screens, and when the weather gets wet, you can sit inside and watch the rain or snow fall.<\/p><p>The reinforced polycarbonate roof offers superior UV protection, and the doors and windows are tinted to allow you to enjoy your new room even in the height of the summer sun.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["1655941944ce699134-0","bb1bba9d-f192-4a03-b171-c9b361401bab"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}},"165594208068bddf9d":{"type":"dynamic-rich-text","blocks":{"165594208075fa9a81-0":{"type":"text","settings":{"title":"Why shop Gazebo Penguin at Fire Pit Surplus?","text":"<p>To put it simply, we’re the outdoor specialists. Though we focus on fire pits of all sorts, including wood-burning fire pits, gas fire pits, and propane fire pits, among others, we sell all kinds of outdoor products, including Gazebo Penguin products.<\/p><p>Most large retailers just don’t have the background and expertise that we do. We’re committed to world-class customer service, and we’re also committed to offering high-quality products for the lowest possible price. You simply won’t find anything more affordable anywhere else — period.<\/p><p>Take a look at all our Gazebo Penguin products and let us know if you have any questions.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["165594208075fa9a81-0"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}}},"order":["1655941471a453c08b","main","static-collection-promo-grid","static-recently-viewed","1655941480a0e75e46","16559419449d7fda47","165594208068bddf9d"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "1655941471a453c08b": {
+      "type": "static-collection-header",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false
+      }
+    },
+    "main": {
+      "type": "static-collection",
+      "blocks": {
+        "307918d3-05d1-4047-a336-07f24a3bb594": {
+          "type": "menu",
+          "settings": {
+            "menu": "company"
+          }
+        },
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "filter_option": "faceted",
+            "show_product_counts": true,
+            "filter_limit": "999",
+            "filter_position": "above_menus",
+            "filter_style": "tags",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
+            "custom_ordered_tags": ""
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "307918d3-05d1-4047-a336-07f24a3bb594",
+        "filter-1",
+        "menu-1"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false,
+        "products_per_page_range": 24,
+        "pagination": "traditional",
+        "sort_by": true,
+        "grid_list": true,
+        "menu_depth_range": 1
+      }
+    },
+    "static-collection-promo-grid": {
+      "type": "static-collection-promo-grid",
+      "blocks": {
+        "grid-tile-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png",
+            "preheading": "test",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "grid-tile-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "dab605d6-5512-4839-ac45-a2c055b7c650": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "grid-tile-1",
+        "grid-tile-2",
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e",
+        "dab605d6-5512-4839-ac45-a2c055b7c650"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "title": "Grid",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "static-recently-viewed": {
+      "type": "static-recently-viewed",
+      "settings": {
+        "enable_recently_viewed_products": false
+      }
+    },
+    "1655941480a0e75e46": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Shop Best Selling Gazebo Penguin Products",
+        "subheading": "",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "gazebo-penguin-florence-add-a-room-10-ft-x-12-ft-w1209",
+        "override_product_description_1": "<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/gazebo-penguin-florence-add-a-room-8-ft-x-12-ft-w1207\"><span style=\"text-decoration:underline\">Florence Add-A-Room Gazebo Penguin<\/span><\/a> gives you a little break from the sun and wind any time of the year.<\/p>",
+        "override_product_2": "gazebo-penguins-venus-gazebo-in-10-feet",
+        "override_product_description_2": "<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/gazebo-penguins-venus-gazebo-in-10-feet\"><span style=\"text-decoration:underline\">Venus Gazebo<\/span><\/a> is a freestanding structure that will resist all types of weather — ask about the one-year warranty.<\/p>",
+        "override_product_3": "gazebo-penguin-florence-solarium",
+        "override_product_description_3": "<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/gazebo-penguin-florence-solarium\"><span style=\"text-decoration:underline\">Florence Solarium<\/span><\/a> comes in two gorgeous colors and has two sliding doors.<\/p>",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": ""
+      }
+    },
+    "16559419449d7fda47": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "1655941944ce699134-0": {
+          "type": "text",
+          "settings": {
+            "title": "Where is Gazebo Penguin located?",
+            "text": "<p>Gazebo Penguin is located in Montreal. A family-run business, it has been in operation since 1984 and originally only sold summer gazebos, winter car shelters, and garden swings.<\/p><p>However, over the years, they were forced to outsource their manufacturing to several plants in China in order to remain competitive. They still maintain a plant in Montreal where they have the equipment and trained personnel who take care of all their warranty repairs or replacements.<\/p><p>They also have a warehouse in Willsboro, NY where they ship products all over the United States.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "bb1bba9d-f192-4a03-b171-c9b361401bab": {
+          "type": "text",
+          "settings": {
+            "title": "What is the top-selling Gazebo Penguin product?",
+            "text": "<p>The top-selling product at Gazebo Penguin is the Florence Add-A-Room Solarium. What makes the add-a-room such a unique product is that you can put it right against your home as soon as it’s assembled.<\/p><p>Its open-end design means that you can align it with an existing doorway so that you’ve essentially added a new room to your home. The sliding doors, which can be adjusted in two different positions, allow you to easily enter or exit your backyard.<\/p><p>Once you’ve filled it with your furniture of choice, you’ve got your new hangout spot. You can open the windows during cool weather to enjoy the breeze through the screens, and when the weather gets wet, you can sit inside and watch the rain or snow fall.<\/p><p>The reinforced polycarbonate roof offers superior UV protection, and the doors and windows are tinted to allow you to enjoy your new room even in the height of the summer sun.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1655941944ce699134-0",
+        "bb1bba9d-f192-4a03-b171-c9b361401bab"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "165594208068bddf9d": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "165594208075fa9a81-0": {
+          "type": "text",
+          "settings": {
+            "title": "Why shop Gazebo Penguin at Fire Pit Surplus?",
+            "text": "<p>To put it simply, we’re the outdoor specialists. Though we focus on fire pits of all sorts, including wood-burning fire pits, gas fire pits, and propane fire pits, among others, we sell all kinds of outdoor products, including Gazebo Penguin products.<\/p><p>Most large retailers just don’t have the background and expertise that we do. We’re committed to world-class customer service, and we’re also committed to offering high-quality products for the lowest possible price. You simply won’t find anything more affordable anywhere else — period.<\/p><p>Take a look at all our Gazebo Penguin products and let us know if you have any questions.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "165594208075fa9a81-0"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    }
+  },
+  "order": [
+    "1655941471a453c08b",
+    "main",
+    "static-collection-promo-grid",
+    "static-recently-viewed",
+    "1655941480a0e75e46",
+    "16559419449d7fda47",
+    "165594208068bddf9d"
+  ]
+}
