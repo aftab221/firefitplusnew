@@ -9,7 +9,7 @@
 */
 {
   "sections": {
-    "166374424844a78e74": {
+    "16496906863e4007b4": {
       "type": "static-collection-header",
       "settings": {
         "show_breadcrumbs": true,
@@ -28,13 +28,13 @@
         "filter-1": {
           "type": "filter",
           "settings": {
-            "filter_option": "tag",
+            "filter_option": "faceted",
             "show_product_counts": true,
             "filter_limit": "999",
             "filter_position": "above_menus",
-            "filter_style": "groups",
-            "grid_categories": "Material, Price, Shape, Color, Brand, Ignition System",
-            "custom_ordered_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "filter_style": "tags",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
             "custom_ordered_tags": ""
           }
         },
@@ -179,29 +179,420 @@
         "enable_recently_viewed_products": false
       }
     },
-    "1662664918e8f79786": {
-      "type": "apps",
+    "1656619895817428a1": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "",
+        "subheading": "<p>Because rectangle propane fire pits are powered by propane, you’re not tied down to a natural gas line — you can <strong>move it whenever you want.<\/strong><\/p><p>Setting up your propane fire pit is actually <strong>incredibly easy <\/strong>and takes only 30 minutes. All these options come with stylish propane tank covers, so you don’t have to stare at that ugly tank<strong> <\/strong>while you enjoy your cozy fire pit.<\/p><p>Take a look at the many rectangle propane fire pits and fire pit tables available in our store.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "elementi-hampton",
+        "override_product_description_1": "",
+        "override_product_2": "ecosmart-fire-wharf-freestatnding-fire-table-esf-o-whf",
+        "override_product_description_2": "",
+        "override_product_3": "slick-rock-concrete-oasis-series-48-inch-rectangle-fire-table-kof48eilp",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": ""
+      }
+    },
+    "1656620137b04f4573": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "",
+        "subheading": "<p>Concrete is a <strong>wonderful material <\/strong>for a rectangular fire pit because it’s so strong and will not burn. Almost all the fire pits we sell are made from glass fiber reinforced concrete (GFRC) and are <strong>incredibly lightweight.<\/strong><\/p><p>Check out your options for rectangular concrete fire pits here.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "elementi-granville",
+        "override_product_description_1": "",
+        "override_product_2": "prism-hardscapes-tavola-6",
+        "override_product_description_2": "",
+        "override_product_3": "the-outdoor-plus-del-mar-concrete-fire-pit",
+        "override_product_description_3": "",
+        "override_product_4": "pyromania-fire-moderne",
+        "override_product_description_4": "",
+        "override_button_link": ""
+      }
+    },
+    "1656620143d65b4496": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "",
+        "subheading": "<p>Rectangle fire pits come in many different varieties, but one of the main differences is the fuel source — gas, propane, or bioethanol.<\/p><p>What makes a gas fire pit table so great is that they <strong>burn all night long<\/strong> (and all day long!). You never have to worry about changing out propane tanks, allowing you to focus on your drinks, dinner, and good times.<\/p><p>Looking for a natural gas rectangle fire pit table? We’ve got you covered. Check out some gas fire pit table options here.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "pyromania-fire-millenia",
+        "override_product_description_1": "",
+        "override_product_2": "the-outdoor-plus-regal-60-concrete-fire-pit-opt-rgl60-sale",
+        "override_product_description_2": "",
+        "override_product_3": "starfire-designs-beton-rectangle-concrete-gas-fire-pit-in-stock",
+        "override_product_description_3": "",
+        "override_product_4": "ecosmart-fire-cosmo-50",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "16566204087d1ea6d6": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Rectangle Fire Pit With Propane Tank Inside",
+        "subheading": "<p>Propane is a popular fuel source for many fire pits because of its flexibility.<\/p><p>However, just because you choose a propane-fueled fire pit doesn’t mean you should have to stare at <strong>that ugly tank <\/strong>all the time.<\/p><p>Fortunately, most propane fire pits these days <strong>have a space available to hide the propane tank. <\/strong>You get all the benefits of propane without the beauty of the fire pit being ruined.<\/p><p>Here are just a few  options to check out.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "american-fyre-designs-contempo-rectangle-fire-table-783-ba-11-v4nc",
+        "override_product_description_1": "",
+        "override_product_2": "the-outdoor-greatroom-monte-carlo-linear-gas-fire-pit-table",
+        "override_product_description_2": "",
+        "override_product_3": "prism-hardscapes-portos-58",
+        "override_product_description_3": "",
+        "override_product_4": "ecosmart-gin-90-bar-firetable",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "16566204155cc105bd": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Rectangle Dining Table With Fire Pit In Middle",
+        "subheading": "<p>Want something truly unique?<\/p><p>How about a dining table with an <strong>enchanting flame <\/strong>whispering away while you and your guests enjoy drinks, dinner, and dessert?<\/p><p>And after you’re done? You can break out the marshmallows and <strong>make delicious s’mores <\/strong>by the fireside.<\/p><p>Find the perfect dining table for your home or backyard here.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "elementi-sonoma",
+        "override_product_description_1": "",
+        "override_product_2": "american-fyre-designs-cosmopolitan-french-barrel-oak-rectangle-fire-table-635-ba-fo-v4nc",
+        "override_product_description_2": "",
+        "override_product_3": "ecosmart-gin-90-dining-firetable",
+        "override_product_description_3": "",
+        "override_product_4": "the-outdoor-greatroom-havenwood-rectangular-gas-fire-pit-table",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "165662073952485df1": {
+      "type": "dynamic-rich-text",
       "blocks": {
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77": {
-          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+        "165662073980c6dd6d-0": {
+          "type": "text",
           "settings": {
-            "active": true,
-            "top_color_predefined": "gold_bright"
+            "title": "Can a fire pit be rectangular?",
+            "text": "<p>The simple answer is <strong>yes, a fire pit can be rectangular<\/strong>. Rectangular fire pits come in a wide variety of styles and materials and can be used in just about any backyard, patio, or deck.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
           }
         }
       },
       "block_order": [
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77"
+        "165662073980c6dd6d-0"
       ],
       "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "165662101895a6a5da": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "1656621018506ae0d5-0": {
+          "type": "text",
+          "settings": {
+            "title": "Are Rectangle Fire Pits Worth it?",
+            "text": "<p>Do you love spending cool autumn nights or frosty winters outside? Do you want something you can roast marshmallows on with family and neighbors?<\/p><p>Then a rectangle fire pit is <strong>definitely worth it<\/strong>. The rectangular shape means you can set up more chairs around it than other types of fire pits, and depending on the model you choose, you can even <strong>use the fire pit as a table<\/strong>.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "381d23d2-b2ca-4f34-9e88-abd0166c8f35": {
+          "type": "text",
+          "settings": {
+            "title": "Why Purchase A Rectangle Fire Pit Table From Us?",
+            "text": "<p>We have the largest collection of rectangle fire tables. <\/p><p>Many fire pit tables come with free lava rock. <\/p><p>Our customers love us! Don’t take our word for it. Check out our reviews! We have over 900 of them. <\/p><p>We have top deals in the industry. <\/p><p>Free standard shipping. The price you see is what you pay. <\/p><p>We have many in-stock options. <\/p><p>Looking for inspiration on how to outfit your backyard? Check out our <a href=\"https:\/\/www.pinterest.com\/thefirepitsurplus\/\" target=\"_blank\" title=\"https:\/\/www.pinterest.com\/thefirepitsurplus\/\">Pinterest<\/a>. <\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1656621018506ae0d5-0",
+        "381d23d2-b2ca-4f34-9e88-abd0166c8f35"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "1657951548cbd59baa": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "165795154883a1cc40-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "165795154883a1cc40-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "Shop collection",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "american-fyre-designs-48-fire-bowl-731-ba-11-v6nc",
+        "override_product_description_1": "",
+        "override_product_2": "american-fyre-designs-el-dorado-fire-pit-681-ba-11-v6nc",
+        "override_product_description_2": "",
+        "override_product_3": "american-fyre-designs-cosmopolitan-french-barrel-oak-square-fire-table-640-ba-fo-v2nc",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": ""
+      }
+    },
+    "165795158388e2ac9d": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "1657951583490e9c4a-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1657951583490e9c4a-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "Shop collection",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "american-fyre-calais-oval-fire-table",
+        "override_product_description_1": "",
+        "override_product_2": "american-fyre-designs-48-versailles-fire-bowl-with-ball-feet-741-ba-11-v6nc",
+        "override_product_description_2": "",
+        "override_product_3": "american-fyre-designs-contempo-round-fire-table-782-ba-11-v2nc",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": ""
+      }
+    },
+    "165795212062f066f7": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "16579521207ed82803-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "16579521207ed82803-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Featured products",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "Shop collection",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "calflame-fpt-rt501m",
+        "override_product_description_1": "",
+        "override_product_2": "american-fyre-designs-40-marseille-fire-bowl-752-ba-11-v6nc",
+        "override_product_description_2": "",
+        "override_product_3": "arteflame-classic-40-grill-low-round-base",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
       }
     }
   },
   "order": [
-    "166374424844a78e74",
+    "16496906863e4007b4",
     "main",
     "static-collection-promo-grid",
     "static-recently-viewed",
-    "1662664918e8f79786"
+    "1656619895817428a1",
+    "1656620137b04f4573",
+    "1656620143d65b4496",
+    "16566204087d1ea6d6",
+    "16566204155cc105bd",
+    "165662073952485df1",
+    "165662101895a6a5da",
+    "1657951548cbd59baa",
+    "165795158388e2ac9d",
+    "165795212062f066f7"
   ]
 }
