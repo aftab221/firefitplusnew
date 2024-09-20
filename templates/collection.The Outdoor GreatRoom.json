@@ -1,1 +1,207 @@
-{"sections":{"165644149052312271":{"type":"static-collection-header","settings":{"show_breadcrumbs":true,"show_collection_image":false}},"main":{"type":"static-collection","blocks":{"307918d3-05d1-4047-a336-07f24a3bb594":{"type":"menu","settings":{"menu":"company"}},"filter-1":{"type":"filter","settings":{"filter_option":"faceted","show_product_counts":true,"filter_limit":"999","filter_position":"above_menus","filter_style":"tags","grid_categories":"","custom_ordered_categories":"","custom_ordered_tags":""}},"menu-1":{"type":"menu","settings":{"menu":""}}},"block_order":["307918d3-05d1-4047-a336-07f24a3bb594","filter-1","menu-1"],"settings":{"show_breadcrumbs":true,"show_collection_image":false,"products_per_page_range":24,"pagination":"traditional","sort_by":true,"grid_list":true,"menu_depth_range":1}},"static-collection-promo-grid":{"type":"static-collection-promo-grid","disabled":true,"blocks":{"grid-tile-1":{"type":"promotion","settings":{"image":"shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png","preheading":"test","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"grid-tile-2":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"acb5d1d6-4dc9-4208-b3a3-9615855fca5e":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"dab605d6-5512-4839-ac45-a2c055b7c650":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}}},"block_order":["grid-tile-1","grid-tile-2","acb5d1d6-4dc9-4208-b3a3-9615855fca5e","dab605d6-5512-4839-ac45-a2c055b7c650"],"settings":{"enable":true,"title":"Grid","subheading":"","heading_color":"#4d4d4d","subheading_color":"#4d4d4d","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"maintain_aspect_ratio":false,"compress_blocks":false}},"static-recently-viewed":{"type":"static-recently-viewed","settings":{"enable_recently_viewed_products":false}},"1656445060ea55689b":{"type":"dynamic-featured-products","blocks":{"16564450600dfb4d8c-0":{"type":"title_card","disabled":true,"settings":{"banner_position":"last","banner_preheading":"Shop this","banner_heading":"Collection","banner_preheading_color":"#ffffff","banner_heading_color":"#ffffff","banner_overlay_color":"","banner_overlay_opacity":0}}},"block_order":["16564450600dfb4d8c-0"],"settings":{"title":"Shop Best Selling Outdoor GreatRoom Fire Tables","subheading":"<p>If you’re looking for a high-quality fire pit table that runs on either gas or propane, then you’ve chosen the right brand — The Outdoor GreatRoom Company is well known in the industry for its high-quality fire pit tables that come in a variety of styles for just about any design aesthetic you can imagine.<\/p><p>Despite being high-quality, The Outdoor GreatRoom Company products are also affordable, making them a great solution for restaurants, hotels, and more. They come in many different shapes and sizes, so you’ll have no trouble finding the fire table that’s right for your needs.<\/p><p>What’s great about The Outdoor GreatRoom Company is that they have some truly unique designs, including the <a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-greatroom-black-uptown-linear-gas-fire-pit-table\"><span style=\"text-decoration:underline\">Uptown<\/span><\/a>, which has a modern design that you’re just not going to see anywhere else. All products by The Outdoor GreatRoom Company have both a manual ignition and a direct spark electronic ignition option.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":48,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":false,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"the-outdoor-greatroom-black-uptown-linear-gas-fire-pit-table","override_product_description_1":"","override_product_2":"the-outdoor-greatroom-alcott-rectangular-gas-fire-pit-table-alc-1224","override_product_description_2":"","override_product_3":"the-outdoor-greatroom-balsam-montego-linear-gas-fire-pit-table","override_product_description_3":"","override_product_4":"the-outdoor-greatroom-monte-carlo-linear-gas-fire-pit-table","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1656445722da19a91f":{"type":"dynamic-rich-text","blocks":{"1656445722dc96729b-0":{"type":"text","settings":{"title":"Where Is The Outdoor GreatRoom Company located?","text":"<p>The Outdoor GreatRoom Company is located in Minnesota, USA.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}},"e8121989-a492-4ac6-948d-56d1496f5f68":{"type":"text","settings":{"title":"Where Are The Outdoor GreatRoom Company Fire Pits Made?","text":"<p>The Outdoor GreatRoom Company fire pits are manufactured in Minnesota, USA.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["1656445722dc96729b-0","e8121989-a492-4ac6-948d-56d1496f5f68"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}},"16564457774f4fd7c0":{"type":"dynamic-rich-text","blocks":{"165644577764160301-0":{"type":"text","settings":{"title":"What Are The Outdoor GreatRoom Company Fire Pits Made of?","text":"<p>The Outdoor GreatRoom Company fire pits are made of a wide variety of materials, all depending on the model you choose. For example, some models are made with aluminum framing, while others use black tile, concrete, and a stucco base. Still others have a glass top and a resin wicker base.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}},"f0b2fc63-5a80-4483-9b4c-191409077de4":{"type":"text","settings":{"title":"Why Shop The Outdoor GreatRoom Company at Fire Pit Surplus?","text":"<p>Fire Pit Surplus is the one-stop shop for all The Outdoor GreatRoom Company fire pits and accessories. We have the best prices available anywhere in the world, online or offline, and guarantee that you’ll be able to get the product you want at the best price possible.<\/p><p>We have hundreds of positive reviews that show why you should buy from Fire Pit Surplus. We do everything we can to give you the best buying experience possible. Contact us today with any questions about The Outdoor GreatRoom Company products you might have.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["165644577764160301-0","f0b2fc63-5a80-4483-9b4c-191409077de4"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}}},"order":["165644149052312271","main","static-collection-promo-grid","static-recently-viewed","1656445060ea55689b","1656445722da19a91f","16564457774f4fd7c0"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "166374424844a78e74": {
+      "type": "static-collection-header",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false
+      }
+    },
+    "main": {
+      "type": "static-collection",
+      "blocks": {
+        "307918d3-05d1-4047-a336-07f24a3bb594": {
+          "type": "menu",
+          "settings": {
+            "menu": "company"
+          }
+        },
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "filter_option": "tag",
+            "show_product_counts": true,
+            "filter_limit": "999",
+            "filter_position": "above_menus",
+            "filter_style": "groups",
+            "grid_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "custom_ordered_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "custom_ordered_tags": ""
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "307918d3-05d1-4047-a336-07f24a3bb594",
+        "filter-1",
+        "menu-1"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false,
+        "products_per_page_range": 24,
+        "pagination": "traditional",
+        "sort_by": true,
+        "grid_list": true,
+        "menu_depth_range": 1
+      }
+    },
+    "static-collection-promo-grid": {
+      "type": "static-collection-promo-grid",
+      "blocks": {
+        "grid-tile-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png",
+            "preheading": "test",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "grid-tile-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "dab605d6-5512-4839-ac45-a2c055b7c650": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "grid-tile-1",
+        "grid-tile-2",
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e",
+        "dab605d6-5512-4839-ac45-a2c055b7c650"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "title": "Grid",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "static-recently-viewed": {
+      "type": "static-recently-viewed",
+      "settings": {
+        "enable_recently_viewed_products": false
+      }
+    },
+    "1662664918e8f79786": {
+      "type": "apps",
+      "blocks": {
+        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77": {
+          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "settings": {
+            "active": true,
+            "top_color_predefined": "gold_bright"
+          }
+        }
+      },
+      "block_order": [
+        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "166374424844a78e74",
+    "main",
+    "static-collection-promo-grid",
+    "static-recently-viewed",
+    "1662664918e8f79786"
+  ]
+}
