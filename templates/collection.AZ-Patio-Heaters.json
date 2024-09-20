@@ -1,1 +1,207 @@
-{"sections":{"165048050590e453e9":{"type":"static-collection-header","settings":{"show_breadcrumbs":true,"show_collection_image":false}},"main":{"type":"static-collection","blocks":{"307918d3-05d1-4047-a336-07f24a3bb594":{"type":"menu","settings":{"menu":"company"}},"filter-1":{"type":"filter","settings":{"filter_option":"tag","show_product_counts":true,"filter_limit":"999","filter_position":"above_menus","filter_style":"groups","grid_categories":"","custom_ordered_categories":"","custom_ordered_tags":""}},"menu-1":{"type":"menu","settings":{"menu":""}}},"block_order":["307918d3-05d1-4047-a336-07f24a3bb594","filter-1","menu-1"],"settings":{"show_breadcrumbs":true,"show_collection_image":false,"products_per_page_range":24,"pagination":"traditional","sort_by":true,"grid_list":true,"menu_depth_range":1}},"static-collection-promo-grid":{"type":"static-collection-promo-grid","blocks":{"grid-tile-1":{"type":"promotion","settings":{"image":"shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png","preheading":"test","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"grid-tile-2":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"acb5d1d6-4dc9-4208-b3a3-9615855fca5e":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"dab605d6-5512-4839-ac45-a2c055b7c650":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}}},"block_order":["grid-tile-1","grid-tile-2","acb5d1d6-4dc9-4208-b3a3-9615855fca5e","dab605d6-5512-4839-ac45-a2c055b7c650"],"disabled":true,"settings":{"enable":true,"title":"Grid","subheading":"","heading_color":"#4d4d4d","subheading_color":"#4d4d4d","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"maintain_aspect_ratio":false,"compress_blocks":false}},"static-recently-viewed":{"type":"static-recently-viewed","settings":{"enable_recently_viewed_products":false}},"1650480938db7762f9":{"type":"dynamic-featured-products","settings":{"title":"Hiland AZ Patio Heaters","subheading":"<p>Hiland Premium Series Patio Heaters are designed with the restaurant or bar owner in mind, but they’re also perfect for your backyard if you regularly have large gatherings. With over 40,000 BTUs, each Hiland Propane Patio Heater is both quick to assemble and easy to move thanks to its wheeled design. If you want to avoid propane or natural gas, try the Hiland Electric Patio Heater, which puts out an impressive amount of heat for an electric heater.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"hiland-bronze-glass-tube-patio-heater-hlds01-gthg","override_product_description_1":"<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/hiland-bronze-glass-tube-patio-heater-hlds01-gthg\"><span style=\"text-decoration:underline\">The Hiland Pyramid Patio Heater<\/span><\/a> puts out 40,000 BTUs of heat, so it’s functional, but it also looks great, its pyramid design setting it apart from many other patio heaters. With included regulator and an anti-tilt safety device, this heater is sure to keep your patio warm and your guests safe.<\/p>","override_product_2":"az-patio-heaters-commercial-tube-heater-hlds01-gch-blk","override_product_description_2":"<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/az-patio-heaters-commercial-infrared-flame-glass-tube-patio-heater-in-black-hlds01-rgt-blk\"><span style=\"text-decoration:underline\">AZ Patio Heaters  Glass Tube Heater <\/span><\/a>matches the other Hiland AZ Patio Heaters products at 44,000 BTUs of heat. Easy to assemble right out of the box and simple to move around because of its wheeled design, this patio heater is perfect for the cold months of the year. <\/p>","override_product_3":"87-two-tone-outdoor-patio-heater-with-table-hammered-bronze-stainless-steel","override_product_description_3":"<p>If you’re looking for something a little bigger with a little more heat output, you’ll want to check out the<a href=\"https:\/\/www.firepitsurplus.com\/products\/87-two-tone-outdoor-patio-heater-with-table-hammered-bronze-stainless-steel\"><span style=\"text-decoration:underline\">  Hiland HLDS01-WCGT<\/span><\/a>, which puts out 48,000 BTUs of heat. It also has a little table where guests can set their drinks.<\/p>","override_product_4":"","override_product_description_4":"","override_button_link":""}},"1650480950b6179e27":{"type":"dynamic-featured-products","settings":{"title":"AZ Patio Heaters Fire Pit","subheading":"<p>If you’re looking for a fire pit that’s both affordable and beautiful (and that’s a little different from what your guests might expect), then take a look at the AZ Patio Heaters Propane Fire Pit.<\/p><p>Made with a range of materials, these fire pits double as beautiful tables with propane storage underneath, allowing you to have a delicious meal and then sit back, relax, and have a few drinks by the fire. <\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"az-patio-heaters-rectangular-cast-aluminum-table-fire-pit-fs-1212-t-10","override_product_description_1":"<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/az-patio-heaters-rectangular-cast-aluminum-table-fire-pit-fs-1212-t-10?ose=false\"><span style=\"text-decoration:underline\">AZ Patio Heaters Fire Pit Bronze<\/span><\/a> (with lid) is both gorgeous and functional. Its included fiberglass makes for a beautiful display, and it can easily be turned into a table for dining or drinks. Switching out the propane tank is simple, and there’s even propane storage underneath.<\/p>","override_product_2":"az-patio-heaters-outdoor-fire-pit-in-hammered-bronze-gs-f-pc","override_product_description_2":"<p>The <a href=\"https:\/\/www.firepitsurplus.com\/products\/az-patio-heaters-outdoor-fire-pit-in-hammered-bronze-gs-f-pc\" title=\"https:\/\/www.firepitsurplus.com\/products\/az-patio-heaters-outdoor-fire-pit-in-hammered-bronze-gs-f-pc\">Hiland Outdoor Fire Pit (<span style=\"text-decoration:underline\">GS-F-PC<\/span>) i<\/a>s covered in hammered bronze and looks absolutely gorgeous as a small table for friends to gather around. At 38 inches, it’s big enough to pull up four chairs and have a meal while still small enough to not take up too much room on your patio.<\/p>","override_product_3":"az-patio-heaters-rectangle-wind-screen-fire-pit-afp-rt-ws","override_product_description_3":"<p>At over 42,000 BTUs, the <a href=\"https:\/\/www.firepitsurplus.com\/products\/az-patio-heaters-rectangle-wind-screen-fire-pit-afp-rt-ws\"><span style=\"text-decoration:underline\">AZ Patio Heaters Outdoor Rectangle Fire Pit In Black Mocha With Wind Screen <\/span><\/a>puts out plenty of heat for a small gathering, comparable to outdoor heaters you might find at restaurants. There’s plenty of room to set down drinks as you lounge and converse with friends and family while safely enjoying that beautiful flame.<\/p>","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1650480965769b7193":{"type":"dynamic-featured-products","settings":{"title":"AZ Patio Heaters Fire Pit Glass","subheading":"<p>While many fire pits do come with their own fire pit glass, not all do, and the ones that do may not be in the color you want. Fortunately, there is a wide range of fire pit glass available to you in a variety of different colors, sizes, and shapes.<\/p><p>Whether you’re looking for smoky black glass, sparkling clear crystal, or anything in between, you’ll find the right fire pit glass for you from AZ Patio Heaters. And if none of the basic colors work for you, you can always mix and match to get the perfect effect.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"az-patio-heaters-recycled-fire-glass-fire-pit-rglass","override_product_description_1":"<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/az-patio-heaters-recycled-fire-glass-fire-pit-rglass?variant=33278531207303\"><span style=\"text-decoration:underline\">Recycled Fire Pit Glass<\/span><\/a> is both affordable and easy on the environment, allowing you to increase the efficiency of your fire pit or fireplace and add a beautiful spark to the dancing flames. Recycled fire pit glass is polished to prevent injury and will not melt.<\/p>","override_product_2":"az-patio-heaters-reflective-fire-glass-fire-pit-rfglass","override_product_description_2":"<p>Looking to add a little elegance to your fire pit or fireplace? Then you’ll want to check out <a href=\"https:\/\/www.firepitsurplus.com\/products\/az-patio-heaters-reflective-fire-glass-fire-pit-rfglass?variant=33279058968711\"><span style=\"text-decoration:underline\">AZ Patio Heaters’ Reflective Fire Glass<\/span><\/a>. Available in 8 different shimmering colors, these reflective pieces of glass are designed to make your fire pit or fireplace truly shine.<\/p>","override_product_3":"","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1650481424c5986ab5":{"type":"dynamic-collection-list","blocks":{"165048142305486e78-0":{"type":"collection","settings":{"collection":"","custom_link":"","image":"shopify:\/\/shop_images\/hiland-pyramid-patio-heater-stainless-steel-in-white-background_png.png","collection_label":"Patio Heaters","mobile_collection_label":"","collection_button_text":""}},"165048142305486e78-1":{"type":"collection","settings":{"collection":"","custom_link":"","collection_label":"","mobile_collection_label":"","collection_button_text":""}},"165048142305486e78-2":{"type":"collection","settings":{"collection":"","custom_link":"","collection_label":"","mobile_collection_label":"","collection_button_text":""}}},"block_order":["165048142305486e78-0","165048142305486e78-1","165048142305486e78-2"],"disabled":true,"settings":{"title":"Collection list","subheading":"","heading_color":"#4d4d4d","subheading_color":"#4d4d4d","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"label_style":"label-style-heading","text_alignment":"center","desktop_collections_per_row":3,"display_desktop_collections":"2","desktop_collection_width":"desktop-full-width","layout_collection_max_width":1000,"desktop_collection_max_width":300,"mobile_collections_per_row":3,"display_mobile_collections":"2","mobile_collection_width":"mobile-full-width","mobile_collection_max_width":80}}},"order":["165048050590e453e9","main","static-collection-promo-grid","static-recently-viewed","1650480938db7762f9","1650480950b6179e27","1650480965769b7193","1650481424c5986ab5"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "166374424844a78e74": {
+      "type": "static-collection-header",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false
+      }
+    },
+    "main": {
+      "type": "static-collection",
+      "blocks": {
+        "307918d3-05d1-4047-a336-07f24a3bb594": {
+          "type": "menu",
+          "settings": {
+            "menu": "company"
+          }
+        },
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "filter_option": "tag",
+            "show_product_counts": true,
+            "filter_limit": "999",
+            "filter_position": "above_menus",
+            "filter_style": "groups",
+            "grid_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "custom_ordered_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "custom_ordered_tags": ""
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "307918d3-05d1-4047-a336-07f24a3bb594",
+        "filter-1",
+        "menu-1"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false,
+        "products_per_page_range": 24,
+        "pagination": "traditional",
+        "sort_by": true,
+        "grid_list": true,
+        "menu_depth_range": 1
+      }
+    },
+    "static-collection-promo-grid": {
+      "type": "static-collection-promo-grid",
+      "blocks": {
+        "grid-tile-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png",
+            "preheading": "test",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "grid-tile-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "dab605d6-5512-4839-ac45-a2c055b7c650": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "grid-tile-1",
+        "grid-tile-2",
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e",
+        "dab605d6-5512-4839-ac45-a2c055b7c650"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "title": "Grid",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "static-recently-viewed": {
+      "type": "static-recently-viewed",
+      "settings": {
+        "enable_recently_viewed_products": false
+      }
+    },
+    "1662664918e8f79786": {
+      "type": "apps",
+      "blocks": {
+        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77": {
+          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+          "settings": {
+            "active": true,
+            "top_color_predefined": "gold_bright"
+          }
+        }
+      },
+      "block_order": [
+        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "166374424844a78e74",
+    "main",
+    "static-collection-promo-grid",
+    "static-recently-viewed",
+    "1662664918e8f79786"
+  ]
+}
