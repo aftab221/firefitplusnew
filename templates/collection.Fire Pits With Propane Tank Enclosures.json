@@ -9,7 +9,7 @@
 */
 {
   "sections": {
-    "166374424844a78e74": {
+    "1651593842fcd19100": {
       "type": "static-collection-header",
       "settings": {
         "show_breadcrumbs": true,
@@ -33,8 +33,8 @@
             "filter_limit": "999",
             "filter_position": "above_menus",
             "filter_style": "groups",
-            "grid_categories": "Material, Price, Shape, Color, Brand, Ignition System",
-            "custom_ordered_categories": "Material, Price, Shape, Color, Brand, Ignition System",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
             "custom_ordered_tags": ""
           }
         },
@@ -179,29 +179,303 @@
         "enable_recently_viewed_products": false
       }
     },
-    "1662664918e8f79786": {
-      "type": "apps",
+    "165159386455eb667d": {
+      "type": "dynamic-featured-products",
       "blocks": {
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77": {
-          "type": "shopify:\/\/apps\/rapid-reviews\/blocks\/stars-color\/7a3f281c-98ec-4a98-8b29-ee3200debcb5",
+        "16515938648b255bd5-0": {
+          "type": "title_card",
+          "disabled": true,
           "settings": {
-            "active": true,
-            "top_color_predefined": "gold_bright"
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
           }
         }
       },
       "block_order": [
-        "c433f0eb-46dc-4eed-b6f0-4d8fab0d0f77"
+        "16515938648b255bd5-0"
       ],
       "settings": {
+        "title": "Round Fire Pit With Propane Tank Inside",
+        "subheading": "<p>If you’re looking for a fire pit table that brings <strong>the right vibe<\/strong> to your backyard, patio, or deck, the round fire pit table with a hidden tank inside might just be for you.<\/p><p>Round fire pits are great for parties of all shapes and sizes. Friends can come and go as they please, setting drinks or horderves on the table as they <strong>chat the night away<\/strong>.<\/p><p>Here are some of our favorites.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "the-outdoor-greatroom-stonefire-round-gas-fire-pit-table",
+        "override_product_description_1": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-greatroom-stonefire-round-gas-fire-pit-table\"> <span style=\"text-decoration:underline\">Outdoor GreatRoom Stonefire Round Gas Fire Pit Table<\/span><\/a> comes in brown and gray. It also comes with <strong>clear tempered fire glass gems<\/strong>.<\/p>",
+        "override_product_2": "the-outdoor-plus-unity-metal-fire-pit-18-inches-tall",
+        "override_product_description_2": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-plus-unity-metal-fire-pit-18-inches-tall\"> <span style=\"text-decoration:underline\">Unity Metal Fire Pit<\/span><\/a> comes in <strong>just about any color you can imagine<\/strong> and has a gas fire pit option if you prefer a gas line — don't forget to get a cover.<\/p>",
+        "override_product_3": "elementi-warren",
+        "override_product_description_3": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/elementi-warren-table-propane-ofg307\"> <span style=\"text-decoration:underline\">Warren Propane Fire Pit<\/span><\/a> has a <strong>gorgeous wood-inspired design<\/strong> that’s perfect for a deck or patio with a rustic theme — because it's propane, you don't have to worry about a key valve, and it's not very tall.<\/p>",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "16515938773ee6dc63": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "1651593876ace575b4-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1651593876ace575b4-0"
+      ],
+      "settings": {
+        "title": "Concrete Fire Pit With Propane Tank Inside",
+        "subheading": "<p>Concrete is a durable, lightweight material that makes your propane fire pit <strong>easy to move<\/strong> with just a few people, allowing you to change the feng shui of your deck, patio, or backyard whenever you want something a little different for your money.<\/p><p><strong>A little change of location<\/strong> never hurt anybody, and having a new place to gather can lead to some truly inspired partying.<\/p><p>A ​​concrete propane fire pit allows you to <strong>get all the benefits of a propane-fueled fire pit<\/strong> without having a hose or needing a no-whistle flex line.<\/p><p>Here are some propane concrete fire pits that we love.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "prism-hardscapes-portos-58",
+        "override_product_description_1": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/prism-hardscapes-portos-58-propane-fire-table\"> <span style=\"text-decoration:underline\">Prism Hardscapes Portos 58 Fire Table<\/span><\/a> is <strong>made to order<\/strong> in the good ole USA, unlike previous options.<\/p>",
+        "override_product_2": "the-outdoor-plus-angelus-concrete-fire-pit",
+        "override_product_description_2": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-plus-angelus-concrete-fire-pit\"> <span style=\"text-decoration:underline\"> Angelus Fire Pit<\/span><\/a> has a modern, <strong>minimalist design. <\/strong>The gas fire pit option is available if you have a gas line.<\/p>",
+        "override_product_3": "the-outdoor-plus-redan-concrete-fire-pit",
+        "override_product_description_3": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-plus-redan-concrete-fire-pit\"> <span style=\"text-decoration:underline\">Outdoor Plus Redan Fire Pit<\/span><\/a> comes in <strong>18 gorgeous colors.<\/strong><\/p>",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "16515939842dc87893": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "1651593984452bb6f3-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1651593984452bb6f3-0"
+      ],
+      "settings": {
+        "title": "Rectangular Fire Pit With Hidden Propane Tank",
+        "subheading": "<p>If you’re looking for a design that’s more traditional, something that’s going to be <strong>a<\/strong> <strong>beautiful centerpiece<\/strong> in your backyard or on your deck or patio, then a rectangle gas fire pit with a hidden propane tank is for you.<\/p><p>What’s great about the rectangular design is that it’s perfect for having a few guests over and <strong>eating dinner by the dazzling flames<\/strong>. And afterward? Enjoying a glass of wine or an ice-cold beer as the fire mesmerizes your guests is about as satisfying as life gets.<\/p><p>Here are some great rectangular fire pit options.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "ecosmart-gin-90-bar-firetable",
+        "override_product_description_1": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/ecosmart-fire-gin-90-bar-freestatnding-firetable-esf-o-gin-90-b\"> <span style=\"text-decoration:underline\">EcoSmart Fire GIN 90 <\/span><\/a> is <em>the <\/em><strong>top-of-the-line fire table<\/strong> on the market today and can go on your patio, beside your pool, or inside your home. Watch this brand closely as they always have new products on the market in one style or another.<\/p>",
+        "override_product_2": "slick-rock-concrete-oasis-series-48-inch-rectangle-fire-table-kof48eilp",
+        "override_product_description_2": "<p>It’s hard to go wrong with the <strong>sleek, modern design<\/strong> of the<a href=\"https:\/\/www.firepitsurplus.com\/products\/slick-rock-concrete-oasis-series-48-inch-rectangle-fire-table-kof48eilp\"> <span style=\"text-decoration:underline\">Slick Rock Concrete Oasis Series<\/span><\/a> — perfect for gathering family on the patio.<\/p>",
+        "override_product_3": "the-outdoor-plus-grove-wood-grain-fire-pit",
+        "override_product_description_3": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-plus-grove-wood-grain-fire-pit\"> <span style=\"text-decoration:underline\">Outdoor Plus Grove Wood Grain Fire Pit<\/span><\/a> comes in <strong>3 eye-popping colors<\/strong> — each color is perfect for any aesthetic. Also includes a brass valve with chrome cover and a regulator.<\/p>",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "165159408428b67fd5": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "1651594084e4cce1e1-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1651594084e4cce1e1-0"
+      ],
+      "settings": {
+        "title": "Square Fire Pit Hidden Propane Tank",
+        "subheading": "<p>Just like the rectangular fire pit options, a square fire pit is going to be perfect for holding drinks, dinner, and desserts — not to mention being <strong>the centerpiece<\/strong> of some late-night dancing.<\/p><p>Imagine the laughter roaring away on your patio as <strong>your friends and family lounge by the pool.<\/strong> It's the perfect addition to any patio or outdoor space.<\/p><p>Here are some options for square fire pits.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "the-outdoor-plus-amere-copper-fire-pit",
+        "override_product_description_1": "<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-plus-amere-copper-fire-pit\"><span style=\"text-decoration:underline\">The Outdoor Plus Amere Copper Fire Pit<\/span><\/a> has a <strong>gorgeous modern hammered finish<\/strong> and a beautiful flame to match.<\/p>",
+        "override_product_2": "the-outdoor-plus-forma-fire-pit",
+        "override_product_description_2": "<p><a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-plus-forma-fire-pit\"><span style=\"text-decoration:underline\">The Outdoor Plus Forma Fire Pit<\/span><\/a> brand comes in <strong>7 warm, sparkling colors <\/strong>that will make your friend's eyes light up with wonder as they gather for drinks and fun.<\/p>",
+        "override_product_3": "the-outdoor-greatroom-sierra-square-gas-fire-pit-table-sierra-2424",
+        "override_product_description_3": "<p>The<a href=\"https:\/\/www.firepitsurplus.com\/products\/the-outdoor-greatroom-sierra-square-gas-fire-pit-table-sierra-2424\"> <span style=\"text-decoration:underline\">Outdoor GreatRoom Sierra Square Gas Fire Pit Table<\/span><\/a> is perfect for that rustic look in any outdoor space or location.<\/p>",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1651594294b3a1a025": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "1651594294c5fa093d-0": {
+          "type": "text",
+          "settings": {
+            "title": "Can a propane tank be under my fire pit?",
+            "text": "<p>Typically, if a fire pit is at least 48” inches, it can accommodate a propane tank within its base. Most owners' manuals will illustrate a recommended setup for gas and propane. If your manual shows a propane tank outside of the fire pit, then it cannot house a propane tank. <\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "bedb1d1d-153c-4b44-9ce9-7e7b5b4b78ed": {
+          "type": "text",
+          "settings": {
+            "title": "How do you hide a tank in a fire pit?",
+            "text": "<p>This is a DIY job that requires some preparation and a good knowledge of fire safety, and it all depends on what kind of fire pit you have and how it’s constructed.<\/p><p>The best way to hide a tank in a fire pit is to buy a specifically designed model to conceal the tank.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "1651594294c5fa093d-0",
+        "bedb1d1d-153c-4b44-9ce9-7e7b5b4b78ed"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "#ffffff",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "1651594477524daccb": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "16515944779a5387a2-0": {
+          "type": "text",
+          "settings": {
+            "title": "How close can a propane fire pit be to a house?",
+            "text": "<p>The simple answer here is 10 feet (about 3 meters).<\/p><p>And don't forget to use filters as filters to keep the hose from being blocked if you want continued results from your beautiful fire pit.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "8b3c46f7-3e26-46cb-91be-4181a2409ffb": {
+          "type": "text",
+          "settings": {
+            "title": "Ready to Buy? You Don't Even Need to Create an Account.",
+            "text": "<p>Choose the type of items you're interested in and make your purchase online — it's easy and hassle-free. Just add products to your cart and make your purchase.<\/p><p><\/p>",
+            "button_text": "SEE ALL FIRE PITS WITH PROPANE TANK ENCLOSURES",
+            "button_url": "shopify:\/\/collections\/fire-tables-with-propane-tank-enclosures",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "16515944779a5387a2-0",
+        "8b3c46f7-3e26-46cb-91be-4181a2409ffb"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "#ffffff",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
       }
     }
   },
   "order": [
-    "166374424844a78e74",
+    "1651593842fcd19100",
     "main",
     "static-collection-promo-grid",
     "static-recently-viewed",
-    "1662664918e8f79786"
+    "165159386455eb667d",
+    "16515938773ee6dc63",
+    "16515939842dc87893",
+    "165159408428b67fd5",
+    "1651594294b3a1a025",
+    "1651594477524daccb"
   ]
 }
