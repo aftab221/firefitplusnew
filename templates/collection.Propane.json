@@ -1,1 +1,443 @@
-{"sections":{"16588596339311deaa":{"type":"static-collection-header","settings":{"show_breadcrumbs":true,"show_collection_image":false}},"main":{"type":"static-collection","blocks":{"307918d3-05d1-4047-a336-07f24a3bb594":{"type":"menu","settings":{"menu":"company"}},"filter-1":{"type":"filter","settings":{"filter_option":"tag","show_product_counts":true,"filter_limit":"999","filter_position":"above_menus","filter_style":"groups","grid_categories":"","custom_ordered_categories":"","custom_ordered_tags":""}},"menu-1":{"type":"menu","settings":{"menu":""}}},"block_order":["307918d3-05d1-4047-a336-07f24a3bb594","filter-1","menu-1"],"settings":{"show_breadcrumbs":true,"show_collection_image":false,"products_per_page_range":24,"pagination":"traditional","sort_by":true,"grid_list":true,"menu_depth_range":1}},"static-collection-promo-grid":{"type":"static-collection-promo-grid","disabled":true,"blocks":{"grid-tile-1":{"type":"promotion","settings":{"image":"shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png","preheading":"test","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"grid-tile-2":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"acb5d1d6-4dc9-4208-b3a3-9615855fca5e":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"dab605d6-5512-4839-ac45-a2c055b7c650":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}}},"block_order":["grid-tile-1","grid-tile-2","acb5d1d6-4dc9-4208-b3a3-9615855fca5e","dab605d6-5512-4839-ac45-a2c055b7c650"],"settings":{"enable":true,"title":"Grid","subheading":"","heading_color":"#4d4d4d","subheading_color":"#4d4d4d","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"maintain_aspect_ratio":false,"compress_blocks":false}},"static-recently-viewed":{"type":"static-recently-viewed","settings":{"enable_recently_viewed_products":false}},"16588596480d659da6":{"type":"dynamic-featured-products","settings":{"title":"Small Propane Fire Pit","subheading":"<p>There are more than a few small propane fire pits on the market today. Just because you’re going small doesn’t mean you’re sacrificing quality! Take a look at some of the highest-quality brands making fire pits today.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"ecosmart-mix-850-bioethanol-fire-bowl","override_product_description_1":"","override_product_2":"pottery-works-36-round-concrete-fire-bowl","override_product_description_2":"","override_product_3":"modeno-york","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1658859764bb5b5c6e":{"type":"dynamic-featured-products","settings":{"title":"Portable Propane Fire Pits","subheading":"<p>If you’re looking for a fire pit that you can move around whenever you want, then you’ll want to check out these portable propane fire pits.<\/p><p>The biggest benefit of a portable fire pit is that you’re not tied down to a single design for your patio or backyard. Who wants to look at the same old design day after day? Shake things up with a portable fire pit.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"modeno-venice","override_product_description_1":"","override_product_2":"oakland-living-matera-44-round-propane-fire-pit-table-matera-fpt-ac","override_product_description_2":"","override_product_3":"ecosmart-pod-40-fire-pit","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"165885980439085250":{"type":"dynamic-featured-products","settings":{"title":"Propane Gas Fire Pits","subheading":"<p>We’ve collected some of our favorite propane gas fire pits here for you to check out. Whether you’re looking for a metal fire pit or a concrete fire pit, or even a beautiful fire table, we’ve got something to meet your needs.<\/p><p>There are so many options available when it comes to propane fire pits, and many of our fire pits and fire tables come with a beautiful cover for the propane tank, while others have a storage space for the tank built in.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"prism-hardscapes-cilindro","override_product_description_1":"","override_product_2":"ecosmart-base-40","override_product_description_2":"","override_product_3":"the-outdoor-plus-unity-metal-fire-pit-24-tall","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"16588598569118ec25":{"type":"dynamic-featured-products","settings":{"title":"Cool Propane Fire Pits","subheading":"<p>If you’re looking for a fire pit that’s so cool it’ll blow away your friends and family and make you the talk of the neighborhood, look no further — we’ve got you covered.<\/p><p>These are some of the most amazing fire pits out there. One of our favorites is the Music City Fire Echo Hue Music Controlled Fire Pit. There’s just nothing else like it out there today — the fire literally dances to your music.<\/p><p>Take a look at all of these cool propane fire pits and find the one that meets your needs.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"modeno-mansfield","override_product_description_1":"","override_product_2":"american-fyre-designs-reclaimed-wood-contempo-rectangle-fire-table-1","override_product_description_2":"","override_product_3":"copy-of-music-city-fire-echo-hue-music-responsive-fire-pit-mc032492b","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"16588598970f5c723a":{"type":"dynamic-featured-products","settings":{"title":"Outdoor Propane Fire Pit","subheading":"<p>No matter how big your backyard or patio is, you’ll be able to find an outdoor fire pit that meets your needs. Concrete is one of the most popular materials for outdoor fire pits as it’s strong, relatively lightweight, and stands up well against the elements.<\/p><p>Whether you’re looking for a fire table that will transform your patio into a dining area any time of the year or a fire bowl that will wow your visitors, we’ve got something for you — check them all out now.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"fire-pit-art-manta-ray","override_product_description_1":"","override_product_2":"the-outdoor-plus-pismo-concrete-gas-fire-pit","override_product_description_2":"","override_product_3":"the-outdoor-greatroom-brooks-rectangular-gas-fire-pit-table-brk-1224-19-k","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1658859929c06481e7":{"type":"dynamic-featured-products","settings":{"title":"Large Propane Fire Pit","subheading":"<p>Is bigger really better? We won’t weigh in on the age-old question, but if you’re looking for a large propane fire pit, we’ve got something to meet your needs.<\/p><p>You’ll want to make sure you have the space available for these fire pits before you buy as some of them are truly large, but if you’ve done your measuring and you’re ready to go, you’ll want to check out all these fire pits today.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"pottery-works-48-round-concrete-fire-bowl","override_product_description_1":"","override_product_2":"the-outdoor-plus-cabo-square-powder-coated-fire-pit","override_product_description_2":"","override_product_3":"elementi-boulder","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1658859970cdf8b5bb":{"type":"dynamic-rich-text","blocks":{"165885997052fd4a07-0":{"type":"text","settings":{"title":"How long does a 20 lb propane tank last on a fire pit?","text":"<p>A 20 lb propane tank on your fire pit will last about 4 to 4 and a half hours, but that assumes you’re burning at the highest output and you’re burning continuously.<\/p><p>Reducing the output can significantly increase the life of the propane tank. Just reducing to a medium output could make your tank last 8 to 9 hours.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}},"cbb489e2-9066-4db5-ada4-878a747e2f4b":{"type":"text","settings":{"title":"What size propane tank do I need for a fire pit?","text":"<p>A 20 lb propane tank is going to be sufficient for most fire pits, but there are larger sizes available. Keep in mind that many fire pits come with a cover that is designed for a 20 lb tank, and others that have space for the tank inside the fire pit itself also are designed for a 20 lb tank.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["165885997052fd4a07-0","cbb489e2-9066-4db5-ada4-878a747e2f4b"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}}},"order":["16588596339311deaa","main","static-collection-promo-grid","static-recently-viewed","16588596480d659da6","1658859764bb5b5c6e","165885980439085250","16588598569118ec25","16588598970f5c723a","1658859929c06481e7","1658859970cdf8b5bb"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "16588596339311deaa": {
+      "type": "static-collection-header",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false
+      }
+    },
+    "main": {
+      "type": "static-collection",
+      "blocks": {
+        "307918d3-05d1-4047-a336-07f24a3bb594": {
+          "type": "menu",
+          "settings": {
+            "menu": "company"
+          }
+        },
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "filter_option": "tag",
+            "show_product_counts": true,
+            "filter_limit": "999",
+            "filter_position": "above_menus",
+            "filter_style": "groups",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
+            "custom_ordered_tags": ""
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "307918d3-05d1-4047-a336-07f24a3bb594",
+        "filter-1",
+        "menu-1"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false,
+        "products_per_page_range": 24,
+        "pagination": "traditional",
+        "sort_by": true,
+        "grid_list": true,
+        "menu_depth_range": 1
+      }
+    },
+    "static-collection-promo-grid": {
+      "type": "static-collection-promo-grid",
+      "blocks": {
+        "grid-tile-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png",
+            "preheading": "test",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "grid-tile-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "dab605d6-5512-4839-ac45-a2c055b7c650": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "grid-tile-1",
+        "grid-tile-2",
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e",
+        "dab605d6-5512-4839-ac45-a2c055b7c650"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "title": "Grid",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "static-recently-viewed": {
+      "type": "static-recently-viewed",
+      "settings": {
+        "enable_recently_viewed_products": false
+      }
+    },
+    "16588596480d659da6": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Small Propane Fire Pit",
+        "subheading": "<p>There are more than a few small propane fire pits on the market today. Just because you’re going small doesn’t mean you’re sacrificing quality! Take a look at some of the highest-quality brands making fire pits today.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "ecosmart-mix-850-bioethanol-fire-bowl",
+        "override_product_description_1": "",
+        "override_product_2": "pottery-works-36-round-concrete-fire-bowl",
+        "override_product_description_2": "",
+        "override_product_3": "modeno-york",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1658859764bb5b5c6e": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Portable Propane Fire Pits",
+        "subheading": "<p>If you’re looking for a fire pit that you can move around whenever you want, then you’ll want to check out these portable propane fire pits.<\/p><p>The biggest benefit of a portable fire pit is that you’re not tied down to a single design for your patio or backyard. Who wants to look at the same old design day after day? Shake things up with a portable fire pit.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "modeno-venice",
+        "override_product_description_1": "",
+        "override_product_2": "oakland-living-matera-44-round-propane-fire-pit-table-matera-fpt-ac",
+        "override_product_description_2": "",
+        "override_product_3": "ecosmart-pod-40-fire-pit",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "165885980439085250": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Propane Gas Fire Pits",
+        "subheading": "<p>We’ve collected some of our favorite propane gas fire pits here for you to check out. Whether you’re looking for a metal fire pit or a concrete fire pit, or even a beautiful fire table, we’ve got something to meet your needs.<\/p><p>There are so many options available when it comes to propane fire pits, and many of our fire pits and fire tables come with a beautiful cover for the propane tank, while others have a storage space for the tank built in.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "prism-hardscapes-cilindro",
+        "override_product_description_1": "",
+        "override_product_2": "ecosmart-base-40",
+        "override_product_description_2": "",
+        "override_product_3": "the-outdoor-plus-unity-metal-fire-pit-24-tall",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "16588598569118ec25": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Cool Propane Fire Pits",
+        "subheading": "<p>If you’re looking for a fire pit that’s so cool it’ll blow away your friends and family and make you the talk of the neighborhood, look no further — we’ve got you covered.<\/p><p>These are some of the most amazing fire pits out there. One of our favorites is the Music City Fire Echo Hue Music Controlled Fire Pit. There’s just nothing else like it out there today — the fire literally dances to your music.<\/p><p>Take a look at all of these cool propane fire pits and find the one that meets your needs.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "modeno-mansfield",
+        "override_product_description_1": "",
+        "override_product_2": "american-fyre-designs-reclaimed-wood-contempo-rectangle-fire-table-1",
+        "override_product_description_2": "",
+        "override_product_3": "copy-of-music-city-fire-echo-hue-music-responsive-fire-pit-mc032492b",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "16588598970f5c723a": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Outdoor Propane Fire Pit",
+        "subheading": "<p>No matter how big your backyard or patio is, you’ll be able to find an outdoor fire pit that meets your needs. Concrete is one of the most popular materials for outdoor fire pits as it’s strong, relatively lightweight, and stands up well against the elements.<\/p><p>Whether you’re looking for a fire table that will transform your patio into a dining area any time of the year or a fire bowl that will wow your visitors, we’ve got something for you — check them all out now.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "fire-pit-art-manta-ray",
+        "override_product_description_1": "",
+        "override_product_2": "the-outdoor-plus-pismo-concrete-gas-fire-pit",
+        "override_product_description_2": "",
+        "override_product_3": "the-outdoor-greatroom-brooks-rectangular-gas-fire-pit-table-brk-1224-19-k",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1658859929c06481e7": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Large Propane Fire Pit",
+        "subheading": "<p>Is bigger really better? We won’t weigh in on the age-old question, but if you’re looking for a large propane fire pit, we’ve got something to meet your needs.<\/p><p>You’ll want to make sure you have the space available for these fire pits before you buy as some of them are truly large, but if you’ve done your measuring and you’re ready to go, you’ll want to check out all these fire pits today.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "pottery-works-48-round-concrete-fire-bowl",
+        "override_product_description_1": "",
+        "override_product_2": "the-outdoor-plus-cabo-square-powder-coated-fire-pit",
+        "override_product_description_2": "",
+        "override_product_3": "elementi-boulder",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1658859970cdf8b5bb": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "165885997052fd4a07-0": {
+          "type": "text",
+          "settings": {
+            "title": "How long does a 20 lb propane tank last on a fire pit?",
+            "text": "<p>A 20 lb propane tank on your fire pit will last about 4 to 4 and a half hours, but that assumes you’re burning at the highest output and you’re burning continuously.<\/p><p>Reducing the output can significantly increase the life of the propane tank. Just reducing to a medium output could make your tank last 8 to 9 hours.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "cbb489e2-9066-4db5-ada4-878a747e2f4b": {
+          "type": "text",
+          "settings": {
+            "title": "What size propane tank do I need for a fire pit?",
+            "text": "<p>A 20 lb propane tank is going to be sufficient for most fire pits, but there are larger sizes available. Keep in mind that many fire pits come with a cover that is designed for a 20 lb tank, and others that have space for the tank inside the fire pit itself also are designed for a 20 lb tank.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "165885997052fd4a07-0",
+        "cbb489e2-9066-4db5-ada4-878a747e2f4b"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    }
+  },
+  "order": [
+    "16588596339311deaa",
+    "main",
+    "static-collection-promo-grid",
+    "static-recently-viewed",
+    "16588596480d659da6",
+    "1658859764bb5b5c6e",
+    "165885980439085250",
+    "16588598569118ec25",
+    "16588598970f5c723a",
+    "1658859929c06481e7",
+    "1658859970cdf8b5bb"
+  ]
+}
