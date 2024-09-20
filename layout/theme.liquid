@@ -1,7 +1,9 @@
 <!doctype html>
 <html class="no-js no-touch" lang="{{ shop.locale }}">
   <head>
-
+<script>
+!function(){for(var t=document.querySelectorAll(".youtube"),e=0;e<t.length;e++)t[e].addEventListener("click",function(){var t=document.createElement("iframe");t.setAttribute("frameborder","0"),t.setAttribute("allow","accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"),t.setAttribute("allowfullscreen",""),t.setAttribute("width",this.dataset.width),t.setAttribute("height",this.dataset.height),t.setAttribute("src","https://www.youtube.com/embed/"+this.dataset.embed+"?rel=0&showinfo=0&autoplay=1"),this.innerHTML="",this.appendChild(t)})}();
+</script>
   <link rel="stylesheet" href="https://obscure-escarpment-2240.herokuapp.com/stylesheets/bcpo-front.css">
   <script>var bcpo_product={{ product | json }}; {% if product.metafields.bcpo.bcpo_data %}var bcpo_data={{ product.metafields.bcpo.bcpo_data }};{% endif %} {% if shop.metafields.bcpo.bcpo_settings %}var bcpo_settings={{ shop.metafields.bcpo.bcpo_settings }};{% endif %}var inventory_quantity = [];{% for v in product.variants %}inventory_quantity.push({{v.inventory_quantity}});{% endfor %}if(bcpo_product) { for (var i = 0; i < bcpo_product.variants.length; i += 1) { bcpo_product.variants[i].inventory_quantity = inventory_quantity[i]; }}window.bcpo = window.bcpo || {}; bcpo.cart = {{cart | json}}; bcpo.ogFormData = FormData; bcpo.money_with_currency_format = {{ shop.money_with_currency_format  | json }};bcpo.money_format = {{ shop.money_format  | json }};</script>
   <style>
