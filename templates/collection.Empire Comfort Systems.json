@@ -1,1 +1,453 @@
-{"sections":{"16564597540f05be93":{"type":"static-collection-header","settings":{"show_breadcrumbs":true,"show_collection_image":false}},"main":{"type":"static-collection","blocks":{"307918d3-05d1-4047-a336-07f24a3bb594":{"type":"menu","settings":{"menu":"company"}},"filter-1":{"type":"filter","settings":{"filter_option":"faceted","show_product_counts":true,"filter_limit":"999","filter_position":"above_menus","filter_style":"tags","grid_categories":"","custom_ordered_categories":"","custom_ordered_tags":""}},"menu-1":{"type":"menu","settings":{"menu":""}}},"block_order":["307918d3-05d1-4047-a336-07f24a3bb594","filter-1","menu-1"],"settings":{"show_breadcrumbs":true,"show_collection_image":false,"products_per_page_range":24,"pagination":"traditional","sort_by":true,"grid_list":true,"menu_depth_range":1}},"static-collection-promo-grid":{"type":"static-collection-promo-grid","disabled":true,"blocks":{"grid-tile-1":{"type":"promotion","settings":{"image":"shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png","preheading":"test","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"grid-tile-2":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"acb5d1d6-4dc9-4208-b3a3-9615855fca5e":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"dab605d6-5512-4839-ac45-a2c055b7c650":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}}},"block_order":["grid-tile-1","grid-tile-2","acb5d1d6-4dc9-4208-b3a3-9615855fca5e","dab605d6-5512-4839-ac45-a2c055b7c650"],"settings":{"enable":true,"title":"Grid","subheading":"","heading_color":"#4d4d4d","subheading_color":"#4d4d4d","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"maintain_aspect_ratio":false,"compress_blocks":false}},"static-recently-viewed":{"type":"static-recently-viewed","settings":{"enable_recently_viewed_products":false}},"1656459759cb1579e3":{"type":"dynamic-featured-products","blocks":{"1656459759564cff5b-0":{"type":"title_card","disabled":true,"settings":{"banner_position":"last","banner_preheading":"Shop this","banner_heading":"Collection","banner_preheading_color":"#ffffff","banner_heading_color":"#ffffff","banner_overlay_color":"","banner_overlay_opacity":0}}},"block_order":["1656459759564cff5b-0"],"settings":{"title":"Empire Cast Iron Stove","subheading":"<p>Empire Comfort Systems manufactures a number of cast iron stoves, including Vent-free Spirit Stoves and Direct-vent Spirit Stoves. The Vent-free Spirit Stoves use precision-port technology, which allows them to produce their entrancing flames.<\/p><p>Their ceramic fiber log set is hand-painted and looks just like the real thing when combined with their glowing embers. Installation is quick and easy thanks to the vent-free design. A 10,000 BTU model is available for customers who want a cast iron stove directly in their bedroom. Perfect for those chilly winter evenings.<\/p><p>Their Direct-vent Spirit Stoves use their trademark Slope Glaze Burner System and have a larger ember bed than you’ll find on their other stoves, but they include the same hand-painted ceramic fiber log set. They come in 20,000 BTU and 30,000 BTU options.<\/p>","heading_color":"#3a0a0b","subheading_color":"#211f1f","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"gateway-1700-empire-stove","override_product_description_1":"","override_product_2":"gateway-2300-empire-stove","override_product_description_2":"","override_product_3":"gateway-3500-empire-stove","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1656459782b17f6f3d":{"type":"dynamic-featured-products","blocks":{"1656459782208f4c05-0":{"type":"title_card","disabled":true,"settings":{"banner_position":"last","banner_preheading":"Shop this","banner_heading":"Collection","banner_preheading_color":"#ffffff","banner_heading_color":"#ffffff","banner_overlay_color":"","banner_overlay_opacity":0}}},"block_order":["1656459782208f4c05-0"],"settings":{"title":"Empire Heaters","subheading":"<p>Empire Comfort Systems and their subsidiary company Empire Heating Systems has a number of wall furnaces and console heaters that are incredibly efficient, especially compared to their competitors. They have both vent-free, direct-vent, and vented models, depending on your needs.<\/p><p>They’re excellent replacements for inefficient oil or wood stoves and can be installed on the wall or on the floor, depending on your preference. Depending on the size of your home, they can be used as your primary heat source.<\/p><p>Their vent-free room heaters come in both infrared and blue flame models, both of which are 99.9% efficient. All of these models come with an Oxygen Depletion Sensor (ODS) that cause the heaters to turn off automatically if the oxygen levels in your home drop too low.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":true,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"empire-rh25-room-heater","override_product_description_1":"","override_product_2":"empire-comfort-console-room-heater-rh35","override_product_description_2":"","override_product_3":"empire-visual-flame-gas-room-heater","override_product_description_3":"","override_product_4":"empire-room-heater-rh65b-visual-flame-gas-room-heater","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1656460372be40e2d6":{"type":"dynamic-featured-products","blocks":{"1656460372f28a637f-0":{"type":"title_card","disabled":true,"settings":{"banner_position":"last","banner_preheading":"Shop this","banner_heading":"Collection","banner_preheading_color":"#ffffff","banner_heading_color":"#ffffff","banner_overlay_color":"","banner_overlay_opacity":0}}},"block_order":["1656460372f28a637f-0"],"settings":{"title":"Empire Fireplaces","subheading":"<p>Empire Comfort Systems has three brands of fireplaces — American Hearth, White Mountain Hearth, and Plaza, the luxury brand. These high-quality fireplaces vary in terms of design, but they’re all extremely high quality. There is a massive variety of models to choose from, and most models are available in either a gas or a propane option.<\/p><p>Whether you’re looking for a fireplace with a traditional look, a linear fireplace that’s more modern looking, or even a see-through fireplace that can be viewed from either side, Empire Comfort Systems has a model that will fit your needs.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":false,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"empire-keystone-deluxe-34-b-vent-gas-fireplace-bvd34fp","override_product_description_1":"","override_product_2":"empire-keystone-deluxe-36-b-vent-gas-fireplace-bvd36fp","override_product_description_2":"","override_product_3":"empire-rushmore-50-clean-face-direct-vent-gas-fireplace-dvct50cbp","override_product_description_3":"","override_product_4":"empire-tahoe-premium-42-direct-vent-gas-fireplace-dvp42fp","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}},"1656460740ffe0916c":{"type":"dynamic-rich-text","blocks":{"165646074072a296d3-0":{"type":"text","settings":{"title":"Who makes White Mountain Hearth?","text":"<p>Empire Comfort Systems makes all White Mountain Hearth products, including electric fireplaces, stoves, outdoor fireplaces and fireboxes, log sets, and more.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}},"2ea9b187-f2b9-4783-8acc-fef205888a35":{"type":"text","settings":{"title":"Where are Empire fireplaces made?","text":"<p>Empire Comfort Systems fireplaces are made in the United States at the company’s two manufacturing facilities located in Belleville, Illinois, which is near St. Louis, Missouri.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["165646074072a296d3-0","2ea9b187-f2b9-4783-8acc-fef205888a35"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}},"1656460780d55d8a5c":{"type":"dynamic-rich-text","blocks":{"16564607804f4e12b1-0":{"type":"text","settings":{"title":"Who owns Empire Comfort Systems?","text":"<p>Empire Comfort Systems is owned by the Bauer family starting in 1932. It is currently owned and operated by Nick Bauer and Jane Bauer, the fourth generation of the family to own Empire Comfort Systems.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}},"2ec9c393-503f-41dc-b08d-b45be3007a08":{"type":"text","settings":{"title":"Where are Empire wall furnaces made?","text":"<p>Empire Comfort Systems wall furnaces are made at their two manufacturing facilities in Belleville, Illinois, USA.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["16564607804f4e12b1-0","2ec9c393-503f-41dc-b08d-b45be3007a08"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}},"16564608187f1f8abb":{"type":"dynamic-rich-text","blocks":{"16564608181307ed30-0":{"type":"text","settings":{"title":"Where are Empire Gas fireplaces made?","text":"<p>Empire Comfort Systems gas fireplaces are made in Belleville, Illinois in the United States.<\/p>","button_text":"","button_url":"","heading_size":"medium","text_alignment":"left"}}},"block_order":["16564608181307ed30-0"],"settings":{"width":"regular","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36}}},"order":["16564597540f05be93","main","static-collection-promo-grid","static-recently-viewed","1656459759cb1579e3","1656459782b17f6f3d","1656460372be40e2d6","1656460740ffe0916c","1656460780d55d8a5c","16564608187f1f8abb"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "16564597540f05be93": {
+      "type": "static-collection-header",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false
+      }
+    },
+    "main": {
+      "type": "static-collection",
+      "blocks": {
+        "307918d3-05d1-4047-a336-07f24a3bb594": {
+          "type": "menu",
+          "settings": {
+            "menu": "company"
+          }
+        },
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "filter_option": "faceted",
+            "show_product_counts": true,
+            "filter_limit": "999",
+            "filter_position": "above_menus",
+            "filter_style": "tags",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
+            "custom_ordered_tags": ""
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "307918d3-05d1-4047-a336-07f24a3bb594",
+        "filter-1",
+        "menu-1"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false,
+        "products_per_page_range": 24,
+        "pagination": "traditional",
+        "sort_by": true,
+        "grid_list": true,
+        "menu_depth_range": 1
+      }
+    },
+    "static-collection-promo-grid": {
+      "type": "static-collection-promo-grid",
+      "blocks": {
+        "grid-tile-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png",
+            "preheading": "test",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "grid-tile-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "dab605d6-5512-4839-ac45-a2c055b7c650": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "grid-tile-1",
+        "grid-tile-2",
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e",
+        "dab605d6-5512-4839-ac45-a2c055b7c650"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "title": "Grid",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "static-recently-viewed": {
+      "type": "static-recently-viewed",
+      "settings": {
+        "enable_recently_viewed_products": false
+      }
+    },
+    "1656459759cb1579e3": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "1656459759564cff5b-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1656459759564cff5b-0"
+      ],
+      "settings": {
+        "title": "Empire Cast Iron Stove",
+        "subheading": "<p>Empire Comfort Systems manufactures a number of cast iron stoves, including Vent-free Spirit Stoves and Direct-vent Spirit Stoves. The Vent-free Spirit Stoves use precision-port technology, which allows them to produce their entrancing flames.<\/p><p>Their ceramic fiber log set is hand-painted and looks just like the real thing when combined with their glowing embers. Installation is quick and easy thanks to the vent-free design. A 10,000 BTU model is available for customers who want a cast iron stove directly in their bedroom. Perfect for those chilly winter evenings.<\/p><p>Their Direct-vent Spirit Stoves use their trademark Slope Glaze Burner System and have a larger ember bed than you’ll find on their other stoves, but they include the same hand-painted ceramic fiber log set. They come in 20,000 BTU and 30,000 BTU options.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#211f1f",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "gateway-1700-empire-stove",
+        "override_product_description_1": "",
+        "override_product_2": "gateway-2300-empire-stove",
+        "override_product_description_2": "",
+        "override_product_3": "gateway-3500-empire-stove",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1656459782b17f6f3d": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "1656459782208f4c05-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1656459782208f4c05-0"
+      ],
+      "settings": {
+        "title": "Empire Heaters",
+        "subheading": "<p>Empire Comfort Systems and their subsidiary company Empire Heating Systems has a number of wall furnaces and console heaters that are incredibly efficient, especially compared to their competitors. They have both vent-free, direct-vent, and vented models, depending on your needs.<\/p><p>They’re excellent replacements for inefficient oil or wood stoves and can be installed on the wall or on the floor, depending on your preference. Depending on the size of your home, they can be used as your primary heat source.<\/p><p>Their vent-free room heaters come in both infrared and blue flame models, both of which are 99.9% efficient. All of these models come with an Oxygen Depletion Sensor (ODS) that cause the heaters to turn off automatically if the oxygen levels in your home drop too low.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": true,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "empire-rh25-room-heater",
+        "override_product_description_1": "",
+        "override_product_2": "empire-comfort-console-room-heater-rh35",
+        "override_product_description_2": "",
+        "override_product_3": "empire-visual-flame-gas-room-heater",
+        "override_product_description_3": "",
+        "override_product_4": "empire-room-heater-rh65b-visual-flame-gas-room-heater",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1656460372be40e2d6": {
+      "type": "dynamic-featured-products",
+      "blocks": {
+        "1656460372f28a637f-0": {
+          "type": "title_card",
+          "disabled": true,
+          "settings": {
+            "banner_position": "last",
+            "banner_preheading": "Shop this",
+            "banner_heading": "Collection",
+            "banner_preheading_color": "#ffffff",
+            "banner_heading_color": "#ffffff",
+            "banner_overlay_color": "",
+            "banner_overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "1656460372f28a637f-0"
+      ],
+      "settings": {
+        "title": "Empire Fireplaces",
+        "subheading": "<p>Empire Comfort Systems has three brands of fireplaces — American Hearth, White Mountain Hearth, and Plaza, the luxury brand. These high-quality fireplaces vary in terms of design, but they’re all extremely high quality. There is a massive variety of models to choose from, and most models are available in either a gas or a propane option.<\/p><p>Whether you’re looking for a fireplace with a traditional look, a linear fireplace that’s more modern looking, or even a see-through fireplace that can be viewed from either side, Empire Comfort Systems has a model that will fit your needs.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "empire-keystone-deluxe-34-b-vent-gas-fireplace-bvd34fp",
+        "override_product_description_1": "",
+        "override_product_2": "empire-keystone-deluxe-36-b-vent-gas-fireplace-bvd36fp",
+        "override_product_description_2": "",
+        "override_product_3": "empire-rushmore-50-clean-face-direct-vent-gas-fireplace-dvct50cbp",
+        "override_product_description_3": "",
+        "override_product_4": "empire-tahoe-premium-42-direct-vent-gas-fireplace-dvp42fp",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    },
+    "1656460740ffe0916c": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "165646074072a296d3-0": {
+          "type": "text",
+          "settings": {
+            "title": "Who makes White Mountain Hearth?",
+            "text": "<p>Empire Comfort Systems makes all White Mountain Hearth products, including electric fireplaces, stoves, outdoor fireplaces and fireboxes, log sets, and more.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "2ea9b187-f2b9-4783-8acc-fef205888a35": {
+          "type": "text",
+          "settings": {
+            "title": "Where are Empire fireplaces made?",
+            "text": "<p>Empire Comfort Systems fireplaces are made in the United States at the company’s two manufacturing facilities located in Belleville, Illinois, which is near St. Louis, Missouri.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "165646074072a296d3-0",
+        "2ea9b187-f2b9-4783-8acc-fef205888a35"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "1656460780d55d8a5c": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "16564607804f4e12b1-0": {
+          "type": "text",
+          "settings": {
+            "title": "Who owns Empire Comfort Systems?",
+            "text": "<p>Empire Comfort Systems is owned by the Bauer family starting in 1932. It is currently owned and operated by Nick Bauer and Jane Bauer, the fourth generation of the family to own Empire Comfort Systems.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        },
+        "2ec9c393-503f-41dc-b08d-b45be3007a08": {
+          "type": "text",
+          "settings": {
+            "title": "Where are Empire wall furnaces made?",
+            "text": "<p>Empire Comfort Systems wall furnaces are made at their two manufacturing facilities in Belleville, Illinois, USA.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "16564607804f4e12b1-0",
+        "2ec9c393-503f-41dc-b08d-b45be3007a08"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    },
+    "16564608187f1f8abb": {
+      "type": "dynamic-rich-text",
+      "blocks": {
+        "16564608181307ed30-0": {
+          "type": "text",
+          "settings": {
+            "title": "Where are Empire Gas fireplaces made?",
+            "text": "<p>Empire Comfort Systems gas fireplaces are made in Belleville, Illinois in the United States.<\/p>",
+            "button_text": "",
+            "button_url": "",
+            "heading_size": "medium",
+            "text_alignment": "left"
+          }
+        }
+      },
+      "block_order": [
+        "16564608181307ed30-0"
+      ],
+      "settings": {
+        "width": "regular",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36
+      }
+    }
+  },
+  "order": [
+    "16564597540f05be93",
+    "main",
+    "static-collection-promo-grid",
+    "static-recently-viewed",
+    "1656459759cb1579e3",
+    "1656459782b17f6f3d",
+    "1656460372be40e2d6",
+    "1656460740ffe0916c",
+    "1656460780d55d8a5c",
+    "16564608187f1f8abb"
+  ]
+}
