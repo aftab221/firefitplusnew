@@ -105,8 +105,7 @@
         "0f61b6af-0ae8-45ef-91d0-5b38007f52fe"
       ],
       "custom_css": [
-        ".small-promo-text-desktop {color: #ff7f02; font-size: x-large; font-weight: bold !important;}",
-        "p#contact_header {display: none;}"
+
       ],
       "settings": {
         "sticky_header": true,
@@ -128,9 +127,9 @@
         "small_promo_icon": "icon-cell-phone",
         "color_smallpromo_text": "#000000",
         "color_smallpromo_icon": "#000000",
-        "color_smallpromo_text_bottom": "#ffffff",
+        "color_smallpromo_text_bottom": "#ff7f02",
         "bottom_announcement_bar_text_color": "#ffffff",
-        "bottom_announcement_bar_background_color": "#ffffff"
+        "bottom_announcement_bar_background_color": "#ff7f02"
       }
     }
   },
