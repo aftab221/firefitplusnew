@@ -1,1 +1,314 @@
-{"sections":{"16504065293511fee6":{"type":"static-collection-header","settings":{"show_breadcrumbs":true,"show_collection_image":false}},"16504066094fc352da":{"type":"dynamic-collection-list","disabled":true,"blocks":{"1650406609167d9852-0":{"type":"collection","settings":{"collection":"","custom_link":"#shopify-section-template--15779688612071__16504068667022acac .featured-collection--container","image":"shopify:\/\/shop_images\/prism-hardscapes-tavola-6-concrete-gas-fire-table-ph-415-with-flame-on-a-pool-side_png.png","collection_label":"Prism Hardscapes Tavola","mobile_collection_label":"","collection_button_text":""}},"1650406609167d9852-4":{"type":"collection","settings":{"collection":"","custom_link":"#shopify-section-template--15779688612071__1650407096b5c70f1a","image":"shopify:\/\/shop_images\/prism-hardscapes-moderno-5-concrete-gas-fire-pit-ph-426-with-flame-on-outdoor-set-up_png.png","collection_label":"Prism Hardscapes Moderno","mobile_collection_label":"","collection_button_text":""}}},"block_order":["1650406609167d9852-0","1650406609167d9852-4"],"settings":{"title":"Shop By Style","subheading":"","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"label_style":"label-style-heading","text_alignment":"center","desktop_collections_per_row":3,"display_desktop_collections":"2","desktop_collection_width":"desktop-full-width","layout_collection_max_width":1040,"desktop_collection_max_width":330,"mobile_collections_per_row":2,"display_mobile_collections":"2","mobile_collection_width":"mobile-full-width","mobile_collection_max_width":110}},"main":{"type":"static-collection","blocks":{"307918d3-05d1-4047-a336-07f24a3bb594":{"type":"menu","settings":{"menu":"company"}},"filter-1":{"type":"filter","settings":{"filter_option":"tag","show_product_counts":true,"filter_limit":"999","filter_position":"above_menus","filter_style":"groups","grid_categories":"","custom_ordered_categories":"","custom_ordered_tags":""}},"menu-1":{"type":"menu","settings":{"menu":""}}},"block_order":["307918d3-05d1-4047-a336-07f24a3bb594","filter-1","menu-1"],"settings":{"show_breadcrumbs":true,"show_collection_image":false,"products_per_page_range":24,"pagination":"traditional","sort_by":true,"grid_list":true,"menu_depth_range":1}},"static-collection-promo-grid":{"type":"static-collection-promo-grid","disabled":true,"blocks":{"grid-tile-1":{"type":"promotion","settings":{"image":"shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png","preheading":"test","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"grid-tile-2":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"acb5d1d6-4dc9-4208-b3a3-9615855fca5e":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}},"dab605d6-5512-4839-ac45-a2c055b7c650":{"type":"promotion","settings":{"preheading":"Preheading","preheading_color":"#4d4d4d","title":"Grid","heading_color":"#4d4d4d","text":"Use this section to welcome customers to your store, say a bit about your brand, or share news.","text_color":"#4d4d4d","block_link":"","button_text":"","button_style":"primary","signpost_color":"#4d4d4d","text_alignment":"top-left","promo_width":"half-width","desktop_height":380,"mobile_height":270,"overlay_style":"none","background":"","opacity":50}}},"block_order":["grid-tile-1","grid-tile-2","acb5d1d6-4dc9-4208-b3a3-9615855fca5e","dab605d6-5512-4839-ac45-a2c055b7c650"],"settings":{"enable":true,"title":"Grid","subheading":"","heading_color":"#4d4d4d","subheading_color":"#4d4d4d","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"maintain_aspect_ratio":false,"compress_blocks":false}},"static-recently-viewed":{"type":"static-recently-viewed","settings":{"enable_recently_viewed_products":false}},"16504068667022acac":{"type":"dynamic-featured-products","settings":{"title":"Prism Hardscapes Tavola","subheading":"<p>If you’re in search of that “wow” factor, then a Tavola fire pit might just be what your backyard has been waiting for. With its sleek and modern design, guests are sure to be drawn in by the rectangle shape.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":false,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"prism-hardscapes-tavola-6-concrete-gas-fire-pit-90x38-inch","override_product_description_1":"","override_product_2":"prism-hardscapes-tavola-8","override_product_description_2":"","override_product_3":"prism-hardscapes-tavola-4","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":""}},"1650407096b5c70f1a":{"type":"dynamic-featured-products","settings":{"title":"Prism Hardscapes Moderno Fire Bowl","subheading":"<p>For those who want to recreate the feeling of a traditional wood-burning fire pit without all the hassle of buying, cutting, and stacking wood. The bowl shape is an excellent choice that goes with many patio designs.<\/p>","heading_color":"#3a0a0b","subheading_color":"#000000","background_color":"","section_spacing_desktop":50,"section_spacing_mobile":36,"collection":"","product_count":3,"enable_custom_image_height":false,"custom_image_height":150,"show_vendor":false,"show_product_short_descriptions":true,"show_product_short_descriptions_above_image":false,"cta_text":"","cta_button_style":"primary","background_image_position":"center-middle","background_overlay_style":"none","background_overlay_color":"","background_overlay_opacity":50,"override_enabled":true,"override_product_1":"prism-hardscapes-moderno-5","override_product_description_1":"","override_product_2":"prism-hardscapes-moderno-3","override_product_description_2":"","override_product_3":"prism-hardscapes-moderno-4","override_product_description_3":"","override_product_4":"","override_product_description_4":"","override_button_link":"shopify:\/\/collections\/all"}}},"order":["16504065293511fee6","16504066094fc352da","main","static-collection-promo-grid","static-recently-viewed","16504068667022acac","1650407096b5c70f1a"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "16504065293511fee6": {
+      "type": "static-collection-header",
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false
+      }
+    },
+    "16504066094fc352da": {
+      "type": "dynamic-collection-list",
+      "blocks": {
+        "1650406609167d9852-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "custom_link": "#shopify-section-template--15779688612071__16504068667022acac .featured-collection--container",
+            "image": "shopify:\/\/shop_images\/prism-hardscapes-tavola-6-concrete-gas-fire-table-ph-415-with-flame-on-a-pool-side_png.png",
+            "collection_label": "Prism Hardscapes Tavola",
+            "mobile_collection_label": "",
+            "collection_button_text": ""
+          }
+        },
+        "1650406609167d9852-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "custom_link": "#shopify-section-template--15779688612071__1650407096b5c70f1a",
+            "image": "shopify:\/\/shop_images\/prism-hardscapes-moderno-5-concrete-gas-fire-pit-ph-426-with-flame-on-outdoor-set-up_png.png",
+            "collection_label": "Prism Hardscapes Moderno",
+            "mobile_collection_label": "",
+            "collection_button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1650406609167d9852-0",
+        "1650406609167d9852-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Shop By Style",
+        "subheading": "",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "label_style": "label-style-heading",
+        "text_alignment": "center",
+        "desktop_collections_per_row": 3,
+        "display_desktop_collections": "2",
+        "desktop_collection_width": "desktop-full-width",
+        "layout_collection_max_width": 1040,
+        "desktop_collection_max_width": 330,
+        "mobile_collections_per_row": 2,
+        "display_mobile_collections": "2",
+        "mobile_collection_width": "mobile-full-width",
+        "mobile_collection_max_width": 110
+      }
+    },
+    "main": {
+      "type": "static-collection",
+      "blocks": {
+        "307918d3-05d1-4047-a336-07f24a3bb594": {
+          "type": "menu",
+          "settings": {
+            "menu": "company"
+          }
+        },
+        "filter-1": {
+          "type": "filter",
+          "settings": {
+            "filter_option": "tag",
+            "show_product_counts": true,
+            "filter_limit": "999",
+            "filter_position": "above_menus",
+            "filter_style": "groups",
+            "grid_categories": "",
+            "custom_ordered_categories": "",
+            "custom_ordered_tags": ""
+          }
+        },
+        "menu-1": {
+          "type": "menu",
+          "settings": {
+            "menu": ""
+          }
+        }
+      },
+      "block_order": [
+        "307918d3-05d1-4047-a336-07f24a3bb594",
+        "filter-1",
+        "menu-1"
+      ],
+      "settings": {
+        "show_breadcrumbs": true,
+        "show_collection_image": false,
+        "products_per_page_range": 24,
+        "pagination": "traditional",
+        "sort_by": true,
+        "grid_list": true,
+        "menu_depth_range": 1
+      }
+    },
+    "static-collection-promo-grid": {
+      "type": "static-collection-promo-grid",
+      "blocks": {
+        "grid-tile-1": {
+          "type": "promotion",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elementi-boulder-rock-fire-pit-table-ofg110-with-flame-on-white-backgroung_600x600_1.png",
+            "preheading": "test",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "grid-tile-2": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        },
+        "dab605d6-5512-4839-ac45-a2c055b7c650": {
+          "type": "promotion",
+          "settings": {
+            "preheading": "Preheading",
+            "preheading_color": "#4d4d4d",
+            "title": "Grid",
+            "heading_color": "#4d4d4d",
+            "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
+            "text_color": "#4d4d4d",
+            "block_link": "",
+            "button_text": "",
+            "button_style": "primary",
+            "signpost_color": "#4d4d4d",
+            "text_alignment": "top-left",
+            "promo_width": "half-width",
+            "desktop_height": 380,
+            "mobile_height": 270,
+            "overlay_style": "none",
+            "background": "",
+            "opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "grid-tile-1",
+        "grid-tile-2",
+        "acb5d1d6-4dc9-4208-b3a3-9615855fca5e",
+        "dab605d6-5512-4839-ac45-a2c055b7c650"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable": true,
+        "title": "Grid",
+        "subheading": "",
+        "heading_color": "#4d4d4d",
+        "subheading_color": "#4d4d4d",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "maintain_aspect_ratio": false,
+        "compress_blocks": false
+      }
+    },
+    "static-recently-viewed": {
+      "type": "static-recently-viewed",
+      "settings": {
+        "enable_recently_viewed_products": false
+      }
+    },
+    "16504068667022acac": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Prism Hardscapes Tavola",
+        "subheading": "<p>If you’re in search of that “wow” factor, then a Tavola fire pit might just be what your backyard has been waiting for. With its sleek and modern design, guests are sure to be drawn in by the rectangle shape.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "prism-hardscapes-tavola-6-concrete-gas-fire-pit-90x38-inch",
+        "override_product_description_1": "",
+        "override_product_2": "prism-hardscapes-tavola-8",
+        "override_product_description_2": "",
+        "override_product_3": "prism-hardscapes-tavola-4",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": ""
+      }
+    },
+    "1650407096b5c70f1a": {
+      "type": "dynamic-featured-products",
+      "settings": {
+        "title": "Prism Hardscapes Moderno Fire Bowl",
+        "subheading": "<p>For those who want to recreate the feeling of a traditional wood-burning fire pit without all the hassle of buying, cutting, and stacking wood. The bowl shape is an excellent choice that goes with many patio designs.<\/p>",
+        "heading_color": "#3a0a0b",
+        "subheading_color": "#000000",
+        "background_color": "",
+        "section_spacing_desktop": 50,
+        "section_spacing_mobile": 36,
+        "collection": "",
+        "product_count": 3,
+        "enable_custom_image_height": false,
+        "custom_image_height": 150,
+        "show_vendor": false,
+        "show_product_short_descriptions": true,
+        "show_product_short_descriptions_above_image": false,
+        "cta_text": "",
+        "cta_button_style": "primary",
+        "background_image_position": "center-middle",
+        "background_overlay_style": "none",
+        "background_overlay_color": "",
+        "background_overlay_opacity": 50,
+        "override_enabled": true,
+        "override_product_1": "prism-hardscapes-moderno-5",
+        "override_product_description_1": "",
+        "override_product_2": "prism-hardscapes-moderno-3",
+        "override_product_description_2": "",
+        "override_product_3": "prism-hardscapes-moderno-4",
+        "override_product_description_3": "",
+        "override_product_4": "",
+        "override_product_description_4": "",
+        "override_button_link": "shopify:\/\/collections\/all"
+      }
+    }
+  },
+  "order": [
+    "16504065293511fee6",
+    "16504066094fc352da",
+    "main",
+    "static-collection-promo-grid",
+    "static-recently-viewed",
+    "16504068667022acac",
+    "1650407096b5c70f1a"
+  ]
+}
